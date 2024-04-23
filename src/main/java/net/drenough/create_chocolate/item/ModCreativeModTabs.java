@@ -30,6 +30,9 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.CHOCOLATE_BRICK_FENCE.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_FENCE_GATE.get());
                         output.accept(ModBlocks.DARK_CHOCOLATE_BRICKS.get());
+
+                        output.accept(ModItems.HARD_CHOCOLATE_STICK.get());
+                        output.accept(ModItems.HARD_CHOCOLATE_PICKAXE.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

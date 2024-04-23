@@ -1,6 +1,8 @@
 {
   "item.create_chocolate.bar_of_dark_chocolate": "Bar of Dark Chocolate",
   "item.create_chocolate.bar_of_white_chocolate": "Bar of White Chocolate",
+  "item.create_chocolate.hard_chocolate_stick": "Hard Chocolate Stick",
+  "item.create_chocolate.hard_chocolate_pickaxe": "Hard Chocolate Pickaxe",
 
 
   "block.create_chocolate.chocolate_bricks": "Chocolate Bricks",
