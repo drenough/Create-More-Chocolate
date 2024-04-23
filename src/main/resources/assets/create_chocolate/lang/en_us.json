@@ -5,6 +5,14 @@
 
   "block.create_chocolate.chocolate_bricks": "Chocolate Bricks",
   "block.create_chocolate.dark_chocolate_bricks": "Dark Chocolate Bricks",
+  "block.create_chocolate.chocolate_brick_stairs": "Chocolate Brick Stairs",
+  "block.create_chocolate.chocolate_brick_slab": "Chocolate Brick Slab",
+  "block.create_chocolate.chocolate_brick_door": "Chocolate Brick Door",
+  "block.create_chocolate.chocolate_brick_trapdoor": "Chocolate Brick Trapdoor",
+  "block.create_chocolate.chocolate_brick_wall": "Chocolate Brick Wall",
+  "block.create_chocolate.chocolate_brick_fence": "Chocolate Brick Fence",
+  "block.create_chocolate.chocolate_brick_fence_gate": "Chocolate Brick Fence Gate",
+
 
   "creativetab.create_chocolate_tab": "Create More Chocolate"
 }

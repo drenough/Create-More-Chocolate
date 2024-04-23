@@ -22,6 +22,11 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.BAR_OF_WHITE_CHOCOLATE.get());
 
                         output.accept(ModBlocks.CHOCOLATE_BRICKS.get());
+                        output.accept(ModBlocks.CHOCOLATE_BRICK_SLAB.get());
+                        output.accept(ModBlocks.CHOCOLATE_BRICK_STAIRS.get());
+                        output.accept(ModBlocks.CHOCOLATE_BRICK_WALL.get());
+                        output.accept(ModBlocks.CHOCOLATE_BRICK_FENCE.get());
+                        output.accept(ModBlocks.CHOCOLATE_BRICK_FENCE_GATE.get());
                         output.accept(ModBlocks.DARK_CHOCOLATE_BRICKS.get());
                     })
                     .build());

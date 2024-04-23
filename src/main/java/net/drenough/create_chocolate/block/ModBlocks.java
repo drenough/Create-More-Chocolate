@@ -2,11 +2,12 @@ package net.drenough.create_chocolate.block;
 
 import net.drenough.create_chocolate.CreateChocolate;
 import net.drenough.create_chocolate.item.ModItems;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -17,9 +18,35 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CreateChocolate.MOD_ID);
-
+    // Chocolate Bricks (Already added)
     public static final RegistryObject<Block> CHOCOLATE_BRICKS = registerBlock("chocolate_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+    // Chocolate Brick Stairs (Already added)
+    public static final RegistryObject<Block> CHOCOLATE_BRICK_STAIRS = registerBlock("chocolate_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.CHOCOLATE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    // Chocolate Brick Slab (Already added)
+    public static final RegistryObject<Block> CHOCOLATE_BRICK_SLAB = registerBlock("chocolate_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+    // Chocolate Brick Door (Missing Texture, to be added)
+///    public static final RegistryObject<Block> CHOCOLATE_BRICK_DOOR = registerBlock("chocolate_brick_door",
+   ///         () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.STONE));
+    // Chocolate Brick Trapdoor (Missing Texture, to be added)
+    ///public static final RegistryObject<Block> CHOCOLATE_BRICK_TRAPDOOR = registerBlock("chocolate_brick_trapdoor",
+    ///        () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.STONE));
+    // Chocolate Brick Wall (Already added) - not connecting to other blocks
+    public static final RegistryObject<Block> CHOCOLATE_BRICK_WALL = registerBlock("chocolate_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
+    // Chocolate Brick Fence (Already added) - not connecting to other blocks
+    public static final RegistryObject<Block> CHOCOLATE_BRICK_FENCE = registerBlock("chocolate_brick_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE)));
+    // Chocolate Brick FenceGate (Already added) - errors with loading model
+    public static final RegistryObject<Block> CHOCOLATE_BRICK_FENCE_GATE = registerBlock("chocolate_brick_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+
+
+
     public static final RegistryObject<Block> DARK_CHOCOLATE_BRICKS = registerBlock("dark_chocolate_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
 
