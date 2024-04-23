@@ -18,14 +18,14 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CreateChocolate.MOD_ID);
-    // Chocolate Bricks (Already added)
+    // Chocolate Bricks
     public static final RegistryObject<Block> CHOCOLATE_BRICKS = registerBlock("chocolate_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
-    // Chocolate Brick Stairs (Already added)
+    // Chocolate Brick Stairs
     public static final RegistryObject<Block> CHOCOLATE_BRICK_STAIRS = registerBlock("chocolate_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.CHOCOLATE_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
-    // Chocolate Brick Slab (Already added)
+    // Chocolate Brick Slab
     public static final RegistryObject<Block> CHOCOLATE_BRICK_SLAB = registerBlock("chocolate_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
     // Chocolate Brick Door
@@ -34,13 +34,13 @@ public class ModBlocks {
     // Chocolate Brick Trapdoor
     public static final RegistryObject<Block> CHOCOLATE_BRICK_TRAPDOOR = registerBlock("chocolate_brick_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.STONE));
-    // Chocolate Brick Wall (Already added) - not connecting to other blocks/missing tag
+    // Chocolate Brick Wall
     public static final RegistryObject<Block> CHOCOLATE_BRICK_WALL = registerBlock("chocolate_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
-    // Chocolate Brick Fence (Already added) - not connecting to other blocks/missing tag
+    // Chocolate Brick Fence
     public static final RegistryObject<Block> CHOCOLATE_BRICK_FENCE = registerBlock("chocolate_brick_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
-    // Chocolate Brick FenceGate (Already added)
+    // Chocolate Brick FenceGate
     public static final RegistryObject<Block> CHOCOLATE_BRICK_FENCE_GATE = registerBlock("chocolate_brick_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "create_chocolate:chocolate_bricks"
+    }
+  },
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "create_chocolate:chocolate_brick_trapdoor"
+  },
+  "show_notification": true
+}
