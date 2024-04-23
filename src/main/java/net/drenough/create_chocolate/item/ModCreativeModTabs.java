@@ -33,6 +33,10 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.HARD_CHOCOLATE_STICK.get());
                         output.accept(ModItems.HARD_CHOCOLATE_PICKAXE.get());
+                        output.accept(ModItems.HARD_CHOCOLATE_AXE.get());
+                        output.accept(ModItems.HARD_CHOCOLATE_SWORD.get());
+                        output.accept(ModItems.HARD_CHOCOLATE_SHOVEL.get());
+                        output.accept(ModItems.HARD_CHOCOLATE_HOE.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
