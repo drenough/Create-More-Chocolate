@@ -37,6 +37,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HARD_CHOCOLATE_SWORD.get());
                         output.accept(ModItems.HARD_CHOCOLATE_SHOVEL.get());
                         output.accept(ModItems.HARD_CHOCOLATE_HOE.get());
+                        output.accept(ModItems.HARD_CHOCOLATE_HELMET.get());
+                        output.accept(ModItems.HARD_CHOCOLATE_CHESTPLATE.get());
+                        output.accept(ModItems.HARD_CHOCOLATE_LEGGINGS.get());
+                        output.accept(ModItems.HARD_CHOCOLATE_BOOTS.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

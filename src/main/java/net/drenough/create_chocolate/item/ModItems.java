@@ -37,6 +37,22 @@ public class ModItems {
     public static final RegistryObject<Item> HARD_CHOCOLATE_HOE = ITEMS.register("hard_chocolate_hoe",
             () -> new HoeItem(Tiers.STONE, 0, -1, new Item.Properties().defaultDurability(175)));
 
+    /// Hard Chocolate Armor
+
+    // Hard Chocolate Helmet
+    public static final RegistryObject<Item> HARD_CHOCOLATE_HELMET = ITEMS.register("hard_chocolate_helmet",
+            () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE, ArmorItem.Type.HELMET, new Item.Properties()));
+    // Hard Chocolate Chestplate
+    public static final RegistryObject<Item> HARD_CHOCOLATE_CHESTPLATE = ITEMS.register("hard_chocolate_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    // Hard Chocolate Leggings
+    public static final RegistryObject<Item> HARD_CHOCOLATE_LEGGINGS = ITEMS.register("hard_chocolate_leggings",
+            () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    // Hard Chocolate Boots
+    public static final RegistryObject<Item> HARD_CHOCOLATE_BOOTS = ITEMS.register("hard_chocolate_boots",
+            () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
