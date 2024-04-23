@@ -27,6 +27,12 @@ versionRange="[0.5.1.f,)"
 ordering="NONE"
 side="BOTH"
 [[dependencies.create_chocolate]]
+modId="flywheel"
+mandatory=true
+versionRange="[0.6.9.a,0.7)"
+ordering="AFTER"
+side="CLIENT"
+[[dependencies.create_chocolate]]
 modId="jei"
 mandatory=false
 versionRange="[15.3.0.4,)"

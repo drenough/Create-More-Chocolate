@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "create_chocolate:block/chocolate_brick_door_bottom",
+    "top": "create_chocolate:block/chocolate_brick_door_top"
+  }
+}

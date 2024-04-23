@@ -28,19 +28,19 @@ public class ModBlocks {
     // Chocolate Brick Slab (Already added)
     public static final RegistryObject<Block> CHOCOLATE_BRICK_SLAB = registerBlock("chocolate_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
-    // Chocolate Brick Door (Missing Texture, to be added)
-///    public static final RegistryObject<Block> CHOCOLATE_BRICK_DOOR = registerBlock("chocolate_brick_door",
-   ///         () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.STONE));
-    // Chocolate Brick Trapdoor (Missing Texture, to be added)
-    ///public static final RegistryObject<Block> CHOCOLATE_BRICK_TRAPDOOR = registerBlock("chocolate_brick_trapdoor",
-    ///        () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.STONE));
-    // Chocolate Brick Wall (Already added) - not connecting to other blocks
+    // Chocolate Brick Door
+    public static final RegistryObject<Block> CHOCOLATE_BRICK_DOOR = registerBlock("chocolate_brick_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.STONE));
+    // Chocolate Brick Trapdoor
+    public static final RegistryObject<Block> CHOCOLATE_BRICK_TRAPDOOR = registerBlock("chocolate_brick_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.STONE));
+    // Chocolate Brick Wall (Already added) - not connecting to other blocks/missing tag
     public static final RegistryObject<Block> CHOCOLATE_BRICK_WALL = registerBlock("chocolate_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
-    // Chocolate Brick Fence (Already added) - not connecting to other blocks
+    // Chocolate Brick Fence (Already added) - not connecting to other blocks/missing tag
     public static final RegistryObject<Block> CHOCOLATE_BRICK_FENCE = registerBlock("chocolate_brick_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_FENCE)));
-    // Chocolate Brick FenceGate (Already added) - errors with loading model
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    // Chocolate Brick FenceGate (Already added)
     public static final RegistryObject<Block> CHOCOLATE_BRICK_FENCE_GATE = registerBlock("chocolate_brick_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
