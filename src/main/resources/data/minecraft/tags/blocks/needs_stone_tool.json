@@ -8,6 +8,13 @@
     "create_chocolate:chocolate_brick_wall",
     "create_chocolate:chocolate_brick_fence",
     "create_chocolate:chocolate_brick_fence_gate",
-    "create_chocolate:dark_chocolate_bricks"
+    "create_chocolate:dark_chocolate_bricks",
+    "create_chocolate:dark_chocolate_stairs",
+    "create_chocolate:dark_chocolate_slab",
+    "create_chocolate:dark_chocolate_door",
+    "create_chocolate:dark_chocolate_trapdoor",
+    "create_chocolate:dark_chocolate_wall",
+    "create_chocolate:dark_chocolate_fence",
+    "create_chocolate:dark_chocolate_fence_gate"
   ]
 }

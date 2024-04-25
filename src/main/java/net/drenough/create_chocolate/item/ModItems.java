@@ -16,6 +16,10 @@ public class ModItems {
     public static final RegistryObject<Item> BAR_OF_WHITE_CHOCOLATE = ITEMS.register("bar_of_white_chocolate",
             () -> new Item(new Item.Properties().food(ModFoods.BAR_OF_WHITE_CHOCOLATE)));
 
+    // Dark Chocolate Stick
+    public static final RegistryObject<Item> DARK_CHOCOLATE_STICK = ITEMS.register("dark_chocolate_stick",
+            () -> new Item(new Item.Properties()));
+
     /// Hard Chocolate Tools
 
     // Hard Chocolate Stick

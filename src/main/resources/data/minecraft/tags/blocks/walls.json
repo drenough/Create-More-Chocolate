@@ -1,5 +1,6 @@
 {
   "values": [
-    "create_chocolate:chocolate_brick_wall"
+    "create_chocolate:chocolate_brick_wall",
+    "create_chocolate:dark_chocolate_wall"
   ]
 }

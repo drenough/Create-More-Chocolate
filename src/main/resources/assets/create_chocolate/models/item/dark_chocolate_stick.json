@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "create_chocolate:item/dark_chocolate_stick"
+  }
+}

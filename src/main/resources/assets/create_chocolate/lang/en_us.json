@@ -1,5 +1,6 @@
 {
   "item.create_chocolate.bar_of_dark_chocolate": "Bar of Dark Chocolate",
+  "item.create_chocolate.dark_chocolate_stick": "Dark Chocolate Stick",
   "item.create_chocolate.bar_of_white_chocolate": "Bar of White Chocolate",
   "item.create_chocolate.hard_chocolate_stick": "Hard Chocolate Stick",
   "item.create_chocolate.hard_chocolate_pickaxe": "Hard Chocolate Pickaxe",
@@ -14,7 +15,6 @@
 
 
   "block.create_chocolate.chocolate_bricks": "Chocolate Bricks",
-  "block.create_chocolate.dark_chocolate_bricks": "Dark Chocolate Bricks",
   "block.create_chocolate.chocolate_brick_stairs": "Chocolate Brick Stairs",
   "block.create_chocolate.chocolate_brick_slab": "Chocolate Brick Slab",
   "block.create_chocolate.chocolate_brick_door": "Chocolate Brick Door",
@@ -22,6 +22,14 @@
   "block.create_chocolate.chocolate_brick_wall": "Chocolate Brick Wall",
   "block.create_chocolate.chocolate_brick_fence": "Chocolate Brick Fence",
   "block.create_chocolate.chocolate_brick_fence_gate": "Chocolate Brick Fence Gate",
+  "block.create_chocolate.dark_chocolate_bricks": "Dark Chocolate Bricks",
+  "block.create_chocolate.dark_chocolate_stairs": "Dark Chocolate Stairs",
+  "block.create_chocolate.dark_chocolate_slab": "Dark Chocolate Slab",
+  "block.create_chocolate.dark_chocolate_door": "Dark Chocolate Door",
+  "block.create_chocolate.dark_chocolate_trapdoor": "Dark Chocolate Trapdoor",
+  "block.create_chocolate.dark_chocolate_wall": "Dark Chocolate Wall",
+  "block.create_chocolate.dark_chocolate_fence": "Dark Chocolate Fence",
+  "block.create_chocolate.dark_chocolate_fence_gate": "Dark Chocolate Fence Gate",
 
 
   "creativetab.create_chocolate_tab": "Create More Chocolate"

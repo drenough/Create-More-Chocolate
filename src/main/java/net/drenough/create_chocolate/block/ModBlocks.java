@@ -18,6 +18,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CreateChocolate.MOD_ID);
+
     // Chocolate Bricks
     public static final RegistryObject<Block> CHOCOLATE_BRICKS = registerBlock("chocolate_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
@@ -46,10 +47,31 @@ public class ModBlocks {
 
 
 
-
+    // Dark Chocolate Bricks
     public static final RegistryObject<Block> DARK_CHOCOLATE_BRICKS = registerBlock("dark_chocolate_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
-
+    // Dark Chocolate Stairs
+    public static final RegistryObject<Block> DARK_CHOCOLATE_STAIRS = registerBlock("dark_chocolate_stairs",
+            () -> new StairBlock(() -> ModBlocks.DARK_CHOCOLATE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    // Dark Chocolate Slab
+    public static final RegistryObject<Block> DARK_CHOCOLATE_SLAB = registerBlock("dark_chocolate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+    // Dark Chocolate Door
+    public static final RegistryObject<Block> DARK_CHOCOLATE_DOOR = registerBlock("dark_chocolate_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.STONE));
+    // Dark Chocolate Trapdoor
+    public static final RegistryObject<Block> DARK_CHOCOLATE_TRAPDOOR = registerBlock("dark_chocolate_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.STONE));
+    // Dark Chocolate Wall
+    public static final RegistryObject<Block> DARK_CHOCOLATE_WALL = registerBlock("dark_chocolate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
+    // Dark Chocolate Fence
+    public static final RegistryObject<Block> DARK_CHOCOLATE_FENCE = registerBlock("dark_chocolate_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    // Dark Chocolate FenceGate
+    public static final RegistryObject<Block> DARK_CHOCOLATE_FENCE_GATE = registerBlock("dark_chocolate_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
 
 

@@ -30,8 +30,16 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.CHOCOLATE_BRICK_FENCE.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_FENCE_GATE.get());
                         output.accept(ModBlocks.DARK_CHOCOLATE_BRICKS.get());
+                        output.accept(ModBlocks.DARK_CHOCOLATE_SLAB.get());
+                        output.accept(ModBlocks.DARK_CHOCOLATE_STAIRS.get());
+                        output.accept(ModBlocks.DARK_CHOCOLATE_WALL.get());
+                        output.accept(ModBlocks.DARK_CHOCOLATE_DOOR.get());
+                        output.accept(ModBlocks.DARK_CHOCOLATE_TRAPDOOR.get());
+                        output.accept(ModBlocks.DARK_CHOCOLATE_FENCE.get());
+                        output.accept(ModBlocks.DARK_CHOCOLATE_FENCE_GATE.get());
 
                         output.accept(ModItems.HARD_CHOCOLATE_STICK.get());
+                        output.accept(ModItems.DARK_CHOCOLATE_STICK.get());
                         output.accept(ModItems.HARD_CHOCOLATE_PICKAXE.get());
                         output.accept(ModItems.HARD_CHOCOLATE_AXE.get());
                         output.accept(ModItems.HARD_CHOCOLATE_SWORD.get());

@@ -10,8 +10,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    HARD_CHOCOLATE("hard_chocolate", 26, new int[]{ 5, 7, 5, 4 }, 25,
-            SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f, () -> Ingredient.of(ModItems.HARD_CHOCOLATE_STICK.get()));
+    HARD_CHOCOLATE("hard_chocolate", 26, new int[]{ 2, 5, 3, 2 }, 25,
+            SoundEvents.ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.of(ModItems.HARD_CHOCOLATE_STICK.get()));
 
     private final String name;
     private final int durabilityMultiplier;
