@@ -1,6 +1,8 @@
 {
   "values": [
     "create_chocolate:chocolate_brick_door",
-    "create_chocolate:dark_chocolate_door"
+    "create_chocolate:dark_chocolate_door",
+    "create_chocolate:white_chocolate_door",
+    "create_chocolate:caramel_door"
   ]
 }

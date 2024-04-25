@@ -15,9 +15,19 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.BAR_OF_DARK_CHOCOLATE)));
     public static final RegistryObject<Item> BAR_OF_WHITE_CHOCOLATE = ITEMS.register("bar_of_white_chocolate",
             () -> new Item(new Item.Properties().food(ModFoods.BAR_OF_WHITE_CHOCOLATE)));
+    public static final RegistryObject<Item> BAR_OF_CARAMEL = ITEMS.register("bar_of_caramel",
+            () -> new Item(new Item.Properties().food(ModFoods.BAR_OF_CARAMEL)));
 
     // Dark Chocolate Stick
     public static final RegistryObject<Item> DARK_CHOCOLATE_STICK = ITEMS.register("dark_chocolate_stick",
+            () -> new Item(new Item.Properties()));
+
+    // White Chocolate Stick
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_STICK = ITEMS.register("white_chocolate_stick",
+            () -> new Item(new Item.Properties()));
+
+    // Caramel Stick
+    public static final RegistryObject<Item> CARAMEL_STICK = ITEMS.register("caramel_stick",
             () -> new Item(new Item.Properties()));
 
     /// Hard Chocolate Tools

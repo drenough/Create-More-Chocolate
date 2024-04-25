@@ -20,6 +20,7 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BAR_OF_DARK_CHOCOLATE.get());
                         output.accept(ModItems.BAR_OF_WHITE_CHOCOLATE.get());
+                        output.accept(ModItems.BAR_OF_CARAMEL.get());
 
                         output.accept(ModBlocks.CHOCOLATE_BRICKS.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_SLAB.get());
@@ -37,9 +38,27 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.DARK_CHOCOLATE_TRAPDOOR.get());
                         output.accept(ModBlocks.DARK_CHOCOLATE_FENCE.get());
                         output.accept(ModBlocks.DARK_CHOCOLATE_FENCE_GATE.get());
+                        output.accept(ModBlocks.WHITE_CHOCOLATE_BRICKS.get());
+                        output.accept(ModBlocks.WHITE_CHOCOLATE_SLAB.get());
+                        output.accept(ModBlocks.WHITE_CHOCOLATE_STAIRS.get());
+                        output.accept(ModBlocks.WHITE_CHOCOLATE_WALL.get());
+                        output.accept(ModBlocks.WHITE_CHOCOLATE_DOOR.get());
+                        output.accept(ModBlocks.WHITE_CHOCOLATE_TRAPDOOR.get());
+                        output.accept(ModBlocks.WHITE_CHOCOLATE_FENCE.get());
+                        output.accept(ModBlocks.WHITE_CHOCOLATE_FENCE_GATE.get());
+                        output.accept(ModBlocks.CARAMEL_BRICKS.get());
+                        output.accept(ModBlocks.CARAMEL_SLAB.get());
+                        output.accept(ModBlocks.CARAMEL_STAIRS.get());
+                        output.accept(ModBlocks.CARAMEL_WALL.get());
+                        output.accept(ModBlocks.CARAMEL_DOOR.get());
+                        output.accept(ModBlocks.CARAMEL_TRAPDOOR.get());
+                        output.accept(ModBlocks.CARAMEL_FENCE.get());
+                        output.accept(ModBlocks.CARAMEL_FENCE_GATE.get());
 
                         output.accept(ModItems.HARD_CHOCOLATE_STICK.get());
                         output.accept(ModItems.DARK_CHOCOLATE_STICK.get());
+                        output.accept(ModItems.WHITE_CHOCOLATE_STICK.get());
+                        output.accept(ModItems.CARAMEL_STICK.get());
                         output.accept(ModItems.HARD_CHOCOLATE_PICKAXE.get());
                         output.accept(ModItems.HARD_CHOCOLATE_AXE.get());
                         output.accept(ModItems.HARD_CHOCOLATE_SWORD.get());

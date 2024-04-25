@@ -74,6 +74,61 @@ public class ModBlocks {
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
 
+    // White Chocolate Bricks
+    public static final RegistryObject<Block> WHITE_CHOCOLATE_BRICKS = registerBlock("white_chocolate_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+    // White Chocolate Stairs
+    public static final RegistryObject<Block> WHITE_CHOCOLATE_STAIRS = registerBlock("white_chocolate_stairs",
+            () -> new StairBlock(() -> ModBlocks.WHITE_CHOCOLATE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    // White Chocolate Slab
+    public static final RegistryObject<Block> WHITE_CHOCOLATE_SLAB = registerBlock("white_chocolate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+    // White Chocolate Door
+    public static final RegistryObject<Block> WHITE_CHOCOLATE_DOOR = registerBlock("white_chocolate_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.STONE));
+    // White Chocolate Trapdoor
+    public static final RegistryObject<Block> WHITE_CHOCOLATE_TRAPDOOR = registerBlock("white_chocolate_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.STONE));
+    // White Chocolate Wall
+    public static final RegistryObject<Block> WHITE_CHOCOLATE_WALL = registerBlock("white_chocolate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
+    // White Chocolate Fence
+    public static final RegistryObject<Block> WHITE_CHOCOLATE_FENCE = registerBlock("white_chocolate_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    // White Chocolate FenceGate
+    public static final RegistryObject<Block> WHITE_CHOCOLATE_FENCE_GATE = registerBlock("white_chocolate_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+
+
+    // Caramel Bricks
+    public static final RegistryObject<Block> CARAMEL_BRICKS = registerBlock("caramel_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+    // Caramel Stairs
+    public static final RegistryObject<Block> CARAMEL_STAIRS = registerBlock("caramel_stairs",
+            () -> new StairBlock(() -> ModBlocks.CARAMEL_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    // Caramel Slab
+    public static final RegistryObject<Block> CARAMEL_SLAB = registerBlock("caramel_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+    // Caramel Door
+    public static final RegistryObject<Block> CARAMEL_DOOR = registerBlock("caramel_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.STONE));
+    // Caramel Trapdoor
+    public static final RegistryObject<Block> CARAMEL_TRAPDOOR = registerBlock("caramel_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.STONE));
+    // Caramel Wall
+    public static final RegistryObject<Block> CARAMEL_WALL = registerBlock("caramel_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.BRICK_WALL)));
+    // Caramel Fence
+    public static final RegistryObject<Block> CARAMEL_FENCE = registerBlock("caramel_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    // Caramel FenceGate
+    public static final RegistryObject<Block> CARAMEL_FENCE_GATE = registerBlock("caramel_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

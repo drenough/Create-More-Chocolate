@@ -7,4 +7,6 @@ public class ModFoods {
             .saturationMod(0.3f).build();
     public static final FoodProperties BAR_OF_WHITE_CHOCOLATE = new FoodProperties.Builder().nutrition(6)
             .saturationMod(0.3f).build();
+    public static final FoodProperties BAR_OF_CARAMEL = new FoodProperties.Builder().nutrition(6)
+            .saturationMod(0.3f).build();
 }
