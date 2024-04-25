@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "create_chocolate:hard_chocolate_stick"
+    },
+    "X": {
+      "item": "create:bar_of_chocolate"
+    }
+  },
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "result": {
+    "item": "create_chocolate:hard_chocolate_axe"
+  },
+  "show_notification": true
+}
