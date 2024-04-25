@@ -19,11 +19,17 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.create_chocolate_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CHOCOLATE_MARSHMALLOW.get());
+                        output.accept(ModItems.DARK_CHOCOLATE_MARSHMALLOW.get());
                         output.accept(ModItems.CHOCOLATE_BUNNY.get());
+                        output.accept(ModItems.DARK_CHOCOLATE_BUNNY.get());
                         output.accept(ModItems.CHOCOLATE_EGG.get());
+                        output.accept(ModItems.DARK_CHOCOLATE_EGG.get());
                         output.accept(ModItems.CHOCOLATE_PRALINE.get());
+                        output.accept(ModItems.DARK_CHOCOLATE_PRALINE.get());
                         output.accept(ModItems.CHOCOLATE_GLAZED_BERRIES.get());
+                        output.accept(ModItems.DARK_CHOCOLATE_GLAZED_BERRIES.get());
                         output.accept(ModItems.CHOCOLATE_TRUFFLE.get());
+                        output.accept(ModItems.DARK_CHOCOLATE_TRUFFLE.get());
                         output.accept(ModItems.BAR_OF_DARK_CHOCOLATE.get());
                         output.accept(ModItems.BAR_OF_WHITE_CHOCOLATE.get());
                         output.accept(ModItems.BAR_OF_CARAMEL.get());
