@@ -46,6 +46,34 @@ public class ModItems {
     public static final RegistryObject<Item> DARK_CHOCOLATE_TRUFFLE = ITEMS.register("dark_chocolate_truffle",
             () -> new Item(new Item.Properties().food(ModFoods.DARK_CHOCOLATE_TRUFFLE)));
 
+    // White Chocolate Related Items
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_MARSHMALLOW = ITEMS.register("white_chocolate_marshmallow",
+            () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_MARSHMALLOW)));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_BUNNY = ITEMS.register("white_chocolate_bunny",
+            () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_BUNNY)));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_EGG = ITEMS.register("white_chocolate_egg",
+            () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_EGG)));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_GLAZED_BERRIES = ITEMS.register("white_chocolate_glazed_berries",
+            () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_GLAZED_BERRIES)));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_PRALINE = ITEMS.register("white_chocolate_praline",
+            () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_PRALINE)));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_TRUFFLE = ITEMS.register("white_chocolate_truffle",
+            () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_TRUFFLE)));
+
+    // Caramel Related Items
+    public static final RegistryObject<Item> CARAMEL_MARSHMALLOW = ITEMS.register("caramel_marshmallow",
+            () -> new Item(new Item.Properties().food(ModFoods.CARAMEL_MARSHMALLOW)));
+    public static final RegistryObject<Item> CARAMEL_BUNNY = ITEMS.register("caramel_bunny",
+            () -> new Item(new Item.Properties().food(ModFoods.CARAMEL_BUNNY)));
+    public static final RegistryObject<Item> CARAMEL_EGG = ITEMS.register("caramel_egg",
+            () -> new Item(new Item.Properties().food(ModFoods.CARAMEL_EGG)));
+    public static final RegistryObject<Item> CARAMEL_GLAZED_BERRIES = ITEMS.register("caramel_glazed_berries",
+            () -> new Item(new Item.Properties().food(ModFoods.CARAMEL_GLAZED_BERRIES)));
+    public static final RegistryObject<Item> CARAMEL_PRALINE = ITEMS.register("caramel_praline",
+            () -> new Item(new Item.Properties().food(ModFoods.CARAMEL_PRALINE)));
+    public static final RegistryObject<Item> CARAMEL_TRUFFLE = ITEMS.register("caramel_truffle",
+            () -> new Item(new Item.Properties().food(ModFoods.CARAMEL_TRUFFLE)));
+
     // Dark Chocolate Stick
     public static final RegistryObject<Item> DARK_CHOCOLATE_STICK = ITEMS.register("dark_chocolate_stick",
             () -> new Item(new Item.Properties()));
