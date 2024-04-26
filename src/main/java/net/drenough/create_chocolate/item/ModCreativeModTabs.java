@@ -18,6 +18,12 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BAR_OF_DARK_CHOCOLATE.get()))
                     .title(Component.translatable("creativetab.create_chocolate_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.COCOA_POWDER.get());
+                        output.accept(ModItems.COCOA_SMASHED_BEANS.get());
+                        output.accept(ModItems.GINGER_DOUGH.get());
+                        output.accept(ModItems.DARK_CHOCOLATE_DOUGH.get());
+                        output.accept(ModItems.WHITE_CHOCOLATE_DOUGH.get());
+                        output.accept(ModItems.CARAMEL_DOUGH.get());
                         output.accept(ModItems.CHOCOLATE_MARSHMALLOW.get());
                         output.accept(ModItems.DARK_CHOCOLATE_MARSHMALLOW.get());
                         output.accept(ModItems.WHITE_CHOCOLATE_MARSHMALLOW.get());
@@ -42,9 +48,23 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DARK_CHOCOLATE_TRUFFLE.get());
                         output.accept(ModItems.WHITE_CHOCOLATE_TRUFFLE.get());
                         output.accept(ModItems.CARAMEL_TRUFFLE.get());
+                        output.accept(ModItems.FULL_CHOCOLATE_BAR.get());
                         output.accept(ModItems.BAR_OF_DARK_CHOCOLATE.get());
+                        output.accept(ModItems.FULL_DARK_CHOCOLATE_BAR.get());
                         output.accept(ModItems.BAR_OF_WHITE_CHOCOLATE.get());
+                        output.accept(ModItems.FULL_WHITE_CHOCOLATE_BAR.get());
                         output.accept(ModItems.BAR_OF_CARAMEL.get());
+                        output.accept(ModItems.FULL_CARAMEL_BAR.get());
+                        output.accept(ModItems.HOT_CHOCOLATE_DRINK.get());
+                        output.accept(ModItems.HOT_DARK_CHOCOLATE_DRINK.get());
+                        output.accept(ModItems.HOT_WHITE_CHOCOLATE_DRINK.get());
+                        output.accept(ModItems.HOT_CARAMEL_DRINK.get());
+                        output.accept(ModItems.SWEET_HOT_CHOCOLATE_DRINK.get());
+                        output.accept(ModItems.GINGER_BREAD.get());
+                        output.accept(ModItems.GINGERBREAD_COOKIE.get());
+                        output.accept(ModItems.GINGERBREAD_DARK_COOKIE.get());
+                        output.accept(ModItems.GINGERBREAD_WHITE_COOKIE.get());
+                        output.accept(ModItems.GINGERBREAD_CARAMEL_COOKIE.get());
 
                         output.accept(ModBlocks.CHOCOLATE_BRICKS.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_SLAB.get());
