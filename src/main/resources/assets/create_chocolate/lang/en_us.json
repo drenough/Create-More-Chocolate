@@ -46,6 +46,7 @@
   "item.create_chocolate.cocoa_powder": "Cocoa Powder",
   "item.create_chocolate.cocoa_smashed_beans": "Cocoa Smashed Beans",
   "item.create_chocolate.ginger_dough": "Gingerdough",
+  "item.create_chocolate.ginger_bread": "Ginger Bread",
   "item.create_chocolate.dark_chocolate_dough": "Dark Chocolate Dough",
   "item.create_chocolate.white_chocolate_dough": "White Chocolate Dough",
   "item.create_chocolate.caramel_dough": "Caramel Dough",
@@ -54,11 +55,10 @@
   "item.create_chocolate.hot_white_chocolate_drink": "Hot White Chocolate Drink",
   "item.create_chocolate.hot_caramel_drink": "Hot Caramel Drink",
   "item.create_chocolate.sweet_hot_chocolate_drink": "Sweet Hot Chocolate Drink",
-  "item.create_chocolate.ginger_bread": "Gingerbread",
-  "item.create_chocolate.gingerbread_cookie": "Gingerbread Cookie",
-  "item.create_chocolate.gingerbread_dark_cookie": "Gingerbread Dark Cookie",
-  "item.create_chocolate.gingerbread_white_cookie": "Gingerbread White Cookie",
-  "item.create_chocolate.gingerbread_caramel_cookie": "Gingerbread Caramel Cookie",
+  "item.create_chocolate.ginger_bread_man": "Gingerbread Man",
+  "item.create_chocolate.dark_chocolate_cookie": "Dark Chocolate Cookie",
+  "item.create_chocolate.white_chocolate_cookie": "White Chocolate Cookie",
+  "item.create_chocolate.caramel_cookie": "Caramel Cookie",
 
 
   "block.create_chocolate.chocolate_bricks": "Chocolate Bricks",

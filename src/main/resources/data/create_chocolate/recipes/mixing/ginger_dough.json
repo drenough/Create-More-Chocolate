@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create:cinder_flour"
+    },
+    {
+      "tag": "forge:flour/wheat"
+    },
+    {
+      "amount": 250,
+      "fluidTag": "forge:honey"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_chocolate:ginger_dough"
+    }
+  ]
+}

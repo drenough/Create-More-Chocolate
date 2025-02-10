@@ -30,10 +30,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.HOT_CHOCOLATE_DRINK)));
     public static final RegistryObject<Item> SWEET_HOT_CHOCOLATE_DRINK = ITEMS.register("sweet_hot_chocolate_drink",
             () -> new Item(new Item.Properties().food(ModFoods.SWEET_HOT_CHOCOLATE_DRINK)));
+    public static final RegistryObject<Item> GINGER_BREAD_MAN = ITEMS.register("ginger_bread_man",
+            () -> new Item(new Item.Properties().food(ModFoods.GINGER_BREAD_MAN)));
     public static final RegistryObject<Item> GINGER_BREAD = ITEMS.register("ginger_bread",
             () -> new Item(new Item.Properties().food(ModFoods.GINGER_BREAD)));
-    public static final RegistryObject<Item> GINGERBREAD_COOKIE = ITEMS.register("gingerbread_cookie",
-            () -> new Item(new Item.Properties().food(ModFoods.GINGERBREAD_COOKIE)));
 
     // Dark Chocolate Releated Items
     public static final RegistryObject<Item> BAR_OF_DARK_CHOCOLATE = ITEMS.register("bar_of_dark_chocolate",
@@ -54,8 +54,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.DARK_CHOCOLATE_TRUFFLE)));
     public static final RegistryObject<Item> HOT_DARK_CHOCOLATE_DRINK = ITEMS.register("hot_dark_chocolate_drink",
             () -> new Item(new Item.Properties().food(ModFoods.HOT_DARK_CHOCOLATE_DRINK)));
-    public static final RegistryObject<Item> GINGERBREAD_DARK_COOKIE = ITEMS.register("gingerbread_dark_cookie",
-            () -> new Item(new Item.Properties().food(ModFoods.GINGERBREAD_DARK_COOKIE)));
+    public static final RegistryObject<Item> DARK_CHOCOLATE_COOKIE = ITEMS.register("dark_chocolate_cookie",
+            () -> new Item(new Item.Properties().food(ModFoods.DARK_CHOCOLATE_COOKIE)));
 
     // White Chocolate Related Items
     public static final RegistryObject<Item> BAR_OF_WHITE_CHOCOLATE = ITEMS.register("bar_of_white_chocolate",
@@ -76,8 +76,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_TRUFFLE)));
     public static final RegistryObject<Item> HOT_WHITE_CHOCOLATE_DRINK = ITEMS.register("hot_white_chocolate_drink",
             () -> new Item(new Item.Properties().food(ModFoods.HOT_WHITE_CHOCOLATE_DRINK)));
-    public static final RegistryObject<Item> GINGERBREAD_WHITE_COOKIE = ITEMS.register("gingerbread_white_cookie",
-            () -> new Item(new Item.Properties().food(ModFoods.GINGERBREAD_WHITE_COOKIE)));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_COOKIE = ITEMS.register("white_chocolate_cookie",
+            () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_COOKIE)));
 
     // Caramel Related Items
     public static final RegistryObject<Item> BAR_OF_CARAMEL = ITEMS.register("bar_of_caramel",
@@ -98,8 +98,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.CARAMEL_TRUFFLE)));
     public static final RegistryObject<Item> HOT_CARAMEL_DRINK = ITEMS.register("hot_caramel_drink",
             () -> new Item(new Item.Properties().food(ModFoods.HOT_CARAMEL_DRINK)));
-    public static final RegistryObject<Item> GINGERBREAD_CARAMEL_COOKIE = ITEMS.register("gingerbread_caramel_cookie",
-            () -> new Item(new Item.Properties().food(ModFoods.GINGERBREAD_CARAMEL_COOKIE)));
+    public static final RegistryObject<Item> CARAMEL_COOKIE = ITEMS.register("caramel_cookie",
+            () -> new Item(new Item.Properties().food(ModFoods.CARAMEL_COOKIE)));
 
     // Cooking Ingredients
     public static final RegistryObject<Item> COCOA_POWDER = ITEMS.register("cocoa_powder",

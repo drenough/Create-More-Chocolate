@@ -60,11 +60,11 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HOT_WHITE_CHOCOLATE_DRINK.get());
                         output.accept(ModItems.HOT_CARAMEL_DRINK.get());
                         output.accept(ModItems.SWEET_HOT_CHOCOLATE_DRINK.get());
+                        output.accept(ModItems.GINGER_BREAD_MAN.get());
                         output.accept(ModItems.GINGER_BREAD.get());
-                        output.accept(ModItems.GINGERBREAD_COOKIE.get());
-                        output.accept(ModItems.GINGERBREAD_DARK_COOKIE.get());
-                        output.accept(ModItems.GINGERBREAD_WHITE_COOKIE.get());
-                        output.accept(ModItems.GINGERBREAD_CARAMEL_COOKIE.get());
+                        output.accept(ModItems.DARK_CHOCOLATE_COOKIE.get());
+                        output.accept(ModItems.WHITE_CHOCOLATE_COOKIE.get());
+                        output.accept(ModItems.CARAMEL_COOKIE.get());
 
                         output.accept(ModBlocks.CHOCOLATE_BRICKS.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_SLAB.get());
