@@ -1,6 +1,7 @@
 package net.drenough.create_chocolate.item;
 
 import net.drenough.create_chocolate.CreateChocolate;
+import net.drenough.create_chocolate.fluid.ModFluids;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -162,6 +163,10 @@ public class ModItems {
     // Hard Chocolate Boots
     public static final RegistryObject<Item> HARD_CHOCOLATE_BOOTS = ITEMS.register("hard_chocolate_boots",
             () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+
+    public static final RegistryObject<Item> SOAP_WATER_BUCKET = ITEMS.register("soap_water_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_SOAP_WATER, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
 
 
     public static void register(IEventBus eventBus) {

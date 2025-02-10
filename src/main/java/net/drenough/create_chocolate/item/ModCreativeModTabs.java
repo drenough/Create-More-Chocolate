@@ -112,6 +112,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HARD_CHOCOLATE_CHESTPLATE.get());
                         output.accept(ModItems.HARD_CHOCOLATE_LEGGINGS.get());
                         output.accept(ModItems.HARD_CHOCOLATE_BOOTS.get());
+
+                        output.accept(ModItems.SOAP_WATER_BUCKET.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

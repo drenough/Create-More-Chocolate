@@ -2,8 +2,12 @@ package net.drenough.create_chocolate;
 
 import com.mojang.logging.LogUtils;
 import net.drenough.create_chocolate.block.ModBlocks;
+import net.drenough.create_chocolate.fluid.ModFluidTypes;
+import net.drenough.create_chocolate.fluid.ModFluids;
 import net.drenough.create_chocolate.item.ModCreativeModTabs;
 import net.drenough.create_chocolate.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -26,6 +30,9 @@ public class CreateChocolate {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -50,7 +57,8 @@ public class CreateChocolate {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_SOAP_WATER.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SOAP_WATER.get(), RenderType.translucent());
         }
     }
 }
