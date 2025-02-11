@@ -59,7 +59,8 @@
   "item.create_chocolate.dark_chocolate_cookie": "Dark Chocolate Cookie",
   "item.create_chocolate.white_chocolate_cookie": "White Chocolate Cookie",
   "item.create_chocolate.caramel_cookie": "Caramel Cookie",
-  "item.create_chocolate.soap_water_bucket": "Soap Water Bucket",
+  "item.create_chocolate.dark_chocolate_bucket": "Bucket of Dark Chocolate",
+  "item.create_chocolate.dark_chocolate_fluid": "Dark Chocolate",
 
 
   "block.create_chocolate.chocolate_bricks": "Chocolate Bricks",

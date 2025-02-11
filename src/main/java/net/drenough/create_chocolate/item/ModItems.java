@@ -165,8 +165,8 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
-    public static final RegistryObject<Item> SOAP_WATER_BUCKET = ITEMS.register("soap_water_bucket",
-            () -> new BucketItem(ModFluids.SOURCE_SOAP_WATER, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+    public static final RegistryObject<Item> DARK_CHOCOLATE_BUCKET = ITEMS.register("dark_chocolate_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
 
 
     public static void register(IEventBus eventBus) {
