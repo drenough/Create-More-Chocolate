@@ -75,8 +75,8 @@ public class BaseFluidType extends FluidType {
             }
 
             @Override
-            public @NotNull Vector3f modifyFogColor (Camera camera, float partialTick, ClientLevel level,
-                                                     int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
+            public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level,
+                                                    int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
                 return fogColor;
             }
 
@@ -85,9 +85,10 @@ public class BaseFluidType extends FluidType {
                                         float nearDistance, float farDistance, FogShape shape) {
                 Vector3f fogColor = getFogColor();
                 RenderSystem.setShaderFogColor(fogColor.x(), fogColor.y(), fogColor.z());
-                RenderSystem.setShaderFogShape(FogShape.CYLINDER);
-                RenderSystem.setShaderFogStart(0.1f);
-                RenderSystem.setShaderFogEnd(1.5f);
+                RenderSystem.setShaderFogShape(FogShape.CYLINDER); // Set the fog shape
+                RenderSystem.setShaderFogStart(0.2f); // Adjust start distance
+                RenderSystem.setShaderFogEnd(1.5f);   // Adjust end distance
+
             }
         });
     }

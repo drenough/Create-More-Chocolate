@@ -28,37 +28,44 @@ public class CreateChocolate {
     public CreateChocolate() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        // Register items, blocks, fluids, and fluid types
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
 
-        modEventBus.addListener(this::commonSetup);
-
+        // Register creative tabs
         ModCreativeModTabs.register(modEventBus);
 
+        // Register common setup method
+        modEventBus.addListener(this::commonSetup);
+
+        // Register server events
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        LOGGER.info("Create Chocolate mod is setting up!");
     }
 
-
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-
+        LOGGER.info("Create Chocolate mod is starting on the server!");
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID.get(), RenderType.cutout());
-            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_DARK_CHOCOLATE_FLUID.get(), RenderType.cutout());
+            // Set render layers for fluids
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_DARK_CHOCOLATE_FLUID.get(), RenderType.translucent());
+
+            /// Add these lines when you add white chocolate and caramel fluids
+            /// ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_WHITE_CHOCOLATE_FLUID.get(), RenderType.translucent());
+           /// ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_WHITE_CHOCOLATE_FLUID.get(), RenderType.translucent());
+            ///ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_CARAMEL_FLUID.get(), RenderType.translucent());
+            ///ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_CARAMEL_FLUID.get(), RenderType.translucent());
         }
     }
 }
