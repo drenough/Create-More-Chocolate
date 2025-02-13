@@ -40,7 +40,6 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DARK_CHOCOLATE_PRALINE.get());
                         output.accept(ModItems.WHITE_CHOCOLATE_PRALINE.get());
                         output.accept(ModItems.CARAMEL_PRALINE.get());
-                        output.accept(ModItems.CHOCOLATE_GLAZED_BERRIES.get());
                         output.accept(ModItems.DARK_CHOCOLATE_GLAZED_BERRIES.get());
                         output.accept(ModItems.WHITE_CHOCOLATE_GLAZED_BERRIES.get());
                         output.accept(ModItems.CARAMEL_GLAZED_BERRIES.get());

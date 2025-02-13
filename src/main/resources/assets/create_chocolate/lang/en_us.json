@@ -50,7 +50,7 @@
   "item.create_chocolate.dark_chocolate_dough": "Dark Chocolate Dough",
   "item.create_chocolate.white_chocolate_dough": "White Chocolate Dough",
   "item.create_chocolate.caramel_dough": "Caramel Dough",
-  "item.create_chocolate.hot_chocolate_drink": " Hot Chocolate Drink",
+  "item.create_chocolate.hot_chocolate_drink": "Hot Chocolate Drink",
   "item.create_chocolate.hot_dark_chocolate_drink": "Hot Dark Chocolate Drink",
   "item.create_chocolate.hot_white_chocolate_drink": "Hot White Chocolate Drink",
   "item.create_chocolate.hot_caramel_drink": "Hot Caramel Drink",
@@ -63,6 +63,7 @@
   "fluid_type.create_chocolate.dark_chocolate_fluid_type": "Dark Chocolate",
 
 
+  "block.create_chocolate.dark_chocolate_block": "Dark Chocolate",
   "block.create_chocolate.chocolate_bricks": "Chocolate Bricks",
   "block.create_chocolate.chocolate_brick_stairs": "Chocolate Brick Stairs",
   "block.create_chocolate.chocolate_brick_slab": "Chocolate Brick Slab",

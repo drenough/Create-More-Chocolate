@@ -21,8 +21,6 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.CHOCOLATE_BUNNY)));
     public static final RegistryObject<Item> CHOCOLATE_EGG = ITEMS.register("chocolate_egg",
             () -> new Item(new Item.Properties().food(ModFoods.CHOCOLATE_EGG)));
-    public static final RegistryObject<Item> CHOCOLATE_GLAZED_BERRIES = ITEMS.register("chocolate_glazed_berries",
-            () -> new Item(new Item.Properties().food(ModFoods.CHOCOLATE_GLAZED_BERRIES)));
     public static final RegistryObject<Item> CHOCOLATE_PRALINE = ITEMS.register("chocolate_praline",
             () -> new Item(new Item.Properties().food(ModFoods.CHOCOLATE_PRALINE)));
     public static final RegistryObject<Item> CHOCOLATE_TRUFFLE = ITEMS.register("chocolate_truffle",
