@@ -1,5 +1,6 @@
 {
+  "parent": "block/cube_all",
   "textures": {
-    "particle": "create_chocolate:fluid/dark_chocolate_still"
+    "all": "create_chocolate:fluid/dark_chocolate_still"
   }
 }

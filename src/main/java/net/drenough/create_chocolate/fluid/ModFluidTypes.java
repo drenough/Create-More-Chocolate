@@ -17,7 +17,8 @@ public class ModFluidTypes {
     public static final ResourceLocation DARK_CHOCOLATE_FLOWING_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/dark_chocolate_flow");
     public static final ResourceLocation DARK_CHOCOLATE_OVERLAY_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/dark_chocolate_overlay");
 
-    // Texture paths for white chocolate fluid
+
+        // Texture paths for white chocolate fluid
     public static final ResourceLocation WHITE_CHOCOLATE_STILL_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/white_chocolate_still");
     public static final ResourceLocation WHITE_CHOCOLATE_FLOWING_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/white_chocolate_flow");
     public static final ResourceLocation WHITE_CHOCOLATE_OVERLAY_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/white_chocolate_overlay");
