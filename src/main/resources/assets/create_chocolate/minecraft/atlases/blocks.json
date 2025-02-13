@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/dark_chocolate_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/dark_chocolate_flow"
+    }
+  ]
+}
