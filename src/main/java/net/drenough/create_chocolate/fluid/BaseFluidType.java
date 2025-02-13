@@ -31,26 +31,6 @@ public class BaseFluidType extends FluidType {
         this.fogColor = fogColor;
     }
 
-    public ResourceLocation getStillTexture() {
-        return stillTexture;
-    }
-
-    public ResourceLocation getFlowingTexture() {
-        return flowingTexture;
-    }
-
-    public int getTintColor() {
-        return tintColor;
-    }
-
-    public ResourceLocation getOverlayTexture() {
-        return overlayTexture;
-    }
-
-    public Vector3f getFogColor() {
-        return fogColor;
-    }
-
     @Override
     public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
         consumer.accept(new IClientFluidTypeExtensions() {
@@ -83,12 +63,10 @@ public class BaseFluidType extends FluidType {
             @Override
             public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick,
                                         float nearDistance, float farDistance, FogShape shape) {
-                Vector3f fogColor = getFogColor();
                 RenderSystem.setShaderFogColor(fogColor.x(), fogColor.y(), fogColor.z());
-                RenderSystem.setShaderFogShape(FogShape.CYLINDER); // Set the fog shape
                 RenderSystem.setShaderFogStart(0.2f); // Adjust start distance
                 RenderSystem.setShaderFogEnd(1.5f);   // Adjust end distance
-
+                RenderSystem.setShaderFogShape(FogShape.CYLINDER); // Set the fog shape
             }
         });
     }
