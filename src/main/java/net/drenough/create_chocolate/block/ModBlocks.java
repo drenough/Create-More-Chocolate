@@ -73,6 +73,9 @@ public class ModBlocks {
     // Dark Chocolate FenceGate
     public static final RegistryObject<Block> DARK_CHOCOLATE_FENCE_GATE = registerBlock("dark_chocolate_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    // Dark Chocolate Block
+    public static final RegistryObject<LiquidBlock> DARK_CHOCOLATE_BLOCK = BLOCKS.register("dark_chocolate_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noOcclusion()));
 
 
     // White Chocolate Bricks
@@ -100,6 +103,9 @@ public class ModBlocks {
     // White Chocolate FenceGate
     public static final RegistryObject<Block> WHITE_CHOCOLATE_FENCE_GATE = registerBlock("white_chocolate_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    // White Chocolate Block
+    public static final RegistryObject<LiquidBlock> WHITE_CHOCOLATE_BLOCK = BLOCKS.register("white_chocolate_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_WHITE_CHOCOLATE_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noOcclusion()));
 
 
 
@@ -129,9 +135,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> CARAMEL_FENCE_GATE = registerBlock("caramel_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
-
-    public static final RegistryObject<LiquidBlock> DARK_CHOCOLATE_BLOCK = BLOCKS.register("dark_chocolate_block",
-            () -> new LiquidBlock(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noOcclusion()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

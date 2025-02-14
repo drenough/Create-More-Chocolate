@@ -8,33 +8,38 @@ version="${mod_version}"
 displayName="Create More Chocolate"
 authors="DrEnough"
 description='''Addon for mod Create, adding food like chocolate'''
+
 [[dependencies.create_chocolate]]
 modId="forge"
 mandatory=true
 versionRange="${forge_version_range}"
 ordering="NONE"
 side="BOTH"
+
 [[dependencies.create_chocolate]]
 modId = "minecraft"
 mandatory = true
 versionRange = "${minecraft_version}"
 ordering = "NONE"
 side = "BOTH"
+
 [[dependencies.create_chocolate]]
 modId="create"
 mandatory=true
-versionRange="[0.5.1.f,)"
+versionRange="[0.5.1.j,)"  # Lower bound inclusive, upper bound exclusive
 ordering="NONE"
 side="BOTH"
+
 [[dependencies.create_chocolate]]
 modId="flywheel"
 mandatory=true
-versionRange="[0.6.9.a,0.7)"
+versionRange="[0.6.11-13,0.7)"  # Lower bound inclusive, upper bound exclusive
 ordering="AFTER"
 side="CLIENT"
+
 [[dependencies.create_chocolate]]
 modId="jei"
 mandatory=false
-versionRange="[15.3.0.4,)"
+versionRange="[15.20.0.105,)"  # Lower bound inclusive, no upper bound
 ordering="NONE"
 side="BOTH"

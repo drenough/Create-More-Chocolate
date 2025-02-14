@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "create_chocolate:cocoa_butter"
+    },
+    {
+      "item": "create_chocolate:milk_powder"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "create_chocolate:white_chocolate_fluid"
+    }
+  ]
+}

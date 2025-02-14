@@ -64,6 +64,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DARK_CHOCOLATE_COOKIE.get());
                         output.accept(ModItems.WHITE_CHOCOLATE_COOKIE.get());
                         output.accept(ModItems.CARAMEL_COOKIE.get());
+                        output.accept(ModItems.BUTTER.get());
+                        output.accept(ModItems.COCOA_BUTTER.get());
+                        output.accept(ModItems.MILK_POWDER.get());
 
                         output.accept(ModBlocks.CHOCOLATE_BRICKS.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_SLAB.get());
@@ -113,6 +116,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HARD_CHOCOLATE_BOOTS.get());
 
                         output.accept(ModItems.DARK_CHOCOLATE_BUCKET.get());
+                        output.accept(ModItems.WHITE_CHOCOLATE_BUCKET.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

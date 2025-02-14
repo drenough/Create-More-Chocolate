@@ -57,13 +57,12 @@ public class CreateChocolate {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            // Set render layers for fluids
+            // Render Layers for Dark Chocolate
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_DARK_CHOCOLATE_FLUID.get(), RenderType.translucent());
-
-            /// Add these lines when you add white chocolate and caramel fluids
-            /// ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_WHITE_CHOCOLATE_FLUID.get(), RenderType.translucent());
-           /// ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_WHITE_CHOCOLATE_FLUID.get(), RenderType.translucent());
+            // Render Layers for White Chocolate
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_WHITE_CHOCOLATE_FLUID.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_WHITE_CHOCOLATE_FLUID.get(), RenderType.translucent());
             ///ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_CARAMEL_FLUID.get(), RenderType.translucent());
             ///ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_CARAMEL_FLUID.get(), RenderType.translucent());
         }

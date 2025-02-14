@@ -7,6 +7,14 @@
     {
       "type": "single",
       "resource": "create_chocolate:fluid/dark_chocolate_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/white_chocolate_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/white_chocolate_flow"
     }
   ]
 }

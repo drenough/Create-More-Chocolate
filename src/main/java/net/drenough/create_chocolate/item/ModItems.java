@@ -55,6 +55,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.HOT_DARK_CHOCOLATE_DRINK)));
     public static final RegistryObject<Item> DARK_CHOCOLATE_COOKIE = ITEMS.register("dark_chocolate_cookie",
             () -> new Item(new Item.Properties().food(ModFoods.DARK_CHOCOLATE_COOKIE)));
+    public static final RegistryObject<Item> DARK_CHOCOLATE_BUCKET = ITEMS.register("dark_chocolate_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
 
     // White Chocolate Related Items
     public static final RegistryObject<Item> BAR_OF_WHITE_CHOCOLATE = ITEMS.register("bar_of_white_chocolate",
@@ -77,6 +79,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.HOT_WHITE_CHOCOLATE_DRINK)));
     public static final RegistryObject<Item> WHITE_CHOCOLATE_COOKIE = ITEMS.register("white_chocolate_cookie",
             () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_COOKIE)));
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_BUCKET = ITEMS.register("white_chocolate_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_WHITE_CHOCOLATE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
 
     // Caramel Related Items
     public static final RegistryObject<Item> BAR_OF_CARAMEL = ITEMS.register("bar_of_caramel",
@@ -162,9 +166,13 @@ public class ModItems {
     public static final RegistryObject<Item> HARD_CHOCOLATE_BOOTS = ITEMS.register("hard_chocolate_boots",
             () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-
-    public static final RegistryObject<Item> DARK_CHOCOLATE_BUCKET = ITEMS.register("dark_chocolate_bucket",
-            () -> new BucketItem(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+    // Food Ingredients
+    public static final RegistryObject<Item> BUTTER = ITEMS.register("butter",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COCOA_BUTTER = ITEMS.register("cocoa_butter",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MILK_POWDER = ITEMS.register("milk_powder",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
