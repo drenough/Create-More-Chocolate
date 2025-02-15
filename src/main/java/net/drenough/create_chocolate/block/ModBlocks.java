@@ -138,6 +138,15 @@ public class ModBlocks {
     public static final RegistryObject<LiquidBlock> CARAMEL_BLOCK = BLOCKS.register("caramel_block",
             () -> new LiquidBlock(ModFluids.SOURCE_CARAMEL_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noOcclusion()));
 
+    // Cardboard Boxes of Chocolate types
+    public static final RegistryObject<Block> CARDBOARD_BOX_OF_CHOCOLATE = registerBlock("cardboard_box_of_chocolate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> CARDBOARD_BOX_OF_DARK_CHOCOLATE = registerBlock("cardboard_box_of_dark_chocolate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> CARDBOARD_BOX_OF_WHITE_CHOCOLATE = registerBlock("cardboard_box_of_white_chocolate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> CARDBOARD_BOX_OF_CARAMEL = registerBlock("cardboard_box_of_caramel",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "create_chocolate:full_dark_chocolate_bar"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "item": "create_chocolate:cardboard_box_of_dark_chocolate"
+  },
+  "show_notification": true
+}

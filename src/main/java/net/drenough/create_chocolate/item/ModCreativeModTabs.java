@@ -68,6 +68,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.COCOA_BUTTER.get());
                         output.accept(ModItems.MILK_POWDER.get());
 
+                        output.accept(ModBlocks.CARDBOARD_BOX_OF_CHOCOLATE.get());
+                        output.accept(ModBlocks.CARDBOARD_BOX_OF_DARK_CHOCOLATE.get());
+                        output.accept(ModBlocks.CARDBOARD_BOX_OF_WHITE_CHOCOLATE.get());
+                        output.accept(ModBlocks.CARDBOARD_BOX_OF_CARAMEL.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICKS.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_STAIRS.get());

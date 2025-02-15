@@ -70,6 +70,10 @@
   "fluid_type.create_chocolate.caramel_fluid_type": "Caramel",
 
 
+  "block.create_chocolate.cardboard_box_of_chocolate": "Box of Chocolate",
+  "block.create_chocolate.cardboard_box_of_dark_chocolate": "Box of Dark Chocolate",
+  "block.create_chocolate.cardboard_box_of_white_chocolate": "Box of White Chocolate",
+  "block.create_chocolate.cardboard_box_of_caramel": "Box of Caramel",
   "block.create_chocolate.dark_chocolate_block": "Dark Chocolate",
   "block.create_chocolate.white_chocolate_block": "White Chocolate",
   "block.create_chocolate.caramel_block": "Caramel",
