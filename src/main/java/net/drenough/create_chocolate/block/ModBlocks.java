@@ -134,6 +134,9 @@ public class ModBlocks {
     // Caramel FenceGate
     public static final RegistryObject<Block> CARAMEL_FENCE_GATE = registerBlock("caramel_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    // Caramel Block
+    public static final RegistryObject<LiquidBlock> CARAMEL_BLOCK = BLOCKS.register("caramel_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_CARAMEL_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noOcclusion()));
 
 
 

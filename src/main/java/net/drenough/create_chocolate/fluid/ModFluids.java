@@ -34,6 +34,16 @@ public class ModFluids {
             ModFluidTypes.WHITE_CHOCOLATE_FLUID_TYPE, SOURCE_WHITE_CHOCOLATE_FLUID, FLOWING_WHITE_CHOCOLATE_FLUID)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.WHITE_CHOCOLATE_BLOCK).bucket(ModItems.WHITE_CHOCOLATE_BUCKET);
 
+    //Caramel Fluid
+    public static final RegistryObject<FlowingFluid> SOURCE_CARAMEL_FLUID = FLUIDS.register("caramel_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.CARAMEL_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_CARAMEL_FLUID = FLUIDS.register("flowing_caramel",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.CARAMEL_FLUID_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties CARAMEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.CARAMEL_FLUID_TYPE, SOURCE_CARAMEL_FLUID, FLOWING_CARAMEL_FLUID)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.CARAMEL_BLOCK).bucket(ModItems.CARAMEL_BUCKET);
+
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);
     }

@@ -2,24 +2,21 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "create_chocolate:chocolate_dough"
-    },
-    {
       "item": "minecraft:sugar"
     },
     {
-      "item": "create_chocolate:cocoa_powder"
+      "item": "create_chocolate:butter"
     },
     {
       "item": "create_chocolate:cocoa_powder"
     },
     {
-      "item": "create_chocolate:cocoa_powder"
+      "item": "create_chocolate:bar_of_white_chocolate"
     }
   ],
   "results": [
     {
-      "item": "create_chocolate:chocolate_truffle"
+      "item": "create_chocolate:white_chocolate_praline"
     }
   ]
 }

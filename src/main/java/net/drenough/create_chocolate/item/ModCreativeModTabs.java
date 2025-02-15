@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.COCOA_POWDER.get());
                         output.accept(ModItems.COCOA_SMASHED_BEANS.get());
                         output.accept(ModItems.GINGER_DOUGH.get());
+                        output.accept(ModItems.CHOCOLATE_DOUGH.get());
                         output.accept(ModItems.DARK_CHOCOLATE_DOUGH.get());
                         output.accept(ModItems.WHITE_CHOCOLATE_DOUGH.get());
                         output.accept(ModItems.CARAMEL_DOUGH.get());
@@ -58,7 +59,6 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HOT_DARK_CHOCOLATE_DRINK.get());
                         output.accept(ModItems.HOT_WHITE_CHOCOLATE_DRINK.get());
                         output.accept(ModItems.HOT_CARAMEL_DRINK.get());
-                        output.accept(ModItems.SWEET_HOT_CHOCOLATE_DRINK.get());
                         output.accept(ModItems.GINGER_BREAD_MAN.get());
                         output.accept(ModItems.GINGER_BREAD.get());
                         output.accept(ModItems.DARK_CHOCOLATE_COOKIE.get());
@@ -117,6 +117,7 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.DARK_CHOCOLATE_BUCKET.get());
                         output.accept(ModItems.WHITE_CHOCOLATE_BUCKET.get());
+                        output.accept(ModItems.CARAMEL_BUCKET.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
