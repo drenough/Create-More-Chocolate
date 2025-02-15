@@ -22,6 +22,8 @@ public class ModFoods {
             .saturationMod(0.3f).build();
     public static final FoodProperties GINGER_BREAD = new FoodProperties.Builder().nutrition(5)
             .saturationMod(0.3f).build();
+    public static final FoodProperties CHOCOLATED_APPLE = new FoodProperties.Builder().nutrition(9)
+            .saturationMod(1.4f).build();
     // Dark Chocolate Food
     public static final FoodProperties BAR_OF_DARK_CHOCOLATE = new FoodProperties.Builder().nutrition(6)
             .saturationMod(0.3f).build();
@@ -43,6 +45,8 @@ public class ModFoods {
             .saturationMod(0.3f).build();
     public static final FoodProperties DARK_CHOCOLATE_COOKIE = new FoodProperties.Builder().nutrition(3)
             .saturationMod(0.2f).build();
+    public static final FoodProperties DARK_CHOCOLATED_APPLE = new FoodProperties.Builder().nutrition(9)
+            .saturationMod(1.4f).build();
     // White Chocolate Food
     public static final FoodProperties BAR_OF_WHITE_CHOCOLATE = new FoodProperties.Builder().nutrition(6)
             .saturationMod(0.3f).build();
@@ -64,6 +68,8 @@ public class ModFoods {
             .saturationMod(0.3f).build();
     public static final FoodProperties WHITE_CHOCOLATE_COOKIE = new FoodProperties.Builder().nutrition(3)
             .saturationMod(0.2f).build();
+    public static final FoodProperties WHITE_CHOCOLATED_APPLE = new FoodProperties.Builder().nutrition(9)
+            .saturationMod(1.4f).build();
     // Caramel Food
     public static final FoodProperties BAR_OF_CARAMEL = new FoodProperties.Builder().nutrition(6)
             .saturationMod(0.3f).build();
@@ -85,4 +91,6 @@ public class ModFoods {
             .saturationMod(0.3f).build();
     public static final FoodProperties CARAMEL_COOKIE = new FoodProperties.Builder().nutrition(3)
             .saturationMod(0.2f).build();
+    public static final FoodProperties CARAMELIZED_APPLE = new FoodProperties.Builder().nutrition(9)
+            .saturationMod(1.4f).build();
 }

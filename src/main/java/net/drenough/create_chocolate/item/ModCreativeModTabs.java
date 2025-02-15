@@ -55,6 +55,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.FULL_WHITE_CHOCOLATE_BAR.get());
                         output.accept(ModItems.BAR_OF_CARAMEL.get());
                         output.accept(ModItems.FULL_CARAMEL_BAR.get());
+                        output.accept(ModItems.CHOCOLATED_APPLE.get());
+                        output.accept(ModItems.DARK_CHOCOLATED_APPLE.get());
+                        output.accept(ModItems.WHITE_CHOCOLATED_APPLE.get());
+                        output.accept(ModItems.CARAMELIZED_APPLE.get());
                         output.accept(ModItems.HOT_CHOCOLATE_DRINK.get());
                         output.accept(ModItems.HOT_DARK_CHOCOLATE_DRINK.get());
                         output.accept(ModItems.HOT_WHITE_CHOCOLATE_DRINK.get());

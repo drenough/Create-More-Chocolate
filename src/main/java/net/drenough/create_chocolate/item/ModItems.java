@@ -31,6 +31,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.GINGER_BREAD_MAN)));
     public static final RegistryObject<Item> GINGER_BREAD = ITEMS.register("ginger_bread",
             () -> new Item(new Item.Properties().food(ModFoods.GINGER_BREAD)));
+    public static final RegistryObject<Item> CHOCOLATED_APPLE = ITEMS.register("chocolated_apple",
+            () -> new Item(new Item.Properties().food(ModFoods.CHOCOLATED_APPLE)));
 
     // Dark Chocolate Releated Items
     public static final RegistryObject<Item> BAR_OF_DARK_CHOCOLATE = ITEMS.register("bar_of_dark_chocolate",
@@ -55,6 +57,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.DARK_CHOCOLATE_COOKIE)));
     public static final RegistryObject<Item> DARK_CHOCOLATE_BUCKET = ITEMS.register("dark_chocolate_bucket",
             () -> new BucketItem(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+    public static final RegistryObject<Item> DARK_CHOCOLATED_APPLE = ITEMS.register("dark_chocolated_apple",
+            () -> new Item(new Item.Properties().food(ModFoods.DARK_CHOCOLATED_APPLE)));
 
     // White Chocolate Related Items
     public static final RegistryObject<Item> BAR_OF_WHITE_CHOCOLATE = ITEMS.register("bar_of_white_chocolate",
@@ -79,6 +83,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_COOKIE)));
     public static final RegistryObject<Item> WHITE_CHOCOLATE_BUCKET = ITEMS.register("white_chocolate_bucket",
             () -> new BucketItem(ModFluids.SOURCE_WHITE_CHOCOLATE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+    public static final RegistryObject<Item> WHITE_CHOCOLATED_APPLE = ITEMS.register("white_chocolated_apple",
+            () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATED_APPLE)));
 
     // Caramel Related Items
     public static final RegistryObject<Item> BAR_OF_CARAMEL = ITEMS.register("bar_of_caramel",
@@ -103,6 +109,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.CARAMEL_COOKIE)));
     public static final RegistryObject<Item> CARAMEL_BUCKET = ITEMS.register("caramel_bucket",
             () -> new BucketItem(ModFluids.SOURCE_CARAMEL_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+    public static final RegistryObject<Item> CARAMELIZED_APPLE = ITEMS.register("caramelized_apple",
+            () -> new Item(new Item.Properties().food(ModFoods.CARAMELIZED_APPLE)));
 
     // Cooking Ingredients
     public static final RegistryObject<Item> COCOA_POWDER = ITEMS.register("cocoa_powder",
