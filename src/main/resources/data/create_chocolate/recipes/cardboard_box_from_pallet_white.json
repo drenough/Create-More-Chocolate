@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create_chocolate:pallet_of_white_chocolate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "create_chocolate:cardboard_box_of_white_chocolate"
+  }
+}

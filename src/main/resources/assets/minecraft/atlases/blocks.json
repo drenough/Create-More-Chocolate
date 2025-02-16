@@ -23,6 +23,22 @@
     {
       "type": "single",
       "resource": "create_chocolate:fluid/caramel_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/pallet_of_dark_chocolate"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/pallet_of_white_chocolate"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/pallet_of_chocolate"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/pallet_of_caramel"
     }
   ]
 }

@@ -148,6 +148,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> CARDBOARD_BOX_OF_CARAMEL = registerBlock("cardboard_box_of_caramel",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
 
+    // Pallets with Chocolate Boxes
+    public static final RegistryObject<Block> PALLET_OF_CHOCOLATE = registerBlock("pallet_of_chocolate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> PALLET_OF_DARK_CHOCOLATE = registerBlock("pallet_of_dark_chocolate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> PALLET_OF_WHITE_CHOCOLATE = registerBlock("pallet_of_white_chocolate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> PALLET_OF_CARAMEL = registerBlock("pallet_of_caramel",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
