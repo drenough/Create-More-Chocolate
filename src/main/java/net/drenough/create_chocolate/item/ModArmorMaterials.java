@@ -1,5 +1,6 @@
 package net.drenough.create_chocolate.item;
 
+import com.simibubi.create.AllItems;
 import net.drenough.create_chocolate.CreateChocolate;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -11,7 +12,7 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     HARD_CHOCOLATE("hard_chocolate", 26, new int[]{ 2, 5, 3, 2 }, 25,
-            SoundEvents.ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.of(ModItems.HARD_CHOCOLATE_STICK.get()));
+            SoundEvents.ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.of(AllItems.BAR_OF_CHOCOLATE));
 
     private final String name;
     private final int durabilityMultiplier;

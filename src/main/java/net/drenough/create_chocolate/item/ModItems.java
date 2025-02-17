@@ -1,5 +1,6 @@
 package net.drenough.create_chocolate.item;
 
+import com.simibubi.create.AllItems;
 import net.drenough.create_chocolate.CreateChocolate;
 import net.drenough.create_chocolate.fluid.ModFluids;
 import net.minecraft.world.item.*;
@@ -7,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -147,19 +149,44 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     // Hard Chocolate Pickaxe
     public static final RegistryObject<Item> HARD_CHOCOLATE_PICKAXE = ITEMS.register("hard_chocolate_pickaxe",
-            () -> new PickaxeItem(Tiers.STONE, 1, -2, new Item.Properties().defaultDurability(175)));
+            () -> new PickaxeItem(Tiers.STONE, 1, -2, new Item.Properties().defaultDurability(175)) {
+                @Override
+                public boolean isValidRepairItem(@NotNull ItemStack toRepair, @NotNull ItemStack repair) {
+                    return repair.getItem() == AllItems.BAR_OF_CHOCOLATE.get();
+                }
+            });
     // Hard Chocolate Axe
     public static final RegistryObject<Item> HARD_CHOCOLATE_AXE = ITEMS.register("hard_chocolate_axe",
-            () -> new AxeItem(Tiers.STONE, 7, -3, new Item.Properties().defaultDurability(175)));
+            () -> new AxeItem(Tiers.STONE, 7, -3, new Item.Properties().defaultDurability(175)) {
+                @Override
+                public boolean isValidRepairItem(@NotNull ItemStack toRepair, @NotNull ItemStack repair) {
+                    return repair.getItem() == AllItems.BAR_OF_CHOCOLATE.get();
+                }
+            });
     // Hard Chocolate Sword
     public static final RegistryObject<Item> HARD_CHOCOLATE_SWORD = ITEMS.register("hard_chocolate_sword",
-            () -> new SwordItem(Tiers.STONE, 3, -2, new Item.Properties().defaultDurability(175)));
+            () -> new SwordItem(Tiers.STONE, 3, -2, new Item.Properties().defaultDurability(175)) {
+                @Override
+                public boolean isValidRepairItem(@NotNull ItemStack toRepair, @NotNull ItemStack repair) {
+                    return repair.getItem() == AllItems.BAR_OF_CHOCOLATE.get();
+                }
+            });
     // Hard Chocolate Shovel
     public static final RegistryObject<Item> HARD_CHOCOLATE_SHOVEL = ITEMS.register("hard_chocolate_shovel",
-            () -> new ShovelItem(Tiers.STONE, 2, -3, new Item.Properties().defaultDurability(175)));
+            () -> new ShovelItem(Tiers.STONE, 2, -3, new Item.Properties().defaultDurability(175)) {
+                @Override
+                public boolean isValidRepairItem(@NotNull ItemStack toRepair, @NotNull ItemStack repair) {
+                    return repair.getItem() == AllItems.BAR_OF_CHOCOLATE.get();
+                }
+            });
     // Hard Chocolate Hoe
     public static final RegistryObject<Item> HARD_CHOCOLATE_HOE = ITEMS.register("hard_chocolate_hoe",
-            () -> new HoeItem(Tiers.STONE, 0, -1, new Item.Properties().defaultDurability(175)));
+            () -> new HoeItem(Tiers.STONE, 0, -1, new Item.Properties().defaultDurability(175)) {
+                @Override
+                public boolean isValidRepairItem(@NotNull ItemStack toRepair, @NotNull ItemStack repair) {
+                    return repair.getItem() == AllItems.BAR_OF_CHOCOLATE.get();
+                }
+            });
 
     /// Hard Chocolate Armor
 
