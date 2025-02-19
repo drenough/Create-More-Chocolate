@@ -66,6 +66,9 @@ public class CreateChocolate {
             // Render Layers for Caramel
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_CARAMEL_FLUID.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_CARAMEL_FLUID.get(), RenderType.translucent());
+            // Render Layers for Royal Chocolate
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ROYAL_CHOCOLATE_FLUID.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ROYAL_CHOCOLATE_FLUID.get(), RenderType.translucent());
         }
     }
 }

@@ -62,6 +62,7 @@
   "item.create_chocolate.dark_chocolate_bucket": "Bucket of Dark Chocolate",
   "item.create_chocolate.white_chocolate_bucket": "Bucket of White Chocolate",
   "item.create_chocolate.caramel_bucket": "Bucket of Caramel",
+  "item.create_chocolate.royal_chocolate_bucket": "Bucket of Royal Chocolate",
   "item.create_chocolate.butter": "Butter",
   "item.create_chocolate.milk_powder": "Milk Powder",
   "item.create_chocolate.cocoa_butter": "Cocoa Butter",
@@ -69,9 +70,11 @@
   "item.create_chocolate.dark_chocolated_apple": "Dark Chocolated Apple",
   "item.create_chocolate.white_chocolated_apple": "White Chocolated Apple",
   "item.create_chocolate.caramelized_apple": "Caramelized Apple",
+  "item.create_chocolate.bar_of_royal_chocolate": "Bar of Royal Chocolate",
   "fluid_type.create_chocolate.dark_chocolate_fluid_type": "Dark Chocolate",
   "fluid_type.create_chocolate.white_chocolate_fluid_type": "White Chocolate",
   "fluid_type.create_chocolate.caramel_fluid_type": "Caramel",
+  "fluid_type.create_chocolate.royal_chocolate_fluid_type": "Royal Chocolate",
 
 
   "block.create_chocolate.pallet_of_chocolate": "Pallet of Chocolate",
@@ -85,6 +88,7 @@
   "block.create_chocolate.dark_chocolate_block": "Dark Chocolate",
   "block.create_chocolate.white_chocolate_block": "White Chocolate",
   "block.create_chocolate.caramel_block": "Caramel",
+  "block.create_chocolate.royal_chocolate_block": "Royal Chocolate",
   "block.create_chocolate.chocolate_bricks": "Chocolate Bricks",
   "block.create_chocolate.chocolate_brick_stairs": "Chocolate Brick Stairs",
   "block.create_chocolate.chocolate_brick_slab": "Chocolate Brick Slab",

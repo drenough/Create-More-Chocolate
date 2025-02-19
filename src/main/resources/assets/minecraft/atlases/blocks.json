@@ -39,6 +39,14 @@
     {
       "type": "single",
       "resource": "create_chocolate:block/pallet_of_caramel"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/royal_chocolate_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/royal_chocolate_flow"
     }
   ]
 }

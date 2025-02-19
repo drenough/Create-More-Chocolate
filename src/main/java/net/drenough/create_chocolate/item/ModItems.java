@@ -211,6 +211,12 @@ public class ModItems {
     public static final RegistryObject<Item> MILK_POWDER = ITEMS.register("milk_powder",
             () -> new Item(new Item.Properties()));
 
+    // Royal Chocolate Related Items
+    public static final RegistryObject<Item> BAR_OF_ROYAL_CHOCOLATE = ITEMS.register("bar_of_royal_chocolate",
+            () -> new Item(new Item.Properties().food(ModFoods.BAR_OF_ROYAL_CHOCOLATE)));
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_BUCKET = ITEMS.register("royal_chocolate_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_ROYAL_CHOCOLATE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

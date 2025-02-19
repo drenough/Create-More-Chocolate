@@ -22,7 +22,7 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties DARK_CHOCOLATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.DARK_CHOCOLATE_FLUID_TYPE, SOURCE_DARK_CHOCOLATE_FLUID, FLOWING_DARK_CHOCOLATE_FLUID)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.DARK_CHOCOLATE_BLOCK).bucket(ModItems.DARK_CHOCOLATE_BUCKET);
+            .slopeFindDistance(3).levelDecreasePerBlock(2).block(ModBlocks.DARK_CHOCOLATE_BLOCK).bucket(ModItems.DARK_CHOCOLATE_BUCKET).tickRate(25);
 
     //White Chocolate Fluid
     public static final RegistryObject<FlowingFluid> SOURCE_WHITE_CHOCOLATE_FLUID = FLUIDS.register("white_chocolate_fluid",
@@ -32,7 +32,7 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties WHITE_CHOCOLATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.WHITE_CHOCOLATE_FLUID_TYPE, SOURCE_WHITE_CHOCOLATE_FLUID, FLOWING_WHITE_CHOCOLATE_FLUID)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.WHITE_CHOCOLATE_BLOCK).bucket(ModItems.WHITE_CHOCOLATE_BUCKET);
+            .slopeFindDistance(3).levelDecreasePerBlock(2).block(ModBlocks.WHITE_CHOCOLATE_BLOCK).bucket(ModItems.WHITE_CHOCOLATE_BUCKET).tickRate(25);
 
     //Caramel Fluid
     public static final RegistryObject<FlowingFluid> SOURCE_CARAMEL_FLUID = FLUIDS.register("caramel_fluid",
@@ -42,7 +42,17 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties CARAMEL_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.CARAMEL_FLUID_TYPE, SOURCE_CARAMEL_FLUID, FLOWING_CARAMEL_FLUID)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.CARAMEL_BLOCK).bucket(ModItems.CARAMEL_BUCKET);
+            .slopeFindDistance(3).levelDecreasePerBlock(2).block(ModBlocks.CARAMEL_BLOCK).bucket(ModItems.CARAMEL_BUCKET).tickRate(25);
+
+    //Royal Chocolate Fluid
+    public static final RegistryObject<FlowingFluid> SOURCE_ROYAL_CHOCOLATE_FLUID = FLUIDS.register("royal_chocolate_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.ROYAL_CHOCOLATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_ROYAL_CHOCOLATE_FLUID = FLUIDS.register("flowing_royal_chocolate",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.ROYAL_CHOCOLATE_FLUID_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties ROYAL_CHOCOLATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.ROYAL_CHOCOLATE_FLUID_TYPE, SOURCE_ROYAL_CHOCOLATE_FLUID, FLOWING_ROYAL_CHOCOLATE_FLUID)
+            .slopeFindDistance(3).levelDecreasePerBlock(2).block(ModBlocks.ROYAL_CHOCOLATE_BLOCK).bucket(ModItems.ROYAL_CHOCOLATE_BUCKET).tickRate(25);
 
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);

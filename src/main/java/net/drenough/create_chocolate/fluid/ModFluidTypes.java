@@ -15,6 +15,7 @@ import net.minecraftforge.fluids.FluidType;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
 
 import java.util.function.Consumer;
@@ -37,6 +38,11 @@ public class ModFluidTypes {
     public static final ResourceLocation CARAMEL_STILL_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/caramel_still");
     public static final ResourceLocation CARAMEL_FLOWING_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/caramel_flow");
     public static final ResourceLocation CARAMEL_OVERLAY_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/caramel_overlay");
+
+    // Texture paths for royal chocolate
+    public static final ResourceLocation ROYAL_CHOCOLATE_STILL_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/royal_chocolate_still");
+    public static final ResourceLocation ROYAL_CHOCOLATE_FLOWING_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/royal_chocolate_flow");
+    public static final ResourceLocation ROYAL_CHOCOLATE_OVERLAY_RL = new ResourceLocation(CreateChocolate.MOD_ID, "fluid/royal_chocolate_overlay");
 
     // Register dark chocolate fluid type
     public static final RegistryObject<FluidType> DARK_CHOCOLATE_FLUID_TYPE = FLUID_TYPES.register("dark_chocolate_fluid_type",
@@ -68,11 +74,11 @@ public class ModFluidTypes {
 
                         @Override
                         public int getTintColor() {
-                            return 0xFF3B2F2F; // Dark brown tint
+                            return 0xFFFFFFFF; // No tint
                         }
 
                         @Override
-                        public Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
+                        public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
                             return new Vector3f(0.231f, 0.184f, 0.184f); // Fog color
                         }
 
@@ -119,7 +125,7 @@ public class ModFluidTypes {
                         }
 
                         @Override
-                        public Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
+                        public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
                             return new Vector3f(1.0f, 0.973f, 0.941f); // Creamy white fog color
                         }
 
@@ -167,13 +173,61 @@ public class ModFluidTypes {
                         }
 
                         @Override
-                        public Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
+                        public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
                             return new Vector3f(1.0f, 0.94f, 0.5f); // Light pastel yellow fog color
                         }
 
                         @Override
                         public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, FogShape shape) {
                             RenderSystem.setShaderFogColor(1.0f, 0.94f, 0.5f); // Light pastel yellow fog color
+                            RenderSystem.setShaderFogStart(0.2f); // Adjust start distance
+                            RenderSystem.setShaderFogEnd(1.5f);   // Adjust end distance
+                            RenderSystem.setShaderFogShape(FogShape.CYLINDER); // Set the fog shape
+                        }
+                    });
+                }
+            });
+    // Register Royal Chocolate fluid type
+    public static final RegistryObject<FluidType> ROYAL_CHOCOLATE_FLUID_TYPE = FLUID_TYPES.register("royal_chocolate_fluid_type",
+            () -> new FluidType(FluidType.Properties.create()
+                    .canSwim(true)
+                    .canDrown(true)
+                    .canHydrate(true)
+                    .lightLevel(2) // Adjust light level if needed
+                    .density(1400) // Adjust density if needed
+                    .viscosity(1500) // Adjust viscosity if needed
+                    .sound(SoundAction.get("drink"), SoundEvents.HONEY_DRINK)) {
+                @Override
+                public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
+                    consumer.accept(new IClientFluidTypeExtensions() {
+                        @Override
+                        public ResourceLocation getStillTexture() {
+                            return ROYAL_CHOCOLATE_STILL_RL;
+                        }
+
+                        @Override
+                        public ResourceLocation getFlowingTexture() {
+                            return ROYAL_CHOCOLATE_FLOWING_RL;
+                        }
+
+                        @Override
+                        public ResourceLocation getOverlayTexture() {
+                            return ROYAL_CHOCOLATE_OVERLAY_RL;
+                        }
+
+                        @Override
+                        public int getTintColor() {
+                            return 0xFFFFFFFF; // No tint
+                        }
+
+                        @Override
+                        public @NotNull Vector3f modifyFogColor(Camera camera, float partialTick, ClientLevel level, int renderDistance, float darkenWorldAmount, Vector3f fluidFogColor) {
+                            return new Vector3f(0.29f, 0.0f, 0.51f); // Royal Purple fog color
+                        }
+
+                        @Override
+                        public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, FogShape shape) {
+                            RenderSystem.setShaderFogColor(0.29f, 0.0f, 0.51f); // Royal Purple fog color
                             RenderSystem.setShaderFogStart(0.2f); // Adjust start distance
                             RenderSystem.setShaderFogEnd(1.5f);   // Adjust end distance
                             RenderSystem.setShaderFogShape(FogShape.CYLINDER); // Set the fog shape

@@ -93,4 +93,7 @@ public class ModFoods {
             .saturationMod(0.2f).build();
     public static final FoodProperties CARAMELIZED_APPLE = new FoodProperties.Builder().nutrition(9)
             .saturationMod(1.4f).build();
+    // Royal Chocolate Food
+    public static final FoodProperties BAR_OF_ROYAL_CHOCOLATE = new FoodProperties.Builder().nutrition(18)
+            .saturationMod(9).build();
 }
