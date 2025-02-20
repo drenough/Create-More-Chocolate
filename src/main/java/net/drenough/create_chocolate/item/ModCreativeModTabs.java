@@ -56,6 +56,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.BAR_OF_CARAMEL.get());
                         output.accept(ModItems.FULL_CARAMEL_BAR.get());
                         output.accept(ModItems.BAR_OF_ROYAL_CHOCOLATE.get());
+                        output.accept(ModItems.FULL_ROYAL_CHOCOLATE_BAR.get());
                         output.accept(ModItems.CHOCOLATED_APPLE.get());
                         output.accept(ModItems.DARK_CHOCOLATED_APPLE.get());
                         output.accept(ModItems.WHITE_CHOCOLATED_APPLE.get());
@@ -127,6 +128,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HARD_CHOCOLATE_CHESTPLATE.get());
                         output.accept(ModItems.HARD_CHOCOLATE_LEGGINGS.get());
                         output.accept(ModItems.HARD_CHOCOLATE_BOOTS.get());
+                        output.accept(ModItems.ROYAL_CHOCOLATE_HELMET.get());
+                        output.accept(ModItems.ROYAL_CHOCOLATE_CHESTPLATE.get());
+                        output.accept(ModItems.ROYAL_CHOCOLATE_LEGGINGS.get());
+                        output.accept(ModItems.ROYAL_CHOCOLATE_BOOTS.get());
 
                         output.accept(ModItems.DARK_CHOCOLATE_BUCKET.get());
                         output.accept(ModItems.WHITE_CHOCOLATE_BUCKET.get());

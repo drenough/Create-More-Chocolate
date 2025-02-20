@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_chestplate"
+    },
+    {
+      "amount": 1000,
+      "fluid": "create_chocolate:royal_chocolate_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_chocolate:royal_chocolate_chestplate"
+    }
+  ]
+}

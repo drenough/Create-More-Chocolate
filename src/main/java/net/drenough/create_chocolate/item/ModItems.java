@@ -142,7 +142,7 @@ public class ModItems {
     public static final RegistryObject<Item> CARAMEL_STICK = ITEMS.register("caramel_stick",
             () -> new Item(new Item.Properties()));
 
-    /// Hard Chocolate Tools
+    // Hard Chocolate Tools
 
     // Hard Chocolate Stick
     public static final RegistryObject<Item> HARD_CHOCOLATE_STICK = ITEMS.register("hard_chocolate_stick",
@@ -188,7 +188,7 @@ public class ModItems {
                 }
             });
 
-    /// Hard Chocolate Armor
+    // Hard Chocolate Armor
 
     // Hard Chocolate Helmet
     public static final RegistryObject<Item> HARD_CHOCOLATE_HELMET = ITEMS.register("hard_chocolate_helmet",
@@ -214,8 +214,24 @@ public class ModItems {
     // Royal Chocolate Related Items
     public static final RegistryObject<Item> BAR_OF_ROYAL_CHOCOLATE = ITEMS.register("bar_of_royal_chocolate",
             () -> new Item(new Item.Properties().food(ModFoods.BAR_OF_ROYAL_CHOCOLATE)));
+    public static final RegistryObject<Item> FULL_ROYAL_CHOCOLATE_BAR = ITEMS.register("full_royal_chocolate_bar",
+            () -> new Item(new Item.Properties().food(ModFoods.FULL_ROYAL_CHOCOLATE_BAR)));
     public static final RegistryObject<Item> ROYAL_CHOCOLATE_BUCKET = ITEMS.register("royal_chocolate_bucket",
             () -> new BucketItem(ModFluids.SOURCE_ROYAL_CHOCOLATE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+
+    // Royal Chocolate Armor
+    // Royal Chocolate Helmet
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_HELMET = ITEMS.register("royal_chocolate_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ROYAL_CHOCOLATE, ArmorItem.Type.HELMET, new Item.Properties()));
+    // Royal Chocolate Chestplate
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_CHESTPLATE = ITEMS.register("royal_chocolate_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ROYAL_CHOCOLATE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    // Royal Chocolate Leggings
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_LEGGINGS = ITEMS.register("royal_chocolate_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ROYAL_CHOCOLATE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    // Royal Chocolate Boots
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_BOOTS = ITEMS.register("royal_chocolate_boots",
+            () -> new ArmorItem(ModArmorMaterials.ROYAL_CHOCOLATE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

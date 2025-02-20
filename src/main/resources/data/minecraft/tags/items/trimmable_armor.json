@@ -4,6 +4,10 @@
     "create_chocolate:hard_chocolate_helmet",
     "create_chocolate:hard_chocolate_chestplate",
     "create_chocolate:hard_chocolate_leggings",
-    "create_chocolate:hard_chocolate_boots"
+    "create_chocolate:hard_chocolate_boots",
+    "create_chocolate:royal_chocolate_helmet",
+    "create_chocolate:royal_chocolate_chestplate",
+    "create_chocolate:royal_chocolate_leggings",
+    "create_chocolate:royal_chocolate_boots"
   ]
 }

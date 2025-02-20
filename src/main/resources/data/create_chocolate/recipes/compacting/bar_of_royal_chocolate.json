@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluid": "create_chocolate:royal_chocolate_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_chocolate:bar_of_royal_chocolate"
+    }
+  ]
+}

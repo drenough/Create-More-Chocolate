@@ -7,12 +7,16 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     HARD_CHOCOLATE("hard_chocolate", 26, new int[]{ 2, 5, 3, 2 }, 25,
-            SoundEvents.ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.of(AllItems.BAR_OF_CHOCOLATE));
+            SoundEvents.ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.of(AllItems.BAR_OF_CHOCOLATE)),
+
+    ROYAL_CHOCOLATE("royal_chocolate", 35, new int[]{3, 6, 8, 3}, 15,
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.of(ModItems.BAR_OF_ROYAL_CHOCOLATE.get()));
 
     private final String name;
     private final int durabilityMultiplier;
@@ -53,17 +57,17 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }
 
     @Override
-    public SoundEvent getEquipSound() {
+    public @NotNull SoundEvent getEquipSound() {
         return this.equipSound;
     }
 
     @Override
-    public Ingredient getRepairIngredient() {
+    public @NotNull Ingredient getRepairIngredient() {
         return this.repairIngredient.get();
     }
 
     @Override
-    public String getName() {
+    public @NotNull String getName() {
         return CreateChocolate.MOD_ID + ":" + this.name;
     }
 
