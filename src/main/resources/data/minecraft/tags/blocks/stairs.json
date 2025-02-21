@@ -3,6 +3,7 @@
     "create_chocolate:chocolate_brick_stairs",
     "create_chocolate:dark_chocolate_stairs",
     "create_chocolate:white_chocolate_stairs",
-    "create_chocolate:caramel_stairs"
+    "create_chocolate:caramel_stairs",
+    "create_chocolate:royal_chocolate_stairs"
   ]
 }

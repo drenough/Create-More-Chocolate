@@ -1,5 +1,12 @@
 {
   "values": [
-
+    "create_chocolate:royal_chocolate_door",
+    "create_chocolate:royal_chocolate_fence_gate",
+    "create_chocolate:royal_chocolate_fence",
+    "create_chocolate:royal_chocolate_slab",
+    "create_chocolate:royal_chocolate_bricks",
+    "create_chocolate:royal_chocolate_stairs",
+    "create_chocolate:royal_chocolate_trapdoor",
+    "create_chocolate:royal_chocolate_wall"
   ]
 }

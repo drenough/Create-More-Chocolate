@@ -31,6 +31,9 @@
     "create_chocolate:caramel_trapdoor",
     "create_chocolate:caramel_wall",
     "create_chocolate:caramel_fence",
-    "create_chocolate:caramel_fence_gate"
+    "create_chocolate:caramel_fence_gate",
+    "create_chocolate:royal_chocolate_bricks",
+    "create_chocolate:royal_chocolate_stairs",
+    "create_chocolate:royal_chocolate_slab"
   ]
 }

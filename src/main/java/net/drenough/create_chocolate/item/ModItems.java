@@ -233,6 +233,26 @@ public class ModItems {
     public static final RegistryObject<Item> ROYAL_CHOCOLATE_BOOTS = ITEMS.register("royal_chocolate_boots",
             () -> new ArmorItem(ModArmorMaterials.ROYAL_CHOCOLATE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    // Royal Chocolate Tools
+    // Royal Chocolate Stick
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_STICK = ITEMS.register("royal_chocolate_stick",
+            () -> new Item(new Item.Properties()));
+    // Royal Chocolate Pickaxe
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_PICKAXE = ITEMS.register("royal_chocolate_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.ROYAL_CHOCOLATE, 1, -2.8F, new Item.Properties()));
+    // Royal Chocolate Shovel
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_SHOVEL = ITEMS.register("royal_chocolate_shovel",
+            () -> new ShovelItem(ModToolTiers.ROYAL_CHOCOLATE, 1.5F, -3.0F, new Item.Properties()));
+    // Royal Chocolate Hoe
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_HOE = ITEMS.register("royal_chocolate_hoe",
+            () -> new HoeItem(ModToolTiers.ROYAL_CHOCOLATE, -1, -2.0F, new Item.Properties()));
+    // Royal Chocolate Axe
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_AXE = ITEMS.register("royal_chocolate_axe",
+            () -> new AxeItem(ModToolTiers.ROYAL_CHOCOLATE, 5.5F, -3.0F, new Item.Properties()));
+    // Royal Chocolate Sword
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_SWORD = ITEMS.register("royal_chocolate_sword",
+            () -> new SwordItem(ModToolTiers.ROYAL_CHOCOLATE, 3, -2.4F, new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -78,10 +78,12 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.CARDBOARD_BOX_OF_DARK_CHOCOLATE.get());
                         output.accept(ModBlocks.CARDBOARD_BOX_OF_WHITE_CHOCOLATE.get());
                         output.accept(ModBlocks.CARDBOARD_BOX_OF_CARAMEL.get());
+                        output.accept(ModBlocks.CARDBOARD_BOX_OF_ROYAL_CHOCOLATE.get());
                         output.accept(ModBlocks.PALLET_OF_CHOCOLATE.get());
                         output.accept(ModBlocks.PALLET_OF_DARK_CHOCOLATE.get());
                         output.accept(ModBlocks.PALLET_OF_WHITE_CHOCOLATE.get());
                         output.accept(ModBlocks.PALLET_OF_CARAMEL.get());
+                        output.accept(ModBlocks.PALLET_OF_ROYAL_CHOCOLATE.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICKS.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_STAIRS.get());
@@ -114,11 +116,20 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.CARAMEL_TRAPDOOR.get());
                         output.accept(ModBlocks.CARAMEL_FENCE.get());
                         output.accept(ModBlocks.CARAMEL_FENCE_GATE.get());
+                        output.accept(ModBlocks.ROYAL_CHOCOLATE_BRICKS.get());
+                        output.accept(ModBlocks.ROYAL_CHOCOLATE_SLAB.get());
+                        output.accept(ModBlocks.ROYAL_CHOCOLATE_STAIRS.get());
+                        output.accept(ModBlocks.ROYAL_CHOCOLATE_WALL.get());
+                        output.accept(ModBlocks.ROYAL_CHOCOLATE_DOOR.get());
+                        output.accept(ModBlocks.ROYAL_CHOCOLATE_TRAPDOOR.get());
+                        output.accept(ModBlocks.ROYAL_CHOCOLATE_FENCE.get());
+                        output.accept(ModBlocks.ROYAL_CHOCOLATE_FENCE_GATE.get());
 
                         output.accept(ModItems.HARD_CHOCOLATE_STICK.get());
                         output.accept(ModItems.DARK_CHOCOLATE_STICK.get());
                         output.accept(ModItems.WHITE_CHOCOLATE_STICK.get());
                         output.accept(ModItems.CARAMEL_STICK.get());
+                        output.accept(ModItems.ROYAL_CHOCOLATE_STICK.get());
                         output.accept(ModItems.HARD_CHOCOLATE_PICKAXE.get());
                         output.accept(ModItems.HARD_CHOCOLATE_AXE.get());
                         output.accept(ModItems.HARD_CHOCOLATE_SWORD.get());
@@ -128,6 +139,11 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.HARD_CHOCOLATE_CHESTPLATE.get());
                         output.accept(ModItems.HARD_CHOCOLATE_LEGGINGS.get());
                         output.accept(ModItems.HARD_CHOCOLATE_BOOTS.get());
+                        output.accept(ModItems.ROYAL_CHOCOLATE_PICKAXE.get());
+                        output.accept(ModItems.ROYAL_CHOCOLATE_AXE.get());
+                        output.accept(ModItems.ROYAL_CHOCOLATE_SWORD.get());
+                        output.accept(ModItems.ROYAL_CHOCOLATE_SHOVEL.get());
+                        output.accept(ModItems.ROYAL_CHOCOLATE_HOE.get());
                         output.accept(ModItems.ROYAL_CHOCOLATE_HELMET.get());
                         output.accept(ModItems.ROYAL_CHOCOLATE_CHESTPLATE.get());
                         output.accept(ModItems.ROYAL_CHOCOLATE_LEGGINGS.get());

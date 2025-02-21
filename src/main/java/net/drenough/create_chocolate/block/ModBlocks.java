@@ -147,6 +147,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
     public static final RegistryObject<Block> CARDBOARD_BOX_OF_CARAMEL = registerBlock("cardboard_box_of_caramel",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> CARDBOARD_BOX_OF_ROYAL_CHOCOLATE = registerBlock("cardboard_box_of_royal_chocolate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
 
     // Pallets with Chocolate Boxes
     public static final RegistryObject<Block> PALLET_OF_CHOCOLATE = registerBlock("pallet_of_chocolate",
@@ -157,10 +159,37 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> PALLET_OF_CARAMEL = registerBlock("pallet_of_caramel",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> PALLET_OF_ROYAL_CHOCOLATE = registerBlock("pallet_of_royal_chocolate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
     // Royal Chocolate Fluid Block
     public static final RegistryObject<LiquidBlock> ROYAL_CHOCOLATE_BLOCK = BLOCKS.register("royal_chocolate_block",
             () -> new LiquidBlock(ModFluids.SOURCE_ROYAL_CHOCOLATE_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noCollission()));
+    // Royal Chocolate Bricks
+    public static final RegistryObject<Block> ROYAL_CHOCOLATE_BRICKS = registerBlock("royal_chocolate_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+    // Royal Chocolate Stairs
+    public static final RegistryObject<Block> ROYAL_CHOCOLATE_STAIRS = registerBlock("royal_chocolate_stairs",
+            () -> new StairBlock(() -> ModBlocks.ROYAL_CHOCOLATE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    // Royal Chocolate Slab
+    public static final RegistryObject<Block> ROYAL_CHOCOLATE_SLAB = registerBlock("royal_chocolate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+    // Royal Chocolate Door
+    public static final RegistryObject<Block> ROYAL_CHOCOLATE_DOOR = registerBlock("royal_chocolate_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
+    // Royal Chocolate Trapdoor
+    public static final RegistryObject<Block> ROYAL_CHOCOLATE_TRAPDOOR = registerBlock("royal_chocolate_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
+    // Royal Chocolate Wall
+    public static final RegistryObject<Block> ROYAL_CHOCOLATE_WALL = registerBlock("royal_chocolate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    // Royal Chocolate Fence
+    public static final RegistryObject<Block> ROYAL_CHOCOLATE_FENCE = registerBlock("royal_chocolate_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    // Royal Chocolate Fence Gate
+    public static final RegistryObject<Block> ROYAL_CHOCOLATE_FENCE_GATE = registerBlock("royal_chocolate_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

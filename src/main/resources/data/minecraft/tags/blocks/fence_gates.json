@@ -3,6 +3,7 @@
     "create_chocolate:chocolate_brick_fence_gate",
     "create_chocolate:dark_chocolate_fence_gate",
     "create_chocolate:white_chocolate_fence_gate",
-    "create_chocolate:caramel_fence_gate"
+    "create_chocolate:caramel_fence_gate",
+    "create_chocolate:royal_chocolate_fence_gate"
   ]
 }

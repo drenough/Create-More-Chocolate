@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create_chocolate:cardboard_box_of_royal_chocolate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "create_chocolate:full_royal_chocolate_bar"
+  }
+}

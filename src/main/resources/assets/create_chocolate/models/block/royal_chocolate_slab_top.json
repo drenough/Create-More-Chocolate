@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "create_chocolate:block/royal_chocolate_bricks",
+    "side": "create_chocolate:block/royal_chocolate_bricks",
+    "top": "create_chocolate:block/royal_chocolate_bricks"
+  }
+}
