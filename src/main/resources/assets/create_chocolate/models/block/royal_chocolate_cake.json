@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cake",
+  "textures": {
+    "bottom": "create_chocolate:block/royal_chocolate_cake_bottom",
+    "top": "create_chocolate:block/royal_chocolate_cake_top",
+    "side": "create_chocolate:block/royal_chocolate_cake_side"
+  }
+}

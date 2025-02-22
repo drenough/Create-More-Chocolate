@@ -2,6 +2,7 @@ package net.drenough.create_chocolate.item;
 
 import com.simibubi.create.AllItems;
 import net.drenough.create_chocolate.CreateChocolate;
+import net.drenough.create_chocolate.block.ModBlocks;
 import net.drenough.create_chocolate.fluid.ModFluids;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -252,6 +253,11 @@ public class ModItems {
     // Royal Chocolate Sword
     public static final RegistryObject<Item> ROYAL_CHOCOLATE_SWORD = ITEMS.register("royal_chocolate_sword",
             () -> new SwordItem(ModToolTiers.ROYAL_CHOCOLATE, 3, -2.4F, new Item.Properties()));
+
+    // Royal Chocolate Food
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_CAKE_ITEM = ITEMS.register("royal_chocolate_cake",
+            () -> new BlockItem(ModBlocks.ROYAL_CHOCOLATE_CAKE.get(),
+                    new Item.Properties().food(ModFoods.ROYAL_CHOCOLATE_CAKE_FOOD)));
 
 
     public static void register(IEventBus eventBus) {

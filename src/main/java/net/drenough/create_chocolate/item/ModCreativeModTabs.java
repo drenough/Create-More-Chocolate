@@ -70,6 +70,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DARK_CHOCOLATE_COOKIE.get());
                         output.accept(ModItems.WHITE_CHOCOLATE_COOKIE.get());
                         output.accept(ModItems.CARAMEL_COOKIE.get());
+                        output.accept(ModBlocks.ROYAL_CHOCOLATE_CAKE.get());
                         output.accept(ModItems.BUTTER.get());
                         output.accept(ModItems.COCOA_BUTTER.get());
                         output.accept(ModItems.MILK_POWDER.get());

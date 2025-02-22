@@ -98,4 +98,8 @@ public class ModFoods {
             .saturationMod(9).build();
     public static final FoodProperties FULL_ROYAL_CHOCOLATE_BAR = new FoodProperties.Builder().nutrition(32)
             .saturationMod(18).build();
+    public static final FoodProperties ROYAL_CHOCOLATE_CAKE_FOOD = new FoodProperties.Builder()
+            .nutrition(14)
+            .saturationMod(0.8f)
+            .build();
 }

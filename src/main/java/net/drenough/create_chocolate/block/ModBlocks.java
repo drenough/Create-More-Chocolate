@@ -190,6 +190,9 @@ public class ModBlocks {
     // Royal Chocolate Fence Gate
     public static final RegistryObject<Block> ROYAL_CHOCOLATE_FENCE_GATE = registerBlock("royal_chocolate_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    // Royal Chocolate Food
+    public static final RegistryObject<Block> ROYAL_CHOCOLATE_CAKE = BLOCKS.register("royal_chocolate_cake",
+            () -> new RoyalChocolateCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

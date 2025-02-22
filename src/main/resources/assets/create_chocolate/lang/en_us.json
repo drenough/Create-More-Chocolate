@@ -82,12 +82,14 @@
   "item.create_chocolate.white_chocolated_apple": "White Chocolated Apple",
   "item.create_chocolate.caramelized_apple": "Caramelized Apple",
   "item.create_chocolate.bar_of_royal_chocolate": "Bar of Royal Chocolate",
+  "item.create_chocolate.royal_chocolate_cake": "Royal Chocolate Cake",
   "fluid_type.create_chocolate.dark_chocolate_fluid_type": "Dark Chocolate",
   "fluid_type.create_chocolate.white_chocolate_fluid_type": "White Chocolate",
   "fluid_type.create_chocolate.caramel_fluid_type": "Caramel",
   "fluid_type.create_chocolate.royal_chocolate_fluid_type": "Royal Chocolate",
 
 
+  "block.create_chocolate.royal_chocolate_cake": "Royal Chocolate Cake",
   "block.create_chocolate.pallet_of_chocolate": "Pallet of Chocolate",
   "block.create_chocolate.pallet_of_dark_chocolate": "Pallet of Dark Chocolate",
   "block.create_chocolate.pallet_of_white_chocolate": "Pallet of White Chocolate",
