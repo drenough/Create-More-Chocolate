@@ -45,6 +45,9 @@ public class ModBlocks {
     // Chocolate Brick FenceGate
     public static final RegistryObject<Block> CHOCOLATE_BRICK_FENCE_GATE = registerBlock("chocolate_brick_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    // Chocolate Cake
+    public static final RegistryObject<Block> CHOCOLATE_CAKE = BLOCKS.register("chocolate_cake",
+            () -> new ChocolateCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
 
 
 
@@ -76,6 +79,9 @@ public class ModBlocks {
     // Dark Chocolate Block
     public static final RegistryObject<LiquidBlock> DARK_CHOCOLATE_BLOCK = BLOCKS.register("dark_chocolate_block",
             () -> new LiquidBlock(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noOcclusion()));
+    // Dark Chocolate Cake
+    public static final RegistryObject<Block> DARK_CHOCOLATE_CAKE = BLOCKS.register("dark_chocolate_cake",
+            () -> new DarkChocolateCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
 
 
     // White Chocolate Bricks
@@ -106,7 +112,9 @@ public class ModBlocks {
     // White Chocolate Block
     public static final RegistryObject<LiquidBlock> WHITE_CHOCOLATE_BLOCK = BLOCKS.register("white_chocolate_block",
             () -> new LiquidBlock(ModFluids.SOURCE_WHITE_CHOCOLATE_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noOcclusion()));
-
+    // White Chocolate Cake
+    public static final RegistryObject<Block> WHITE_CHOCOLATE_CAKE = BLOCKS.register("white_chocolate_cake",
+            () -> new WhiteChocolateCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
 
 
     // Caramel Bricks
@@ -137,6 +145,9 @@ public class ModBlocks {
     // Caramel Block
     public static final RegistryObject<LiquidBlock> CARAMEL_BLOCK = BLOCKS.register("caramel_block",
             () -> new LiquidBlock(ModFluids.SOURCE_CARAMEL_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noOcclusion()));
+    // Caramel Cake
+    public static final RegistryObject<Block> CARAMEL_CAKE = BLOCKS.register("caramel_cake",
+            () -> new CaramelCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
 
     // Cardboard Boxes of Chocolate types
     public static final RegistryObject<Block> CARDBOARD_BOX_OF_CHOCOLATE = registerBlock("cardboard_box_of_chocolate",
@@ -193,6 +204,7 @@ public class ModBlocks {
     // Royal Chocolate Food
     public static final RegistryObject<Block> ROYAL_CHOCOLATE_CAKE = BLOCKS.register("royal_chocolate_cake",
             () -> new RoyalChocolateCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

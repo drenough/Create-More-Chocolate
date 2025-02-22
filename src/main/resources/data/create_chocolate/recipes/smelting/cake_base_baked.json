@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "create_chocolate:cake_base"
+  },
+  "result": "create_chocolate:cake_base_baked"
+}

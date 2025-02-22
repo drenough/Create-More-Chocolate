@@ -36,6 +36,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.GINGER_BREAD)));
     public static final RegistryObject<Item> CHOCOLATED_APPLE = ITEMS.register("chocolated_apple",
             () -> new Item(new Item.Properties().food(ModFoods.CHOCOLATED_APPLE)));
+    // Chocolate Cake
+    public static final RegistryObject<Item> CHOCOLATE_CAKE_ITEM = ITEMS.register("chocolate_cake",
+            () -> new BlockItem(ModBlocks.CHOCOLATE_CAKE.get(),
+                    new Item.Properties().food(ModFoods.CHOCOLATE_CAKE_FOOD)));
 
     // Dark Chocolate Releated Items
     public static final RegistryObject<Item> BAR_OF_DARK_CHOCOLATE = ITEMS.register("bar_of_dark_chocolate",
@@ -62,6 +66,10 @@ public class ModItems {
             () -> new BucketItem(ModFluids.SOURCE_DARK_CHOCOLATE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
     public static final RegistryObject<Item> DARK_CHOCOLATED_APPLE = ITEMS.register("dark_chocolated_apple",
             () -> new Item(new Item.Properties().food(ModFoods.DARK_CHOCOLATED_APPLE)));
+    // Dark Chocolate Cake
+    public static final RegistryObject<Item> DARK_CHOCOLATE_CAKE_ITEM = ITEMS.register("dark_chocolate_cake",
+            () -> new BlockItem(ModBlocks.DARK_CHOCOLATE_CAKE.get(),
+                    new Item.Properties().food(ModFoods.DARK_CHOCOLATE_CAKE_FOOD)));
 
     // White Chocolate Related Items
     public static final RegistryObject<Item> BAR_OF_WHITE_CHOCOLATE = ITEMS.register("bar_of_white_chocolate",
@@ -88,6 +96,10 @@ public class ModItems {
             () -> new BucketItem(ModFluids.SOURCE_WHITE_CHOCOLATE_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
     public static final RegistryObject<Item> WHITE_CHOCOLATED_APPLE = ITEMS.register("white_chocolated_apple",
             () -> new Item(new Item.Properties().food(ModFoods.WHITE_CHOCOLATED_APPLE)));
+    // White Chocolate Cake
+    public static final RegistryObject<Item> WHITE_CHOCOLATE_CAKE_ITEM = ITEMS.register("white_chocolate_cake",
+            () -> new BlockItem(ModBlocks.WHITE_CHOCOLATE_CAKE.get(),
+                    new Item.Properties().food(ModFoods.WHITE_CHOCOLATE_CAKE_FOOD)));
 
     // Caramel Related Items
     public static final RegistryObject<Item> BAR_OF_CARAMEL = ITEMS.register("bar_of_caramel",
@@ -114,6 +126,10 @@ public class ModItems {
             () -> new BucketItem(ModFluids.SOURCE_CARAMEL_FLUID, new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
     public static final RegistryObject<Item> CARAMELIZED_APPLE = ITEMS.register("caramelized_apple",
             () -> new Item(new Item.Properties().food(ModFoods.CARAMELIZED_APPLE)));
+    // Caramel Cake
+    public static final RegistryObject<Item> CARAMEL_CAKE_ITEM = ITEMS.register("caramel_cake",
+            () -> new BlockItem(ModBlocks.CARAMEL_CAKE.get(),
+                    new Item.Properties().food(ModFoods.CARAMEL_CAKE_FOOD)));
 
     // Cooking Ingredients
     public static final RegistryObject<Item> COCOA_POWDER = ITEMS.register("cocoa_powder",
@@ -129,6 +145,8 @@ public class ModItems {
     public static final RegistryObject<Item> CARAMEL_DOUGH = ITEMS.register("caramel_dough",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHOCOLATE_DOUGH = ITEMS.register("chocolate_dough",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_DOUGH = ITEMS.register("royal_chocolate_dough",
             () -> new Item(new Item.Properties()));
 
     // Dark Chocolate Stick
@@ -211,6 +229,10 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MILK_POWDER = ITEMS.register("milk_powder",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAKE_BASE = ITEMS.register("cake_base",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAKE_BASE_BAKED = ITEMS.register("cake_base_baked",
+            () -> new Item(new Item.Properties()));
 
     // Royal Chocolate Related Items
     public static final RegistryObject<Item> BAR_OF_ROYAL_CHOCOLATE = ITEMS.register("bar_of_royal_chocolate",
@@ -258,6 +280,24 @@ public class ModItems {
     public static final RegistryObject<Item> ROYAL_CHOCOLATE_CAKE_ITEM = ITEMS.register("royal_chocolate_cake",
             () -> new BlockItem(ModBlocks.ROYAL_CHOCOLATE_CAKE.get(),
                     new Item.Properties().food(ModFoods.ROYAL_CHOCOLATE_CAKE_FOOD)));
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_MARSHMALLOW = ITEMS.register("royal_chocolate_marshmallow",
+            () -> new Item(new Item.Properties().food(ModFoods.ROYAL_CHOCOLATE_MARSHMALLOW)));
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_BUNNY = ITEMS.register("royal_chocolate_bunny",
+            () -> new Item(new Item.Properties().food(ModFoods.ROYAL_CHOCOLATE_BUNNY)));
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_EGG =  ITEMS.register("royal_chocolate_egg",
+            () -> new Item(new Item.Properties().food(ModFoods.ROYAL_CHOCOLATE_EGG)));
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_GLAZED_BERRIES = ITEMS.register("royal_chocolate_glazed_berries",
+            () -> new Item(new Item.Properties().food(ModFoods.ROYAL_CHOCOLATE_GLAZED_BERRIES)));
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_PRALINE = ITEMS.register("royal_chocolate_praline",
+            () -> new Item(new Item.Properties().food(ModFoods.ROYAL_CHOCOLATE_PRALINE)));
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_TRUFFLE = ITEMS.register("royal_chocolate_truffle",
+            () -> new Item(new Item.Properties().food(ModFoods.ROYAL_CHOCOLATE_TRUFFLE)));
+    public static final RegistryObject<Item> HOT_ROYAL_CHOCOLATE_DRINK = ITEMS.register("hot_royal_chocolate_drink",
+            () -> new DrinkItem(new Item.Properties().food(ModFoods.HOT_ROYAL_CHOCOLATE_DRINK).craftRemainder(Items.GLASS_BOTTLE)));
+    public static final RegistryObject<Item> ROYAL_CHOCOLATE_COOKIE = ITEMS.register("royal_chocolate_cookie",
+            () -> new Item(new Item.Properties().food(ModFoods.ROYAL_CHOCOLATE_COOKIE)));
+    public static final RegistryObject<Item> ROYAL_CHOCOLATED_APPLE = ITEMS.register("royal_chocolated_apple",
+            () -> new Item(new Item.Properties().food(ModFoods.ROYAL_CHOCOLATED_APPLE)));
 
 
     public static void register(IEventBus eventBus) {
