@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:cookie"
+    },
+    {
+      "amount": 125,
+      "fluid": "create_chocolate:caramel_fluid"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_chocolate:caramel_cookie"
+    }
+  ]
+}

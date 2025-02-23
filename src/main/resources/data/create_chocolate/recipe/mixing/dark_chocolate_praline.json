@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create_chocolate:butter"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    },
+    {
+      "item": "create_chocolate:bar_of_dark_chocolate"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_chocolate:dark_chocolate_praline"
+    }
+  ]
+}

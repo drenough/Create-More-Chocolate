@@ -162,15 +162,30 @@ public class ModBlocks {
 
     // Pallets with Chocolate Boxes
     public static final DeferredBlock<Block> PALLET_OF_CHOCOLATE = registerBlock("pallet_of_chocolate",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> PALLET_OF_DARK_CHOCOLATE = registerBlock("pallet_of_dark_chocolate",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> PALLET_OF_WHITE_CHOCOLATE = registerBlock("pallet_of_white_chocolate",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> PALLET_OF_CARAMEL = registerBlock("pallet_of_caramel",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
     public static final DeferredBlock<Block> PALLET_OF_ROYAL_CHOCOLATE = registerBlock("pallet_of_royal_chocolate",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
 
     // Royal Chocolate Fluid Block
     public static final DeferredBlock<LiquidBlock> ROYAL_CHOCOLATE_BLOCK = BLOCKS.register("royal_chocolate_block",

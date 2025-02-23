@@ -1,5 +1,7 @@
 package net.drenough.create_chocolate.item;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
@@ -45,7 +47,7 @@ public class ModToolTiers {
     public static final Tier ROYAL_CHOCOLATE_TOOL = new Tier() {
         @Override
         public int getUses() {
-            return 1561; // Durability
+            return 1800; // Durability
         }
 
         @Override
@@ -55,7 +57,7 @@ public class ModToolTiers {
 
         @Override
         public float getAttackDamageBonus() {
-            return 4.0F; // Base attack damage
+            return 3.0F; // Base attack damage
         }
 
         @Override
@@ -70,7 +72,8 @@ public class ModToolTiers {
 
         @Override
         public @NotNull TagKey<Block> getIncorrectBlocksForDrops() {
-            return BlockTags.NEEDS_DIAMOND_TOOL; // Blocks that won't drop items when mined
-        }
+            // Use a custom tag to allow mining all blocks
+            return TagKey.create(Registries.BLOCK, ResourceLocation.parse("create_chocolate:needs_royal_chocolate_tool"));
+    }
     };
 }

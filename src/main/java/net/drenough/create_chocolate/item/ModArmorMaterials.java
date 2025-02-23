@@ -15,7 +15,7 @@ public class ModArmorMaterials {
             Map.of(
                     ArmorItem.Type.HELMET, 2,
                     ArmorItem.Type.CHESTPLATE, 5,
-                    ArmorItem.Type.LEGGINGS, 6,
+                    ArmorItem.Type.LEGGINGS, 3,
                     ArmorItem.Type.BOOTS, 2
             ),
             14, // Enchantability
@@ -30,8 +30,8 @@ public class ModArmorMaterials {
     public static final ArmorMaterial ROYAL_CHOCOLATE_ARMOR = new ArmorMaterial(
             Map.of(
                     ArmorItem.Type.HELMET, 3,
-                    ArmorItem.Type.CHESTPLATE, 6,
-                    ArmorItem.Type.LEGGINGS, 8,
+                    ArmorItem.Type.CHESTPLATE, 8,
+                    ArmorItem.Type.LEGGINGS, 6,
                     ArmorItem.Type.BOOTS, 3
             ),
             15, // Enchantability

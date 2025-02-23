@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:cookie"
+    },
+    {
+      "amount": 125,
+      "fluid": "create_chocolate:royal_chocolate_fluid"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_chocolate:royal_chocolate_cookie"
+    }
+  ]
+}

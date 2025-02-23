@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_chocolate:dark_chocolate_dough"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_chocolate:dark_chocolate_truffle"
+    }
+  ]
+}

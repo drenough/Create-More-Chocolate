@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "create_chocolate:dark_chocolate_dough"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_chocolate:dark_chocolate_marshmallow"
+    }
+  ]
+}

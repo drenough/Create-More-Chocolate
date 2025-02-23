@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:rabbit"
+    },
+    {
+      "amount": 250,
+      "fluid": "create_chocolate:royal_chocolate_fluid"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_chocolate:royal_chocolate_bunny"
+    }
+  ]
+}

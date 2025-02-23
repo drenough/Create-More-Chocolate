@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create_chocolate:cake_base_baked"
+    },
+    {
+      "amount": 1000,
+      "fluid": "create_chocolate:caramel_fluid"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_chocolate:caramel_cake"
+    }
+  ]
+}

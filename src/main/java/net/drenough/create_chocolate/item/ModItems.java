@@ -166,19 +166,24 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     // Hard Chocolate Pickaxe
     public static final DeferredItem<Item> HARD_CHOCOLATE_PICKAXE = ITEMS.register("hard_chocolate_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties().attributes(
+                    PickaxeItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 1, -2.8F))));
     // Hard Chocolate Axe
     public static final DeferredItem<AxeItem> HARD_CHOCOLATE_AXE = ITEMS.register("hard_chocolate_axe",
-            () -> new AxeItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties().attributes(
+                    AxeItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 5.0F, -3.0F))));
     // Hard Chocolate Sword
     public static final DeferredItem<Item> HARD_CHOCOLATE_SWORD = ITEMS.register("hard_chocolate_sword",
-            () -> new SwordItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties().attributes(
+                    SwordItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 3, -2.4F))));
     // Hard Chocolate Shovel
     public static final DeferredItem<Item> HARD_CHOCOLATE_SHOVEL = ITEMS.register("hard_chocolate_shovel",
-            () -> new ShovelItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties().attributes(
+                    ShovelItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 1.5F, -3.0F))));
     // Hard Chocolate Hoe
     public static final DeferredItem<Item> HARD_CHOCOLATE_HOE = ITEMS.register("hard_chocolate_hoe",
-            () -> new HoeItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties().attributes(
+                    HoeItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, -1, -2.0F))));
 
     // Hard Chocolate Armor
 
@@ -238,19 +243,24 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     // Royal Chocolate Pickaxe
     public static final DeferredItem<Item> ROYAL_CHOCOLATE_PICKAXE = ITEMS.register("royal_chocolate_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.ROYAL_CHOCOLATE_TOOL, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.ROYAL_CHOCOLATE_TOOL, new Item.Properties().attributes(
+                    PickaxeItem.createAttributes(ModToolTiers.ROYAL_CHOCOLATE_TOOL, 1, -2.8F))));
     // Royal Chocolate Shovel
     public static final DeferredItem<Item> ROYAL_CHOCOLATE_SHOVEL = ITEMS.register("royal_chocolate_shovel",
-            () -> new ShovelItem(ModToolTiers.ROYAL_CHOCOLATE_TOOL, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.ROYAL_CHOCOLATE_TOOL, new Item.Properties().attributes(
+                    ShovelItem.createAttributes(ModToolTiers.ROYAL_CHOCOLATE_TOOL, 1.5F, 3.0F))));
     // Royal Chocolate Hoe
     public static final DeferredItem<Item> ROYAL_CHOCOLATE_HOE = ITEMS.register("royal_chocolate_hoe",
-            () -> new HoeItem(ModToolTiers.ROYAL_CHOCOLATE_TOOL, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.ROYAL_CHOCOLATE_TOOL, new Item.Properties().attributes(
+                    HoeItem.createAttributes(ModToolTiers.ROYAL_CHOCOLATE_TOOL, -1, -2.0F))));
     // Royal Chocolate Axe
     public static final DeferredItem<Item> ROYAL_CHOCOLATE_AXE = ITEMS.register("royal_chocolate_axe",
-            () -> new AxeItem(ModToolTiers.ROYAL_CHOCOLATE_TOOL, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.ROYAL_CHOCOLATE_TOOL, new Item.Properties().attributes(
+                    AxeItem.createAttributes(ModToolTiers.ROYAL_CHOCOLATE_TOOL, 5.5F, -3.0F))));
     // Royal Chocolate Sword
     public static final DeferredItem<Item> ROYAL_CHOCOLATE_SWORD = ITEMS.register("royal_chocolate_sword",
-            () -> new SwordItem(ModToolTiers.ROYAL_CHOCOLATE_TOOL, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.ROYAL_CHOCOLATE_TOOL, new Item.Properties().attributes(
+                    SwordItem.createAttributes(ModToolTiers.ROYAL_CHOCOLATE_TOOL, 3, -2.4F))));
 
     // Royal Chocolate Food
     public static final DeferredItem<Item> ROYAL_CHOCOLATE_CAKE_ITEM = ITEMS.register("royal_chocolate_cake",

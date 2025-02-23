@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_chocolate:cocoa_smashed_beans"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "id": "create_chocolate:cocoa_powder"
+    }
+  ]
+}

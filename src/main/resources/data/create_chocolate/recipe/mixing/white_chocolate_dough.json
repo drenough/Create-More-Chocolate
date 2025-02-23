@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluid": "create_chocolate:white_chocolate_fluid"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create_chocolate:butter"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_chocolate:white_chocolate_dough"
+    }
+  ]
+}

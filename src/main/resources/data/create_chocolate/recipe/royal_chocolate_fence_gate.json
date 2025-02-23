@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "create_chocolate:royal_chocolate_stick"
+    },
+    "W": {
+      "item": "create_chocolate:royal_chocolate_bricks"
+    }
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "create_chocolate:royal_chocolate_fence_gate"
+  },
+  "show_notification": true
+}
