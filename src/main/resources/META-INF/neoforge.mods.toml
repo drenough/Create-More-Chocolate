@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="All Rights Reserved"
+
+[[mods]]
+modId="create_chocolate"
+version="${mod_version}"
+displayName="Create More Chocolate"
+authors="DrEnough"
+description='''Addon for mod Create, adding food like chocolate'''
+
+[[dependencies.create_chocolate]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.119,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.create_chocolate]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.create_chocolate]]
+modId="jei"
+type="optional"
+versionRange="[19.21.1.248,)"  # Updated to the correct JEI version range
+ordering="NONE"
+side="BOTH"
