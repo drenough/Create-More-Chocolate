@@ -1,83 +1,100 @@
 package net.drenough.create_chocolate.item;
 
-import com.simibubi.create.AllItems;
-import net.drenough.create_chocolate.CreateChocolate;
+import net.minecraft.core.Holder;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
-import org.jetbrains.annotations.NotNull;
 
-import java.util.function.Supplier;
+public class ModArmorMaterials {
+    // Hard Chocolate Armor Material
+    public static final ArmorMaterial HARD_CHOCOLATE_ARMOR = new ArmorMaterial() {
+        private static final int[] BASE_DURABILITY = {11, 16, 16, 13}; // Base durability for helmet, chestplate, leggings, boots
 
-public enum ModArmorMaterials implements ArmorMaterial {
-    HARD_CHOCOLATE("hard_chocolate", 26, new int[]{ 2, 5, 3, 2 }, 25,
-            SoundEvents.ARMOR_EQUIP_LEATHER, 0f, 0f, () -> Ingredient.of(AllItems.BAR_OF_CHOCOLATE)),
+        @Override
+        public int getDurabilityForType(ArmorItem.Type type) {
+            return BASE_DURABILITY[type.ordinal()] * 25; // Durability multiplier
+        }
 
-    ROYAL_CHOCOLATE("royal_chocolate", 35, new int[]{3, 6, 8, 3}, 15,
-            SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.of(ModItems.BAR_OF_ROYAL_CHOCOLATE.get()));
+        @Override
+        public int getDefenseForType(ArmorItem.Type type) {
+            return new int[]{2, 5, 6, 2}[type.ordinal()]; // Protection values for helmet, chestplate, leggings, boots
+        }
 
-    private final String name;
-    private final int durabilityMultiplier;
-    private final int[] protectionAmounts;
-    private final int enchantmentValue;
-    private final SoundEvent equipSound;
-    private final float toughness;
-    private final float knockbackResistance;
-    private final Supplier<Ingredient> repairIngredient;
+        @Override
+        public int getEnchantmentValue() {
+            return 14; // Enchantability
+        }
 
-    private static final int[] BASE_DURABILITY = { 11, 16, 16, 13 };
+        @Override
+        public Holder<SoundEvent> getEquipSound() {
+            return SoundEvents.ARMOR_EQUIP_LEATHER; // Sound when equipping
+        }
 
-    ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound,
-                      float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
-        this.name = name;
-        this.durabilityMultiplier = durabilityMultiplier;
-        this.protectionAmounts = protectionAmounts;
-        this.enchantmentValue = enchantmentValue;
-        this.equipSound = equipSound;
-        this.toughness = toughness;
-        this.knockbackResistance = knockbackResistance;
-        this.repairIngredient = repairIngredient;
-    }
+        @Override
+        public Ingredient getRepairIngredient() {
+            return Ingredient.of(ModItems.HARD_CHOCOLATE_STICK.get()); // Repair material
+        }
 
-    @Override
-    public int getDurabilityForType(ArmorItem.Type pType) {
-        return BASE_DURABILITY[pType.ordinal()] * this.durabilityMultiplier;
-    }
+        @Override
+        public String getName() {
+            return "hard_chocolate"; // Name of the armor material
+        }
 
-    @Override
-    public int getDefenseForType(ArmorItem.Type pType) {
-        return this.protectionAmounts[pType.ordinal()];
-    }
+        @Override
+        public float getToughness() {
+            return 1.0F; // Toughness (extra protection)
+        }
 
-    @Override
-    public int getEnchantmentValue() {
-        return enchantmentValue;
-    }
+        @Override
+        public float getKnockbackResistance() {
+            return 0.0F; // Knockback resistance
+        }
+    };
 
-    @Override
-    public @NotNull SoundEvent getEquipSound() {
-        return this.equipSound;
-    }
+    // Royal Chocolate Armor Material
+    public static final ArmorMaterial ROYAL_CHOCOLATE_ARMOR = new ArmorMaterial() {
+        private static final int[] BASE_DURABILITY = {11, 16, 16, 13}; // Base durability for helmet, chestplate, leggings, boots
 
-    @Override
-    public @NotNull Ingredient getRepairIngredient() {
-        return this.repairIngredient.get();
-    }
+        @Override
+        public int getDurabilityForType(ArmorItem.Type type) {
+            return BASE_DURABILITY[type.ordinal()] * 35; // Durability multiplier
+        }
 
-    @Override
-    public @NotNull String getName() {
-        return CreateChocolate.MOD_ID + ":" + this.name;
-    }
+        @Override
+        public int getDefenseForType(ArmorItem.Type type) {
+            return new int[]{3, 6, 8, 3}[type.ordinal()]; // Protection values for helmet, chestplate, leggings, boots
+        }
 
-    @Override
-    public float getToughness() {
-        return this.toughness;
-    }
+        @Override
+        public int getEnchantmentValue() {
+            return 15; // Enchantability
+        }
 
-    @Override
-    public float getKnockbackResistance() {
-        return this.knockbackResistance;
-    }
+        @Override
+        public Holder<SoundEvent> getEquipSound() {
+            return SoundEvents.ARMOR_EQUIP_NETHERITE; // Sound when equipping
+        }
+
+        @Override
+        public Ingredient getRepairIngredient() {
+            return Ingredient.of(ModItems.BAR_OF_ROYAL_CHOCOLATE.get()); // Repair material
+        }
+
+        @Override
+        public String getName() {
+            return "royal_chocolate"; // Name of the armor material
+        }
+
+        @Override
+        public float getToughness() {
+            return 3.0F; // Toughness (extra protection)
+        }
+
+        @Override
+        public float getKnockbackResistance() {
+            return 0.1F; // Knockback resistance
+        }
+    };
 }
