@@ -26,11 +26,6 @@ public class ModToolTiers {
         }
 
         @Override
-        public int getLevel() {
-            return 2; // Harvest level (e.g., 2 = iron level)
-        }
-
-        @Override
         public int getEnchantmentValue() {
             return 14; // Enchantability
         }
@@ -41,12 +36,8 @@ public class ModToolTiers {
         }
 
         @Override
-        public TagKey<Block> getTag() {
-            return BlockTags.NEEDS_IRON_TOOL; // Blocks this tier can mine
-        }
-        @Override
         public @NotNull TagKey<Block> getIncorrectBlocksForDrops() {
-            return BlockTags.INCORRECT_FOR_IRON_TOOL; // Blocks that won't drop items when mined
+            return BlockTags.NEEDS_IRON_TOOL; // Blocks that won't drop items when mined
         }
     };
 
@@ -68,11 +59,6 @@ public class ModToolTiers {
         }
 
         @Override
-        public int getLevel() {
-            return 3; // Harvest level (e.g., 3 = diamond level)
-        }
-
-        @Override
         public int getEnchantmentValue() {
             return 15; // Enchantability
         }
@@ -83,12 +69,8 @@ public class ModToolTiers {
         }
 
         @Override
-        public TagKey<Block> getTag() {
-            return BlockTags.NEEDS_DIAMOND_TOOL; // Blocks this tier can mine
-        }
-        @Override
         public @NotNull TagKey<Block> getIncorrectBlocksForDrops() {
-            return BlockTags.INCORRECT_FOR_DIAMOND_TOOL; // Blocks that won't drop items when mined
+            return BlockTags.NEEDS_DIAMOND_TOOL; // Blocks that won't drop items when mined
         }
     };
 }
