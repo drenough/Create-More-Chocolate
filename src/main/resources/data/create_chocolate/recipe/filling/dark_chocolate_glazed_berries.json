@@ -5,13 +5,14 @@
       "item": "minecraft:sweet_berries"
     },
     {
+      "type": "fluid_stack",
       "amount": 250,
       "fluid": "create_chocolate:dark_chocolate_fluid"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:dark_chocolate_glazed_berries"
+      "item": "create_chocolate:dark_chocolate_glazed_berries"
     }
   ]
 }

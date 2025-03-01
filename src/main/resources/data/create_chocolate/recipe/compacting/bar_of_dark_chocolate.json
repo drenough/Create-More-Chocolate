@@ -2,13 +2,14 @@
   "type": "create:compacting",
   "ingredients": [
     {
+      "type": "fluid_stack",
       "amount": 250,
       "fluid": "create_chocolate:dark_chocolate_fluid"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:bar_of_dark_chocolate"
+      "item": "create_chocolate:bar_of_dark_chocolate"
     }
   ]
 }

@@ -2,6 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
+      "type": "fluid_stack",
       "amount": 250,
       "fluid": "create_chocolate:caramel_fluid"
     },
@@ -20,7 +21,7 @@
   ],
   "results": [
     {
-      "id": "create_chocolate:caramel_dough"
+      "item": "create_chocolate:caramel_dough"
     }
   ]
 }

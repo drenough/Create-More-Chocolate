@@ -1,5 +1,6 @@
 package net.drenough.create_chocolate.item;
 
+import com.simibubi.create.AllItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -19,12 +20,12 @@ public class ModToolTiers {
 
         @Override
         public float getSpeed() {
-            return 6.0F; // Mining speed
+            return 2.0F; // Mining speed
         }
 
         @Override
         public float getAttackDamageBonus() {
-            return 2.0F; // Base attack damage
+            return 1.0F; // Base attack damage
         }
 
         @Override
@@ -34,7 +35,7 @@ public class ModToolTiers {
 
         @Override
         public @NotNull Ingredient getRepairIngredient() {
-            return Ingredient.of(ModItems.HARD_CHOCOLATE_STICK.get()); // Repair material
+            return Ingredient.of(AllItems.BAR_OF_CHOCOLATE.get()); // Repair material
         }
 
         @Override

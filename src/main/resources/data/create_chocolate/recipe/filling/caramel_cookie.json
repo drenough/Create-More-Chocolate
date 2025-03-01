@@ -5,13 +5,14 @@
       "item": "minecraft:cookie"
     },
     {
+      "type": "fluid_stack",
       "amount": 125,
       "fluid": "create_chocolate:caramel_fluid"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:caramel_cookie"
+      "item": "create_chocolate:caramel_cookie"
     }
   ]
 }

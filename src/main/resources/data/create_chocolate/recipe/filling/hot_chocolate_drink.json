@@ -5,13 +5,14 @@
       "item": "minecraft:glass_bottle"
     },
     {
+      "type": "fluid_stack",
       "amount": 250,
       "fluid": "create:chocolate"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:hot_chocolate_drink"
+      "item": "create_chocolate:hot_chocolate_drink"
     }
   ]
 }

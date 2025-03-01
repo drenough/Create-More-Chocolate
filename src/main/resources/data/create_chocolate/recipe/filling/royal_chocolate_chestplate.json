@@ -5,13 +5,14 @@
       "item": "minecraft:diamond_chestplate"
     },
     {
+      "type": "fluid_stack",
       "amount": 1000,
       "fluid": "create_chocolate:royal_chocolate_fluid"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:royal_chocolate_chestplate"
+      "item": "create_chocolate:royal_chocolate_chestplate"
     }
   ]
 }

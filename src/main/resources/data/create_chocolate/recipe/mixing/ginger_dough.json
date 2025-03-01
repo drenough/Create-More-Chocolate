@@ -8,16 +8,17 @@
       "item": "create:cinder_flour"
     },
     {
-      "tag": "forge:flour/wheat"
+      "item": "create:wheat_flour"
     },
     {
+      "type": "fluid_tag",
       "amount": 250,
-      "fluidTag": "forge:honey"
+      "fluid_tag": "c:honey"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:ginger_dough"
+      "item": "create_chocolate:ginger_dough"
     }
   ]
 }

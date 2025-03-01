@@ -5,13 +5,14 @@
       "item": "minecraft:rabbit"
     },
     {
+      "type": "fluid_stack",
       "amount": 250,
       "fluid": "create:chocolate"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:chocolate_bunny"
+      "item": "create_chocolate:chocolate_bunny"
     }
   ]
 }

@@ -5,13 +5,14 @@
       "item": "minecraft:apple"
     },
     {
+      "type": "fluid_stack",
       "amount": 250,
       "fluid": "create_chocolate:caramel_fluid"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:caramelized_apple"
+      "item": "create_chocolate:caramelized_apple"
     }
   ]
 }

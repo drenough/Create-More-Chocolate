@@ -11,7 +11,7 @@
     },
     {
       "amount": 250,
-      "fluid": "create_chocolate:white_chocolate_fluid"
+      "id": "create_chocolate:white_chocolate_fluid"
     }
   ]
 }

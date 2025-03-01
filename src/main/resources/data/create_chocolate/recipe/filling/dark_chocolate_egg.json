@@ -5,13 +5,14 @@
       "item": "minecraft:egg"
     },
     {
+      "type": "fluid_stack",
       "amount": 125,
       "fluid": "create_chocolate:dark_chocolate_fluid"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:dark_chocolate_egg"
+      "item": "create_chocolate:dark_chocolate_egg"
     }
   ]
 }

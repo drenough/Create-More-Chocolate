@@ -2,6 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
+      "type": "fluid_stack",
       "amount": 250,
       "fluid": "create:chocolate"
     },
@@ -17,7 +18,7 @@
   ],
   "results": [
     {
-      "id": "create_chocolate:chocolate_dough"
+      "item": "create_chocolate:chocolate_dough"
     }
   ]
 }

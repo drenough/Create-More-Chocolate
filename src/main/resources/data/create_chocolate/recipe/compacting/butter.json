@@ -2,13 +2,14 @@
   "type": "create:compacting",
   "ingredients": [
     {
+      "type": "fluid_stack",
       "amount": 250,
       "fluid": "minecraft:milk"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:butter"
+      "item": "create_chocolate:butter"
     }
   ]
 }

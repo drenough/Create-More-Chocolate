@@ -5,13 +5,14 @@
       "item": "minecraft:diamond_boots"
     },
     {
+      "type": "fluid_stack",
       "amount": 500,
       "fluid": "create_chocolate:royal_chocolate_fluid"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:royal_chocolate_boots"
+      "item": "create_chocolate:royal_chocolate_boots"
     }
   ]
 }

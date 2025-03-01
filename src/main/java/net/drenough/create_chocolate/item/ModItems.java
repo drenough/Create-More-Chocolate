@@ -1,6 +1,5 @@
 package net.drenough.create_chocolate.item;
 
-//import com.simibubi.create.AllItems;
 import net.drenough.create_chocolate.CreateChocolate;
 import net.drenough.create_chocolate.block.ModBlocks;
 import net.drenough.create_chocolate.fluid.ModFluids;
@@ -167,11 +166,11 @@ public class ModItems {
     // Hard Chocolate Pickaxe
     public static final DeferredItem<Item> HARD_CHOCOLATE_PICKAXE = ITEMS.register("hard_chocolate_pickaxe",
             () -> new PickaxeItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties().attributes(
-                    PickaxeItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 1, -2.8F))));
+                    PickaxeItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 1.0F, -2.8F))));
     // Hard Chocolate Axe
     public static final DeferredItem<AxeItem> HARD_CHOCOLATE_AXE = ITEMS.register("hard_chocolate_axe",
             () -> new AxeItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties().attributes(
-                    AxeItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 5.0F, -3.0F))));
+                    AxeItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 6.0F, -3.0F))));
     // Hard Chocolate Sword
     public static final DeferredItem<Item> HARD_CHOCOLATE_SWORD = ITEMS.register("hard_chocolate_sword",
             () -> new SwordItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties().attributes(
@@ -179,11 +178,11 @@ public class ModItems {
     // Hard Chocolate Shovel
     public static final DeferredItem<Item> HARD_CHOCOLATE_SHOVEL = ITEMS.register("hard_chocolate_shovel",
             () -> new ShovelItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties().attributes(
-                    ShovelItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 1.5F, -3.0F))));
+                    ShovelItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 2.0F, -3.0F))));
     // Hard Chocolate Hoe
     public static final DeferredItem<Item> HARD_CHOCOLATE_HOE = ITEMS.register("hard_chocolate_hoe",
             () -> new HoeItem(ModToolTiers.HARD_CHOCOLATE_TOOL, new Item.Properties().attributes(
-                    HoeItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, -1, -2.0F))));
+                    HoeItem.createAttributes(ModToolTiers.HARD_CHOCOLATE_TOOL, 0.0F, -2.0F))));
 
     // Hard Chocolate Armor
 

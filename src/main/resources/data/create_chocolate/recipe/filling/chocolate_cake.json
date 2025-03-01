@@ -5,13 +5,14 @@
       "item": "create_chocolate:cake_base_baked"
     },
     {
+      "type": "fluid_stack",
       "amount": 1000,
       "fluid": "create:chocolate"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:chocolate_cake"
+      "item": "create_chocolate:chocolate_cake"
     }
   ]
 }

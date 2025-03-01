@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "create_chocolate:cake_base"
   },
-  "result": "create_chocolate:cake_base_baked"
+  "result": {
+    "count": 1,
+    "id": "create_chocolate:cake_base_baked"
+  }
 }

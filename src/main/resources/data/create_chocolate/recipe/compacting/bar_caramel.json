@@ -2,13 +2,14 @@
   "type": "create:compacting",
   "ingredients": [
     {
+      "type": "fluid_stack",
       "amount": 250,
       "fluid": "create_chocolate:caramel_fluid"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:bar_of_caramel"
+      "item": "create_chocolate:bar_of_caramel"
     }
   ]
 }

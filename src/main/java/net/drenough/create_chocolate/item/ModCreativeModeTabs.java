@@ -17,7 +17,7 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreateChocolate.MOD_ID);
 
     public static final Supplier<CreativeModeTab> CREATE_CHOCOLATE_TAB = CREATIVE_MODE_TAB.register("create_chocolate_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GINGER_BREAD_MAN.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BAR_OF_DARK_CHOCOLATE.get()))
                     .title(Component.translatable("creativetab.create_chocolate_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.COCOA_POWDER.get());

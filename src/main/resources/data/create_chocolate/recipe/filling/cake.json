@@ -5,13 +5,14 @@
       "item": "create_chocolate:cake_base_baked"
     },
     {
+      "type": "fluid_stack",
       "amount": 1000,
-      "fluidTag": "forge:milk"
+      "fluid": "minecraft:milk"
     }
   ],
   "results": [
     {
-      "item": "minecraft:cake"
+        "item": "minecraft:cake"
     }
   ]
 }

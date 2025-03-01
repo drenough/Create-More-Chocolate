@@ -5,13 +5,14 @@
       "item": "minecraft:diamond_leggings"
     },
     {
+      "type": "fluid_stack",
       "amount": 750,
       "fluid": "create_chocolate:royal_chocolate_fluid"
     }
   ],
   "results": [
     {
-      "id": "create_chocolate:royal_chocolate_leggings"
+      "item": "create_chocolate:royal_chocolate_leggings"
     }
   ]
 }

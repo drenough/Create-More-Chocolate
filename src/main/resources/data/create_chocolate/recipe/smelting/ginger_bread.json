@@ -6,5 +6,8 @@
   "ingredient": {
     "item": "create_chocolate:ginger_dough"
   },
-  "result": "create_chocolate:ginger_bread"
+  "result": {
+    "count": 1,
+    "id": "create_chocolate:ginger_bread"
+  }
 }
