@@ -12,7 +12,7 @@ description='''Addon for mod Create, adding food like chocolate'''
 [[dependencies.create_chocolate]]
 modId="neoforge"
 type="required"
-versionRange="[21.1.119,)"
+versionRange="[21.1.125,)"
 ordering="NONE"
 side="BOTH"
 
@@ -29,3 +29,24 @@ type="optional"
 versionRange="[19.21.1.248,)"  # Updated to the correct JEI version range
 ordering="NONE"
 side="BOTH"
+
+[[dependencies.create_chocolate]]
+modId="create"
+type="required"
+versionRange="[6.0.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.create_chocolate]]
+modId="ponder"
+type="required"
+versionRange="[0.8,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.create_chocolate]]
+modId="flywheel"
+type="required"
+versionRange="[1.0.0,)"
+ordering="AFTER"
+side="CLIENT"
