@@ -19,7 +19,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:white_chocolate_truffle"
+      "item": {
+        "id": "create_chocolate:white_chocolate_truffle"
+      }
     }
   ]
 }

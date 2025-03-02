@@ -12,7 +12,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:hot_chocolate_drink"
+      "item": {
+        "id": "create_chocolate:hot_chocolate_drink"
+      }
     }
   ]
 }

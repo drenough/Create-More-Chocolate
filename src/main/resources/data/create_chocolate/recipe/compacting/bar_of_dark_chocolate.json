@@ -9,7 +9,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:bar_of_dark_chocolate"
+      "item": {
+        "id": "create_chocolate:bar_of_dark_chocolate"
+      }
     }
   ]
 }

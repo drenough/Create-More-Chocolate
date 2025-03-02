@@ -7,7 +7,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:cocoa_smashed_beans"
+      "item": {
+        "id": "create_chocolate:cocoa_smashed_beans"
+      }
     }
   ]
 }

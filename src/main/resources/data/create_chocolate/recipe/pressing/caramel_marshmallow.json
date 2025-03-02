@@ -7,7 +7,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:caramel_marshmallow"
+      "item": {
+        "id": "create_chocolate:caramel_marshmallow"
+      }
     }
   ]
 }

@@ -12,7 +12,9 @@
   ],
   "results": [
     {
-        "item": "minecraft:cake"
+        "item": {
+          "id": "minecraft:cake"
+        }
     }
   ]
 }

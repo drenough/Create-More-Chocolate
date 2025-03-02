@@ -8,7 +8,9 @@
   "processingTime": 100,
   "results": [
     {
-      "item": "create_chocolate:cocoa_powder"
+      "item": {
+        "id": "create_chocolate:cocoa_powder"
+      }
     }
   ]
 }

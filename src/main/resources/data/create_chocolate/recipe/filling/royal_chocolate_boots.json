@@ -12,7 +12,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:royal_chocolate_boots"
+      "item": {
+        "id": "create_chocolate:royal_chocolate_boots"
+      }
     }
   ]
 }

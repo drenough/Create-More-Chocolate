@@ -10,7 +10,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:milk_powder"
+      "item": {
+        "id": "create_chocolate:milk_powder"
+      }
     }
   ]
 }

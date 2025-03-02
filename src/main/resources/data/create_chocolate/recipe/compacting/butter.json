@@ -9,7 +9,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:butter"
+      "item": {
+        "id": "create_chocolate:butter"
+      }
     }
   ]
 }

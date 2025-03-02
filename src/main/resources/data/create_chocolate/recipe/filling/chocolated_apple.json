@@ -12,7 +12,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:chocolated_apple"
+      "item": {
+        "id": "create_chocolate:chocolated_apple"
+      }
     }
   ]
 }

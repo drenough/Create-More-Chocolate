@@ -22,7 +22,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:cake_base"
+      "item": {
+        "id": "create_chocolate:cake_base"
+      }
     }
   ]
 }

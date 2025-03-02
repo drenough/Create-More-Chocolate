@@ -25,7 +25,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:full_royal_chocolate_bar"
+      "item": {
+        "id": "create_chocolate:full_royal_chocolate_bar"
+      }
     }
   ]
 }

@@ -12,7 +12,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:dark_chocolate_glazed_berries"
+      "item": {
+        "id": "create_chocolate:dark_chocolate_glazed_berries"
+      }
     }
   ]
 }

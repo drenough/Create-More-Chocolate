@@ -16,7 +16,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:caramel_praline"
+      "item": {
+        "id": "create_chocolate:caramel_praline"
+      }
     }
   ]
 }

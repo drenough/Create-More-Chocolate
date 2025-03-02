@@ -25,7 +25,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:full_caramel_bar"
+      "item": {
+        "id": "create_chocolate:full_caramel_bar"
+      }
     }
   ]
 }

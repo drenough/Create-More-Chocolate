@@ -16,7 +16,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:royal_chocolate_praline"
+      "item": {
+        "id": "create_chocolate:royal_chocolate_praline"
+      }
     }
   ]
 }

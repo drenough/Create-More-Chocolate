@@ -18,7 +18,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:chocolate_dough"
+      "item": {
+        "id": "create_chocolate:chocolate_dough"
+      }
     }
   ]
 }

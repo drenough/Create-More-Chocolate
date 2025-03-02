@@ -12,7 +12,9 @@
   ],
   "results": [
     {
-      "item": "create_chocolate:chocolate_cake"
+      "item": {
+        "id": "create_chocolate:chocolate_cake"
+      }
     }
   ]
 }
