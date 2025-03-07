@@ -14,7 +14,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.TreeConfigurati
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ALMOND_KEY = registerKey("almond");
@@ -22,13 +22,13 @@ public class ModConfiguredFeatures {
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
         register(context, ALMOND_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.ALMOND_LOG.get()),
-                new ForkingTrunkPlacer(4, 4, 3),
+                BlockStateProvider.simple(ModBlocks.ALMOND_LOG.get()), // Trunk block
+                new StraightTrunkPlacer(5, 2, 0), // Trunk height, branch height, branch count
 
-                BlockStateProvider.simple(ModBlocks.ALMOND_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(3), 3),
+                BlockStateProvider.simple(ModBlocks.ALMOND_LEAVES.get()), // Leaves block
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), 2), // Foliage radius, offset, height
 
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).build()); // Limit for the tree's size
     }
 
 
