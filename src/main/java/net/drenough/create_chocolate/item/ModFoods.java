@@ -1,11 +1,16 @@
 package net.drenough.create_chocolate.item;
 
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFoods {
     // Chocolate Food
-    public static final FoodProperties FULL_CHOCOLATE_BAR = new FoodProperties.Builder().nutrition(12)
-            .saturationModifier(1.0f).build();
+    public static final FoodProperties FULL_CHOCOLATE_BAR = new FoodProperties.Builder()
+            .nutrition(12)
+            .saturationModifier(1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1.0f) // Speed boost for 30 seconds
+            .build();
     public static final FoodProperties CHOCOLATE_MARSHMALLOW = new FoodProperties.Builder().nutrition(6)
             .saturationModifier(0.6f).build();
     public static final FoodProperties CHOCOLATE_BUNNY = new FoodProperties.Builder().nutrition(8)
@@ -31,8 +36,11 @@ public class ModFoods {
     // Dark Chocolate Food
     public static final FoodProperties BAR_OF_DARK_CHOCOLATE = new FoodProperties.Builder().nutrition(6)
             .saturationModifier(0.4f).build();
-    public static final FoodProperties FULL_DARK_CHOCOLATE_BAR = new FoodProperties.Builder().nutrition(12)
-            .saturationModifier(1.2f).build();
+    public static final FoodProperties FULL_DARK_CHOCOLATE_BAR = new FoodProperties.Builder()
+            .nutrition(12)
+            .saturationModifier(1.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 1.0f) // Resistance for 30 seconds
+            .build();
     public static final FoodProperties DARK_CHOCOLATE_MARSHMALLOW = new FoodProperties.Builder().nutrition(6)
             .saturationModifier(0.7f).build();
     public static final FoodProperties DARK_CHOCOLATE_BUNNY = new FoodProperties.Builder().nutrition(8)
@@ -58,8 +66,11 @@ public class ModFoods {
     // White Chocolate Food
     public static final FoodProperties BAR_OF_WHITE_CHOCOLATE = new FoodProperties.Builder().nutrition(6)
             .saturationModifier(0.3f).build();
-    public static final FoodProperties FULL_WHITE_CHOCOLATE_BAR = new FoodProperties.Builder().nutrition(12)
-            .saturationModifier(1.0f).build();
+    public static final FoodProperties FULL_WHITE_CHOCOLATE_BAR = new FoodProperties.Builder()
+            .nutrition(12)
+            .saturationModifier(1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 600, 0), 1.0f) // Jump Boost for 30 seconds
+            .build();
     public static final FoodProperties WHITE_CHOCOLATE_MARSHMALLOW = new FoodProperties.Builder().nutrition(6)
             .saturationModifier(0.6f).build();
     public static final FoodProperties WHITE_CHOCOLATE_BUNNY = new FoodProperties.Builder().nutrition(8)
@@ -85,8 +96,11 @@ public class ModFoods {
     // Caramel Food
     public static final FoodProperties BAR_OF_CARAMEL = new FoodProperties.Builder().nutrition(6)
             .saturationModifier(0.4f).build();
-    public static final FoodProperties FULL_CARAMEL_BAR = new FoodProperties.Builder().nutrition(12)
-            .saturationModifier(1.2f).build();
+    public static final FoodProperties FULL_CARAMEL_BAR = new FoodProperties.Builder()
+            .nutrition(12)
+            .saturationModifier(1.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 600, 0), 1.0f) // Fire Resistance for 30 seconds
+            .build();
     public static final FoodProperties CARAMEL_MARSHMALLOW = new FoodProperties.Builder().nutrition(6)
             .saturationModifier(0.7f).build();
     public static final FoodProperties CARAMEL_BUNNY = new FoodProperties.Builder().nutrition(8)
@@ -112,8 +126,12 @@ public class ModFoods {
     // Royal Chocolate Food
     public static final FoodProperties BAR_OF_ROYAL_CHOCOLATE = new FoodProperties.Builder().nutrition(18)
             .saturationModifier(2.0f).build();
-    public static final FoodProperties FULL_ROYAL_CHOCOLATE_BAR = new FoodProperties.Builder().nutrition(32)
-            .saturationModifier(4.0f).build();
+    public static final FoodProperties FULL_ROYAL_CHOCOLATE_BAR = new FoodProperties.Builder()
+            .nutrition(32)
+            .saturationModifier(4.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 1), 1.0f) // Strength II for 60 seconds
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 600, 1), 1.0f) // Regeneration II for 30 seconds
+            .build();
     public static final FoodProperties ROYAL_CHOCOLATE_CAKE_FOOD = new FoodProperties.Builder()
             .nutrition(16)
             .saturationModifier(1.6f)
