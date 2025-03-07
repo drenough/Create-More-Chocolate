@@ -284,6 +284,10 @@ public class ModItems {
     public static final DeferredItem<Item> ROYAL_CHOCOLATED_APPLE = ITEMS.register("royal_chocolated_apple",
             () -> new Item(new Item.Properties().food(ModFoods.ROYAL_CHOCOLATED_APPLE)));
 
+    // Almond
+    public static final DeferredItem<Item> ALMOND_ITEM = ITEMS.register("almond",
+            () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

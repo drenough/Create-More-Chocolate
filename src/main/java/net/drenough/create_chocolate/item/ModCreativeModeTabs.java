@@ -92,6 +92,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MILK_POWDER.get());
                         output.accept(ModItems.CAKE_BASE.get());
                         output.accept(ModItems.CAKE_BASE_BAKED.get());
+                        output.accept(ModItems.ALMOND_ITEM.get());
 
                         output.accept(ModBlocks.CARDBOARD_BOX_OF_CHOCOLATE.get());
                         output.accept(ModBlocks.CARDBOARD_BOX_OF_DARK_CHOCOLATE.get());
@@ -143,6 +144,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ROYAL_CHOCOLATE_TRAPDOOR.get());
                         output.accept(ModBlocks.ROYAL_CHOCOLATE_FENCE.get());
                         output.accept(ModBlocks.ROYAL_CHOCOLATE_FENCE_GATE.get());
+                        output.accept(ModBlocks.ALMOND_LOG.get());
+                        output.accept(ModBlocks.ALMOND_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_ALMOND_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_ALMOND_WOOD.get());
+                        output.accept(ModBlocks.ALMOND_PLANKS.get());
+                        output.accept(ModBlocks.ALMOND_SAPLING.get());
+                        output.accept(ModBlocks.ALMOND_LEAVES.get());
 
                         output.accept(ModItems.HARD_CHOCOLATE_STICK.get());
                         output.accept(ModItems.DARK_CHOCOLATE_STICK.get());

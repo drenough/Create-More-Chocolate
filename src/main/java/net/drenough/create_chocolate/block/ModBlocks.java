@@ -1,19 +1,29 @@
 package net.drenough.create_chocolate.block;
 
 import net.drenough.create_chocolate.CreateChocolate;
+import net.drenough.create_chocolate.block.almond.ModFlammableRotatedPillarBlock;
 import net.drenough.create_chocolate.fluid.ModFluids;
 import net.drenough.create_chocolate.item.ModItems;
+import net.drenough.create_chocolate.worldgen.tree.ModTreeGrowers;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
+
+import static net.drenough.create_chocolate.item.ModItems.ITEMS;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
@@ -219,6 +229,68 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ROYAL_CHOCOLATE_CAKE = BLOCKS.register("royal_chocolate_cake",
             () -> new RoyalChocolateCakeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)));
 
+    // Almond Tree
+    public static final DeferredBlock<Block> ALMOND_LOG = BLOCKS.register("almond_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> ALMOND_WOOD = BLOCKS.register("almond_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<Block> STRIPPED_ALMOND_LOG = BLOCKS.register("stripped_almond_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+    public static final DeferredBlock<Block> STRIPPED_ALMOND_WOOD = BLOCKS.register("stripped_almond_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final DeferredBlock<Block> ALMOND_PLANKS = BLOCKS.register("almond_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)){
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
+    public static final DeferredBlock<Block> ALMOND_LEAVES = BLOCKS.register("almond_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)){
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 30;
+                }
+            });
+    public static final DeferredBlock<Block> ALMOND_SAPLING = BLOCKS.register("almond_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.ALMOND, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+
+    // Register BlockItems for each block
+    public static final DeferredItem<Item> ALMOND_LOG_ITEM = ITEMS.register("almond_log",
+            () -> new BlockItem(ALMOND_LOG.get(), new Item.Properties()));
+    public static final DeferredItem<Item> ALMOND_WOOD_ITEM = ITEMS.register("almond_wood",
+            () -> new BlockItem(ALMOND_WOOD.get(), new Item.Properties()));
+    public static final DeferredItem<Item> STRIPPED_ALMOND_LOG_ITEM = ITEMS.register("stripped_almond_log",
+            () -> new BlockItem(STRIPPED_ALMOND_LOG.get(), new Item.Properties()));
+    public static final DeferredItem<Item> STRIPPED_ALMOND_WOOD_ITEM = ITEMS.register("stripped_almond_wood",
+            () -> new BlockItem(STRIPPED_ALMOND_WOOD.get(), new Item.Properties()));
+    public static final DeferredItem<Item> ALMOND_PLANKS_ITEM = ITEMS.register("almond_planks",
+            () -> new BlockItem(ALMOND_PLANKS.get(), new Item.Properties()));
+    public static final DeferredItem<Item> ALMOND_LEAVES_ITEM = ITEMS.register("almond_leaves",
+            () -> new BlockItem(ALMOND_LEAVES.get(), new Item.Properties()));
+    public static final DeferredItem<Item> ALMOND_SAPLING_ITEM = ITEMS.register("almond_sapling",
+            () -> new BlockItem(ALMOND_SAPLING.get(), new Item.Properties()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
@@ -228,7 +300,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {
