@@ -3,7 +3,6 @@ package net.drenough.create_chocolate.block;
 import net.drenough.create_chocolate.CreateChocolate;
 import net.drenough.create_chocolate.block.almond.ModFlammableRotatedPillarBlock;
 import net.drenough.create_chocolate.fluid.ModFluids;
-import net.drenough.create_chocolate.item.ModItems;
 import net.drenough.create_chocolate.worldgen.tree.ModTreeGrowers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -169,6 +168,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL)));
     public static final DeferredBlock<Block> CARDBOARD_BOX_OF_ROYAL_CHOCOLATE = registerBlock("cardboard_box_of_royal_chocolate",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL)));
+    public static final DeferredBlock<Block> CARDBOARD_BOX_OF_VEGAN_CHOCOLATE = registerBlock("cardboard_box_of_vegan_chocolate",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BROWN_WOOL)));
 
     // Pallets with Chocolate Boxes
     public static final DeferredBlock<Block> PALLET_OF_CHOCOLATE = registerBlock("pallet_of_chocolate",
@@ -194,6 +195,11 @@ public class ModBlocks {
     public static final DeferredBlock<Block> PALLET_OF_ROYAL_CHOCOLATE = registerBlock("pallet_of_royal_chocolate",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2.0F, 3.0F)
+                    .sound(SoundType.WOOD)
+                    .requiresCorrectToolForDrops()));
+    public static final DeferredBlock<Block> PALLET_OF_VEGAN_CHOCOLATE = registerBlock("pallet_of_vegan_chocolate",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 3.0f)
                     .sound(SoundType.WOOD)
                     .requiresCorrectToolForDrops()));
 
@@ -291,6 +297,25 @@ public class ModBlocks {
             () -> new BlockItem(ALMOND_LEAVES.get(), new Item.Properties()));
     public static final DeferredItem<Item> ALMOND_SAPLING_ITEM = ITEMS.register("almond_sapling",
             () -> new BlockItem(ALMOND_SAPLING.get(), new Item.Properties()));
+
+    // Vanilla Crop
+    public static final DeferredBlock<Block> VANILLA_CROP = BLOCKS.register("vanilla_crop",
+            () -> new VanillaCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+
+    // Vegan Chocolate
+    public static final DeferredBlock<LiquidBlock> VEGAN_CHOCOLATE_BLOCK = BLOCKS.register("vegan_chocolate_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_VEGAN_CHOCOLATE_FLUID.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noCollission()));
+    public static final DeferredBlock<Block> VEGAN_CHOCOLATE_CAKE = BLOCKS.register("vegan_chocolate_cake",
+            () -> new VeganChocolateCakeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)));
+
+    // Apple Sauce
+    public static final DeferredBlock<LiquidBlock> APPLE_SAUCE_BLOCK = BLOCKS.register("apple_sauce_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_APPLE_SAUCE_FLUID.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noCollission()));
+
+    // Almond Milk
+    public static final DeferredBlock<LiquidBlock> ALMOND_MILK_BLOCK = BLOCKS.register("almond_milk_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_ALMOND_MILK_FLUID.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noCollission()));
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

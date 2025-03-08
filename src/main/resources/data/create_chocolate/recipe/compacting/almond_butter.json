@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "create_chocolate:almond_milk_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:almond_butter"
+      }
+    }
+  ]
+}

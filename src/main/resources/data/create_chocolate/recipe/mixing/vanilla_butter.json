@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_chocolate:vanilla_powder"
+    },
+    {
+      "item": "create_chocolate:butter"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:vanilla_butter"
+      }
+    }
+  ]
+}

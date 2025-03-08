@@ -1,0 +1,28 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "create_chocolate:vegan_chocolate_fluid"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "create_chocolate:apple_sauce_fluid"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:vegan_chocolate_dough"
+      }
+    }
+  ]
+}

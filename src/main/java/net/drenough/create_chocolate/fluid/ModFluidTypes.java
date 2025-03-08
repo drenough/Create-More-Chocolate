@@ -44,7 +44,51 @@ public class ModFluidTypes {
     public static final ResourceLocation ROYAL_CHOCOLATE_FLOWING_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/royal_chocolate_flow");
     public static final ResourceLocation ROYAL_CHOCOLATE_OVERLAY_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/royal_chocolate_overlay");
 
-    // Register dark chocolate fluid type
+    // Texture paths for vegan chocolate fluid
+    public static final ResourceLocation VEGAN_CHOCOLATE_STILL_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/vegan_chocolate_still");
+    public static final ResourceLocation VEGAN_CHOCOLATE_FLOWING_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/vegan_chocolate_flow");
+    public static final ResourceLocation VEGAN_CHOCOLATE_OVERLAY_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/vegan_chocolate_overlay");
+
+    // Texture paths for apple sauce fluid
+    public static final ResourceLocation APPLE_SAUCE_STILL_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/apple_sauce_still");
+    public static final ResourceLocation APPLE_SAUCE_FLOWING_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/apple_sauce_flow");
+    public static final ResourceLocation APPLE_SAUCE_OVERLAY_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/apple_sauce_overlay");
+
+    // Texture paths for almond milk fluid
+    public static final ResourceLocation ALMOND_MILK_STILL_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/almond_milk_still");
+    public static final ResourceLocation ALMOND_MILK_FLOWING_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/almond_milk_flow");
+    public static final ResourceLocation ALMOND_MILK_OVERLAY_RL = ResourceLocation.fromNamespaceAndPath(CreateChocolate.MOD_ID, "fluid/almond_milk_overlay");
+
+    // Register almond milk fluid type
+    public static final DeferredHolder<FluidType, FluidType> ALMOND_MILK_FLUID_TYPE = FLUID_TYPES.register("almond_milk_fluid_type",
+            () -> new FluidType(FluidType.Properties.create()
+                    .canSwim(true)
+                    .canDrown(true)
+                    .canHydrate(true)
+                    .lightLevel(0)
+                    .density(1050)
+                    .viscosity(1100)
+                    .sound(SoundAction.get("drink"), SoundEvents.HONEY_DRINK)));
+    // Register apple sauce fluid type
+    public static final DeferredHolder<FluidType, FluidType> APPLE_SAUCE_FLUID_TYPE = FLUID_TYPES.register("apple_sauce_fluid_type",
+            () -> new FluidType(FluidType.Properties.create()
+                    .canSwim(true)
+                    .canDrown(true)
+                    .canHydrate(true)
+                    .lightLevel(0)
+                    .density(1300)
+                    .viscosity(1400)
+                    .sound(SoundAction.get("drink"), SoundEvents.HONEY_DRINK)));
+    // Register vegan chocolate fluid type
+    public static final DeferredHolder<FluidType, FluidType> VEGAN_CHOCOLATE_FLUID_TYPE = FLUID_TYPES.register("vegan_chocolate_fluid_type",
+            () -> new FluidType(FluidType.Properties.create()
+                    .canSwim(true)
+                    .canDrown(true)
+                    .canHydrate(true)
+                    .lightLevel(2)
+                    .density(1400)
+                    .viscosity(1500)
+                    .sound(SoundAction.get("drink"), SoundEvents.HONEY_DRINK)));
     // Register dark chocolate fluid type
     public static final DeferredHolder<FluidType, FluidType> DARK_CHOCOLATE_FLUID_TYPE = FLUID_TYPES.register("dark_chocolate_fluid_type",
             () -> new FluidType(FluidType.Properties.create()
@@ -240,5 +284,110 @@ public class ModFluidTypes {
                         RenderSystem.setShaderFogShape(FogShape.CYLINDER); // Set the fog shape
                     }
                 }, ROYAL_CHOCOLATE_FLUID_TYPE.get());
+        // Register client extension for vegan chocolate fluid
+        event.registerFluidType(new IClientFluidTypeExtensions() {
+            @Override
+            public @NotNull ResourceLocation getStillTexture() {
+                return VEGAN_CHOCOLATE_STILL_RL;
+            }
+
+            @Override
+            public @NotNull ResourceLocation getFlowingTexture() {
+                return VEGAN_CHOCOLATE_FLOWING_RL;
+            }
+
+            @Override
+            public ResourceLocation getOverlayTexture() {
+                return VEGAN_CHOCOLATE_OVERLAY_RL;
+            }
+
+            @Override
+            public int getTintColor() {
+                return 0xFFFFFFFF; // No tint
+            }
+
+            @Override
+            public @NotNull Vector3f modifyFogColor(@NotNull Camera camera, float partialTick, @NotNull ClientLevel level, int renderDistance, float darkenWorldAmount, @NotNull Vector3f fluidFogColor) {
+                return new Vector3f(0.18f, 0.09f, 0.05f); // Vegan Chocolate fog color
+            }
+
+            @Override
+            public void modifyFogRender(@NotNull Camera camera, FogRenderer.@NotNull FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, @NotNull FogShape shape) {
+                RenderSystem.setShaderFogColor(0.18f, 0.09f, 0.05f); // Vegan Chocolate fog color
+                RenderSystem.setShaderFogStart(0.2f); // Adjust start distance
+                RenderSystem.setShaderFogEnd(1.5f);   // Adjust end distance
+                RenderSystem.setShaderFogShape(FogShape.CYLINDER); // Set the fog shape
+            }
+        }, VEGAN_CHOCOLATE_FLUID_TYPE.get());
+        // Register client extension for apple sauce fluid
+        event.registerFluidType(new IClientFluidTypeExtensions() {
+            @Override
+            public @NotNull ResourceLocation getStillTexture() {
+                return APPLE_SAUCE_STILL_RL;
+            }
+
+            @Override
+            public @NotNull ResourceLocation getFlowingTexture() {
+                return APPLE_SAUCE_FLOWING_RL;
+            }
+
+            @Override
+            public ResourceLocation getOverlayTexture() {
+                return APPLE_SAUCE_OVERLAY_RL;
+            }
+
+            @Override
+            public int getTintColor() {
+                return 0xFFFFFFFF; // No tint
+            }
+
+            @Override
+            public @NotNull Vector3f modifyFogColor(@NotNull Camera camera, float partialTick, @NotNull ClientLevel level, int renderDistance, float darkenWorldAmount, @NotNull Vector3f fluidFogColor) {
+                return new Vector3f(0.8f, 0.4f, 0.2f); // Apple Sauce fog color
+            }
+
+            @Override
+            public void modifyFogRender(@NotNull Camera camera, FogRenderer.@NotNull FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, @NotNull FogShape shape) {
+                RenderSystem.setShaderFogColor(0.8f, 0.4f, 0.2f); // Apple Sauce fog color
+                RenderSystem.setShaderFogStart(0.2f); // Adjust start distance
+                RenderSystem.setShaderFogEnd(1.5f);   // Adjust end distance
+                RenderSystem.setShaderFogShape(FogShape.CYLINDER); // Set the fog shape
+            }
+        }, APPLE_SAUCE_FLUID_TYPE.get());
+        // Register client extension for apple sauce fluid
+        event.registerFluidType(new IClientFluidTypeExtensions() {
+            @Override
+            public @NotNull ResourceLocation getStillTexture() {
+                return ALMOND_MILK_STILL_RL;
+            }
+
+            @Override
+            public @NotNull ResourceLocation getFlowingTexture() {
+                return ALMOND_MILK_FLOWING_RL;
+            }
+
+            @Override
+            public ResourceLocation getOverlayTexture() {
+                return ALMOND_MILK_OVERLAY_RL;
+            }
+
+            @Override
+            public int getTintColor() {
+                return 0xFFFFFFFF; // No tint
+            }
+
+            @Override
+            public @NotNull Vector3f modifyFogColor(@NotNull Camera camera, float partialTick, @NotNull ClientLevel level, int renderDistance, float darkenWorldAmount, @NotNull Vector3f fluidFogColor) {
+                return new Vector3f(0.95f, 0.9f, 0.8f); // Almond Milk fog color
+            }
+
+            @Override
+            public void modifyFogRender(@NotNull Camera camera, FogRenderer.@NotNull FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, @NotNull FogShape shape) {
+                RenderSystem.setShaderFogColor(0.95f, 0.9f, 0.8f); // Almond Milk fog color
+                RenderSystem.setShaderFogStart(0.2f); // Adjust start distance
+                RenderSystem.setShaderFogEnd(1.5f);   // Adjust end distance
+                RenderSystem.setShaderFogShape(FogShape.CYLINDER); // Set the fog shape
+            }
+        }, ALMOND_MILK_FLUID_TYPE.get());
     }
 }

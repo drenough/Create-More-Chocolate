@@ -14,7 +14,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
@@ -40,9 +39,6 @@ public class CreateChocolate {
         ModBlocks.register(modEventBus);
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
-
-        // Register our mod's ModConfigSpec so that FML can create and load the config file for us
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -74,6 +70,18 @@ public class CreateChocolate {
                 // Render Layers for Royal Chocolate
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ROYAL_CHOCOLATE_FLUID.get(), RenderType.translucent());
                 ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ROYAL_CHOCOLATE_FLUID.get(), RenderType.translucent());
+
+                // Render Layers for Vegan Chocolate
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_VEGAN_CHOCOLATE_FLUID.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_VEGAN_CHOCOLATE_FLUID.get(), RenderType.translucent());
+
+                // Render Layers for Apple Sauce
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_APPLE_SAUCE_FLUID.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_APPLE_SAUCE_FLUID.get(), RenderType.translucent());
+
+                // Render Layers for Almond Milk
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ALMOND_MILK_FLUID.get(), RenderType.translucent());
+                ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ALMOND_MILK_FLUID.get(), RenderType.translucent());
             });
         }
     }

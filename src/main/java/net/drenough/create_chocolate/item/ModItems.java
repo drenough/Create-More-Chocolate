@@ -284,9 +284,59 @@ public class ModItems {
     public static final DeferredItem<Item> ROYAL_CHOCOLATED_APPLE = ITEMS.register("royal_chocolated_apple",
             () -> new Item(new Item.Properties().food(ModFoods.ROYAL_CHOCOLATED_APPLE)));
 
+    // Vegan Chocolate
+    public static final DeferredItem<Item> VEGAN_CHOCOLATE_BUCKET = ITEMS.register("vegan_chocolate_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_VEGAN_CHOCOLATE_FLUID.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+    public static final DeferredItem<Item> VEGAN_CHOCOLATE_CAKE_ITEM = ITEMS.register("vegan_chocolate_cake",
+            () -> new BlockItem(ModBlocks.VEGAN_CHOCOLATE_CAKE.get(),
+                    new Item.Properties().food(ModFoods.VEGAN_CHOCOLATE_CAKE_FOOD)));
+    public static final DeferredItem<Item> VEGAN_CHOCOLATE_GLAZED_BERRIES = ITEMS.register("vegan_chocolate_glazed_berries",
+            () -> new Item(new Item.Properties().food(ModFoods.VEGAN_CHOCOLATE_GLAZED_BERRIES)));
+    public static final DeferredItem<Item> VEGAN_CHOCOLATE_PRALINE = ITEMS.register("vegan_chocolate_praline",
+            () -> new Item(new Item.Properties().food(ModFoods.VEGAN_CHOCOLATE_PRALINE)));
+    public static final DeferredItem<Item> VEGAN_CHOCOLATE_TRUFFLE = ITEMS.register("vegan_chocolate_truffle",
+            () -> new Item(new Item.Properties().food(ModFoods.VEGAN_CHOCOLATE_TRUFFLE)));
+    public static final DeferredItem<Item> HOT_VEGAN_CHOCOLATE_DRINK = ITEMS.register("hot_vegan_chocolate_drink",
+            () -> new DrinkItem(new Item.Properties().food(ModFoods.HOT_VEGAN_CHOCOLATE_DRINK).craftRemainder(Items.GLASS_BOTTLE)));
+    public static final DeferredItem<Item> VEGAN_CHOCOLATE_COOKIE = ITEMS.register("vegan_chocolate_cookie",
+            () -> new Item(new Item.Properties().food(ModFoods.VEGAN_CHOCOLATE_COOKIE)));
+    public static final DeferredItem<Item> VEGAN_CHOCOLATED_APPLE = ITEMS.register("vegan_chocolated_apple",
+            () -> new Item(new Item.Properties().food(ModFoods.VEGAN_CHOCOLATED_APPLE)));
+    public static final DeferredItem<Item> VEGAN_CHOCOLATE_MARSHMALLOW = ITEMS.register("vegan_chocolate_marshmallow",
+            () -> new Item(new Item.Properties().food(ModFoods.VEGAN_CHOCOLATE_MARSHMALLOW)));
+    public static final DeferredItem<Item> BAR_OF_VEGAN_CHOCOLATE = ITEMS.register("bar_of_vegan_chocolate",
+            () -> new Item(new Item.Properties().food(ModFoods.BAR_OF_VEGAN_CHOCOLATE)));
+    public static final DeferredItem<Item> FULL_VEGAN_CHOCOLATE_BAR = ITEMS.register("full_vegan_chocolate_bar",
+            () -> new Item(new Item.Properties().food(ModFoods.FULL_VEGAN_CHOCOLATE_BAR)));
+    public static final DeferredItem<Item> VEGAN_CHOCOLATE_DOUGH = ITEMS.register("vegan_chocolate_dough",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> VEGAN_CHOCOLATE_STICK = ITEMS.register("vegan_chocolate_stick",
+            () -> new Item(new Item.Properties()));
+
     // Almond
     public static final DeferredItem<Item> ALMOND_ITEM = ITEMS.register("almond",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ALMOND_BUTTER = ITEMS.register("almond_butter",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ALMOND_MILK_BUCKET = ITEMS.register("almond_milk_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_ALMOND_MILK_FLUID.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
+
+    // Vanilla Seed and stuff
+    public static final DeferredItem<Item> VANILLA_SEED = ITEMS.register("vanilla_seed",
+            () -> new ItemNameBlockItem(ModBlocks.VANILLA_CROP.get(), new Item.Properties()));
+    public static final DeferredItem<Item> VANILLA_LUSK = ITEMS.register("vanilla_lusk",
+            () -> new Item(new Item.Properties().food(ModFoods.VANILLA_LUSK)));
+    public static final DeferredItem<Item> VANILLA_BUTTER = ITEMS.register("vanilla_butter",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> VANILLA_POWDER = ITEMS.register("vanilla_powder",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> VANILLA_SUGAR = ITEMS.register("vanilla_sugar",
+            () -> new Item(new Item.Properties()));
+    // Apple Sauce
+    public static final DeferredItem<Item> APPLE_SAUCE_DRINK = ITEMS.register("apple_sauce_drink",
+            () -> new DrinkItem(new Item.Properties().food(ModFoods.APPLE_SAUCE_DRINK).craftRemainder(Items.GLASS_BOTTLE)));
+    public static final DeferredItem<Item> APPLE_SAUCE_BUCKET = ITEMS.register("apple_sauce_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_APPLE_SAUCE_FLUID.get(), new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)));
 
 
     public static void register(IEventBus eventBus) {

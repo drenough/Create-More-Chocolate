@@ -1,0 +1,10 @@
+{
+  "values": {
+    "create_chocolate:vanilla_lusk": {
+      "chance": 0.45
+    },
+    "create_chocolate:vanilla_seed": {
+      "chance": 0.25
+    }
+  }
+}
