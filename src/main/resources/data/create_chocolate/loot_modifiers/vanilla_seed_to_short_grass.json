@@ -1,0 +1,14 @@
+{
+  "type": "create_chocolate:add_item",
+  "conditions": [
+    {
+      "block": "minecraft:short_grass",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.25,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "create_chocolate:vanilla_seed"
+}

@@ -6,6 +6,7 @@ import net.drenough.create_chocolate.fluid.ModFluidTypes;
 import net.drenough.create_chocolate.fluid.ModFluids;
 import net.drenough.create_chocolate.item.ModCreativeModeTabs;
 import net.drenough.create_chocolate.item.ModItems;
+import net.drenough.create_chocolate.loot.ModLootModifiers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.neoforged.api.distmarker.Dist;
@@ -39,6 +40,7 @@ public class CreateChocolate {
         ModBlocks.register(modEventBus);
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
