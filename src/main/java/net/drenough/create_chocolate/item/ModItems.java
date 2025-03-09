@@ -3,7 +3,6 @@ package net.drenough.create_chocolate.item;
 import net.drenough.create_chocolate.CreateChocolate;
 import net.drenough.create_chocolate.block.ModBlocks;
 import net.drenough.create_chocolate.fluid.ModFluids;
-import net.minecraft.core.Holder;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -187,18 +186,18 @@ public class ModItems {
     // Hard Chocolate Armor
 
     // Hard Chocolate Helmet
-    public static final DeferredItem<Item> HARD_CHOCOLATE_HELMET = ITEMS.register("hard_chocolate_helmet",
-            () -> new ArmorItem(Holder.direct(ModArmorMaterials.ROYAL_CHOCOLATE_ARMOR), ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> HARD_CHOCOLATE_HELMET = ITEMS.register("hard_chocolate_helmet",
+            () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(6))));
 
     // Hard Chocolate Chestplate
-    public static final DeferredItem<Item> HARD_CHOCOLATE_CHESTPLATE = ITEMS.register("hard_chocolate_chestplate",
-            () -> new ArmorItem(Holder.direct(ModArmorMaterials.HARD_CHOCOLATE_ARMOR), ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> HARD_CHOCOLATE_CHESTPLATE = ITEMS.register("hard_chocolate_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(5))));
     // Hard Chocolate Leggings
-    public static final DeferredItem<Item> HARD_CHOCOLATE_LEGGINGS = ITEMS.register("hard_chocolate_leggings",
-            () -> new ArmorItem(Holder.direct(ModArmorMaterials.HARD_CHOCOLATE_ARMOR), ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> HARD_CHOCOLATE_LEGGINGS = ITEMS.register("hard_chocolate_leggings",
+            () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(5))));
     // Hard Chocolate Boots
-    public static final DeferredItem<Item> HARD_CHOCOLATE_BOOTS = ITEMS.register("hard_chocolate_boots",
-            () -> new ArmorItem(Holder.direct(ModArmorMaterials.HARD_CHOCOLATE_ARMOR), ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> HARD_CHOCOLATE_BOOTS = ITEMS.register("hard_chocolate_boots",
+            () -> new ArmorItem(ModArmorMaterials.HARD_CHOCOLATE_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(3))));
 
     // Food Ingredients
     public static final DeferredItem<Item> BUTTER = ITEMS.register("butter",
@@ -222,17 +221,17 @@ public class ModItems {
 
     // Royal Chocolate Armor
     // Royal Chocolate Helmet
-    public static final DeferredItem<Item> ROYAL_CHOCOLATE_HELMET = ITEMS.register("royal_chocolate_helmet",
-            () -> new ArmorItem(Holder.direct(ModArmorMaterials.ROYAL_CHOCOLATE_ARMOR), ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> ROYAL_CHOCOLATE_HELMET = ITEMS.register("royal_chocolate_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ROYAL_CHOCOLATE_ARMOR, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(35))));
     // Royal Chocolate Chestplate
-    public static final DeferredItem<Item> ROYAL_CHOCOLATE_CHESTPLATE = ITEMS.register("royal_chocolate_chestplate",
-            () -> new ArmorItem(Holder.direct(ModArmorMaterials.ROYAL_CHOCOLATE_ARMOR), ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> ROYAL_CHOCOLATE_CHESTPLATE = ITEMS.register("royal_chocolate_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ROYAL_CHOCOLATE_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(35))));
     // Royal Chocolate Leggings
-    public static final DeferredItem<Item> ROYAL_CHOCOLATE_LEGGINGS = ITEMS.register("royal_chocolate_leggings",
-            () -> new ArmorItem(Holder.direct(ModArmorMaterials.ROYAL_CHOCOLATE_ARMOR), ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> ROYAL_CHOCOLATE_LEGGINGS = ITEMS.register("royal_chocolate_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ROYAL_CHOCOLATE_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(35))));
     // Royal Chocolate Boots
-    public static final DeferredItem<Item> ROYAL_CHOCOLATE_BOOTS = ITEMS.register("royal_chocolate_boots",
-            () -> new ArmorItem(Holder.direct(ModArmorMaterials.ROYAL_CHOCOLATE_ARMOR), ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ArmorItem> ROYAL_CHOCOLATE_BOOTS = ITEMS.register("royal_chocolate_boots",
+            () -> new ArmorItem(ModArmorMaterials.ROYAL_CHOCOLATE_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(35))));
 
     // Royal Chocolate Tools
 
