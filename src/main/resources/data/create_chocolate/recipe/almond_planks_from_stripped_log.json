@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "create_chocolate:stripped_almond_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "create_chocolate:almond_planks"
+  }
+}
