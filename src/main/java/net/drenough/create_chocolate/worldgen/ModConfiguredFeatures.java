@@ -2,6 +2,7 @@ package net.drenough.create_chocolate.worldgen;
 
 import net.drenough.create_chocolate.CreateChocolate;
 import net.drenough.create_chocolate.block.ModBlocks;
+import net.drenough.create_chocolate.block.almond.AlmondLeavesBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
@@ -25,8 +26,10 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.simple(ModBlocks.ALMOND_LOG.get()), // Trunk block
                 new StraightTrunkPlacer(5, 2, 0), // Trunk height, branch height, branch count
 
-                BlockStateProvider.simple(ModBlocks.ALMOND_LEAVES.get()), // Leaves block
+                BlockStateProvider.simple(ModBlocks.ALMOND_LEAVES.get().defaultBlockState()
+                        .setValue(AlmondLeavesBlock.FULL, false)), // Start with empty leaves
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), 2), // Foliage radius, offset, height
+
 
                 new TwoLayersFeatureSize(1, 0, 2)).build()); // Limit for the tree's size
     }

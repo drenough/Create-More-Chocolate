@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/leaves",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "all": "create_chocolate:block/almond_leaves"
-  }
-}

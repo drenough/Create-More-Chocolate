@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
-      "model": "create_chocolate:block/almond_leaves"
+    "full=false": {
+      "model": "create_chocolate:block/almond_leaves_empty"
+    },
+    "full=true": {
+      "model": "create_chocolate:block/almond_leaves_full"
     }
   }
 }

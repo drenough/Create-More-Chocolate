@@ -1,6 +1,7 @@
 package net.drenough.create_chocolate.block;
 
 import net.drenough.create_chocolate.CreateChocolate;
+import net.drenough.create_chocolate.block.almond.AlmondLeavesBlock;
 import net.drenough.create_chocolate.block.almond.ModFlammableRotatedPillarBlock;
 import net.drenough.create_chocolate.fluid.ModFluids;
 import net.drenough.create_chocolate.worldgen.tree.ModTreeGrowers;
@@ -263,7 +264,7 @@ public class ModBlocks {
                 }
             });
     public static final DeferredBlock<Block> ALMOND_LEAVES = BLOCKS.register("almond_leaves",
-            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)){
+            () -> new AlmondLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
                     return true;
