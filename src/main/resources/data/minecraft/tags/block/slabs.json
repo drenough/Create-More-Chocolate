@@ -4,6 +4,7 @@
     "create_chocolate:dark_chocolate_slab",
     "create_chocolate:white_chocolate_slab",
     "create_chocolate:caramel_slab",
-    "create_chocolate:royal_chocolate_slab"
+    "create_chocolate:royal_chocolate_slab",
+    "create_chocolate:vegan_chocolate_slab"
   ]
 }

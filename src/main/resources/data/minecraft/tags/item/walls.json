@@ -4,6 +4,7 @@
     "create_chocolate:dark_chocolate_wall",
     "create_chocolate:white_chocolate_wall",
     "create_chocolate:caramel_wall",
-    "create_chocolate:royal_chocolate_wall"
+    "create_chocolate:royal_chocolate_wall",
+    "create_chocolate:vegan_chocolate_wall"
   ]
 }

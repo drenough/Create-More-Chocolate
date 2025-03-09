@@ -307,6 +307,31 @@ public class ModBlocks {
             () -> new LiquidBlock(ModFluids.SOURCE_VEGAN_CHOCOLATE_FLUID.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noCollission()));
     public static final DeferredBlock<Block> VEGAN_CHOCOLATE_CAKE = BLOCKS.register("vegan_chocolate_cake",
             () -> new VeganChocolateCakeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE)));
+    // Vegan Chocolate Bricks
+    public static final DeferredBlock<Block> VEGAN_CHOCOLATE_BRICKS = registerBlock("vegan_chocolate_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
+    // Vegan Chocolate Stairs
+    public static final DeferredBlock<Block> VEGAN_CHOCOLATE_STAIRS = registerBlock("vegan_chocolate_stairs",
+            () -> new StairBlock(ModBlocks.VEGAN_CHOCOLATE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_STAIRS)));
+    // Vegan Chocolate Slab
+    public static final DeferredBlock<Block> VEGAN_CHOCOLATE_SLAB = registerBlock("vegan_chocolate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB)));
+    // Vegan Chocolate Door
+    public static final DeferredBlock<Block> VEGAN_CHOCOLATE_DOOR = registerBlock("vegan_chocolate_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).noOcclusion()));
+    // Vegan Chocolate Trapdoor
+    public static final DeferredBlock<Block> VEGAN_CHOCOLATE_TRAPDOOR = registerBlock("vegan_chocolate_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).noOcclusion()));
+    // Vegan Chocolate Wall
+    public static final DeferredBlock<Block> VEGAN_CHOCOLATE_WALL = registerBlock("vegan_chocolate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL)));
+    // Vegan Chocolate Fence
+    public static final DeferredBlock<Block> VEGAN_CHOCOLATE_FENCE = registerBlock("vegan_chocolate_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE)));
+    // Vegan Chocolate Fence Gate
+    public static final DeferredBlock<Block> VEGAN_CHOCOLATE_FENCE_GATE = registerBlock("vegan_chocolate_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
 
     // Apple Sauce
     public static final DeferredBlock<LiquidBlock> APPLE_SAUCE_BLOCK = BLOCKS.register("apple_sauce_block",

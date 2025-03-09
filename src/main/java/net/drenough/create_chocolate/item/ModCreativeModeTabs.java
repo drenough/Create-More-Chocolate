@@ -122,6 +122,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PALLET_OF_WHITE_CHOCOLATE.get());
                         output.accept(ModBlocks.PALLET_OF_CARAMEL.get());
                         output.accept(ModBlocks.PALLET_OF_ROYAL_CHOCOLATE.get());
+                        output.accept(ModBlocks.VEGAN_CHOCOLATE_BRICKS.get());
+                        output.accept(ModBlocks.VEGAN_CHOCOLATE_SLAB.get());
+                        output.accept(ModBlocks.VEGAN_CHOCOLATE_STAIRS.get());
+                        output.accept(ModBlocks.VEGAN_CHOCOLATE_WALL.get());
+                        output.accept(ModBlocks.VEGAN_CHOCOLATE_DOOR.get());
+                        output.accept(ModBlocks.VEGAN_CHOCOLATE_TRAPDOOR.get());
+                        output.accept(ModBlocks.VEGAN_CHOCOLATE_FENCE.get());
+                        output.accept(ModBlocks.VEGAN_CHOCOLATE_FENCE_GATE.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICKS.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_SLAB.get());
                         output.accept(ModBlocks.CHOCOLATE_BRICK_STAIRS.get());

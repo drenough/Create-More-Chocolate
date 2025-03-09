@@ -204,6 +204,14 @@
   "block.create_chocolate.royal_chocolate_wall": "Royal Chocolate Wall",
   "block.create_chocolate.royal_chocolate_fence": "Royal Chocolate Fence",
   "block.create_chocolate.royal_chocolate_fence_gate": "Royal Chocolate Fence Gate",
+  "block.create_chocolate.vegan_chocolate_bricks": "Vegan Chocolate Bricks",
+  "block.create_chocolate.vegan_chocolate_stairs": "Vegan Chocolate Stairs",
+  "block.create_chocolate.vegan_chocolate_slab": "Vegan Chocolate Slab",
+  "block.create_chocolate.vegan_chocolate_door": "Vegan Chocolate Door",
+  "block.create_chocolate.vegan_chocolate_trapdoor": "Vegan Chocolate Trapdoor",
+  "block.create_chocolate.vegan_chocolate_wall": "Vegan Chocolate Wall",
+  "block.create_chocolate.vegan_chocolate_fence": "Vegan Chocolate Fence",
+  "block.create_chocolate.vegan_chocolate_fence_gate": "Vegan Chocolate Fence Gate",
 
 
   "creativetab.create_chocolate_tab": "Create More Chocolate"
