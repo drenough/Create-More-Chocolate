@@ -12,7 +12,7 @@ description='''Addon for mod Create, adding food like chocolate'''
 [[dependencies.create_chocolate]]
 modId="neoforge"
 type="required"
-versionRange="[21.1.125,)"
+versionRange="[21.1.133,)"
 ordering="NONE"
 side="BOTH"
 
@@ -33,7 +33,7 @@ side="BOTH"
 [[dependencies.create_chocolate]]
 modId="create"
 type="required"
-versionRange="[6.0.2,)"
+versionRange="[6.0.4,6.1.0)"
 ordering="AFTER"
 side="BOTH"
 
