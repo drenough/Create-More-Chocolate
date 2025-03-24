@@ -6,6 +6,7 @@ import net.drenough.create_chocolate.fluid.ModFluidTypes;
 import net.drenough.create_chocolate.fluid.ModFluids;
 import net.drenough.create_chocolate.item.ModCreativeModTabs;
 import net.drenough.create_chocolate.item.ModItems;
+import net.drenough.create_chocolate.loot.ModLootModifiers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,7 @@ public class CreateChocolate {
         ModBlocks.register(modEventBus);
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         // Register creative tabs
         ModCreativeModTabs.register(modEventBus);
@@ -69,6 +71,15 @@ public class CreateChocolate {
             // Render Layers for Royal Chocolate
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ROYAL_CHOCOLATE_FLUID.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ROYAL_CHOCOLATE_FLUID.get(), RenderType.translucent());
+            // Render Layers for Vegan Chocolate
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_VEGAN_CHOCOLATE_FLUID.get(),RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_VEGAN_CHOCOLATE_FLUID.get(), RenderType.translucent());
+            // Render Layers for Apple Sauce
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_APPLE_SAUCE_FLUID.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_APPLE_SAUCE_FLUID.get(), RenderType.translucent());
+            // Render Layers for Almond Milk
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ALMOND_MILK_FLUID.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ALMOND_MILK_FLUID.get(), RenderType.translucent());
         }
     }
 }

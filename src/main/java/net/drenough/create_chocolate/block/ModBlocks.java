@@ -1,18 +1,26 @@
 package net.drenough.create_chocolate.block;
 
 import net.drenough.create_chocolate.CreateChocolate;
+import net.drenough.create_chocolate.block.almond.AlmondLeavesBlock;
+import net.drenough.create_chocolate.block.almond.ModFlammableRotatedPillarBlock;
 import net.drenough.create_chocolate.fluid.ModFluids;
 import net.drenough.create_chocolate.item.ModItems;
+import net.drenough.create_chocolate.worldgen.tree.ModTreeGrowers;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
@@ -160,6 +168,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
     public static final RegistryObject<Block> CARDBOARD_BOX_OF_ROYAL_CHOCOLATE = registerBlock("cardboard_box_of_royal_chocolate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
+    public static final RegistryObject<Block> CARDBOARD_BOX_OF_VEGAN_CHOCOLATE = registerBlock("cardboard_box_of_vegan_chocolate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BROWN_WOOL)));
 
     // Pallets with Chocolate Boxes
     public static final RegistryObject<Block> PALLET_OF_CHOCOLATE = registerBlock("pallet_of_chocolate",
@@ -172,6 +182,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> PALLET_OF_ROYAL_CHOCOLATE = registerBlock("pallet_of_royal_chocolate",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+    public static final RegistryObject<Block> PALLET_OF_VEGAN_CHOCOLATE = registerBlock("pallet_of_vegan_chocolate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
 
     // Royal Chocolate Fluid Block
     public static final RegistryObject<LiquidBlock> ROYAL_CHOCOLATE_BLOCK = BLOCKS.register("royal_chocolate_block",
@@ -204,6 +217,98 @@ public class ModBlocks {
     // Royal Chocolate Food
     public static final RegistryObject<Block> ROYAL_CHOCOLATE_CAKE = BLOCKS.register("royal_chocolate_cake",
             () -> new RoyalChocolateCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
+
+    // Almond Tree
+    public static final RegistryObject<Block> ALMOND_LOG = BLOCKS.register("almond_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> ALMOND_WOOD = BLOCKS.register("almond_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> STRIPPED_ALMOND_LOG = BLOCKS.register("stripped_almond_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<Block> STRIPPED_ALMOND_WOOD = BLOCKS.register("stripped_almond_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> ALMOND_PLANKS = BLOCKS.register("almond_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 5;
+                }
+            });
+    public static final RegistryObject<Block> ALMOND_LEAVES = BLOCKS.register("almond_leaves",
+            () -> new AlmondLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
+                @Override
+                public boolean isFlammable(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull Direction direction) {
+                    return 30;
+                }
+            });
+    public static final RegistryObject<Block> ALMOND_SAPLING = BLOCKS.register("almond_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.ALMOND, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+
+    // Vanilla Crop
+    public static final RegistryObject<Block> VANILLA_CROP = BLOCKS.register("vanilla_crop",
+            () -> new VanillaCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+    // Vegan Chocolate Fluid Block
+    public static final RegistryObject<LiquidBlock> VEGAN_CHOCOLATE_BLOCK = BLOCKS.register("vegan_chocolate_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_VEGAN_CHOCOLATE_FLUID, BlockBehaviour.Properties.copy(Blocks.WATER).noCollission()));
+    // Vegan Chocolate Bricks
+    public static final RegistryObject<Block> VEGAN_CHOCOLATE_BRICKS = registerBlock("vegan_chocolate_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+    // Vegan Chocolate Stairs
+    public static final RegistryObject<Block> VEGAN_CHOCOLATE_STAIRS = registerBlock("vegan_chocolate_stairs",
+            () -> new StairBlock(() -> ModBlocks.VEGAN_CHOCOLATE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS)));
+    // Vegan Chocolate Slab
+    public static final RegistryObject<Block> VEGAN_CHOCOLATE_SLAB = registerBlock("vegan_chocolate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
+    // Vegan Chocolate Door
+    public static final RegistryObject<Block> VEGAN_CHOCOLATE_DOOR = registerBlock("vegan_chocolate_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion(), BlockSetType.OAK));
+    // Vegan Chocolate Trapdoor
+    public static final RegistryObject<Block> VEGAN_CHOCOLATE_TRAPDOOR = registerBlock("vegan_chocolate_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR).noOcclusion(), BlockSetType.OAK));
+    // Vegan Chocolate Wall
+    public static final RegistryObject<Block> VEGAN_CHOCOLATE_WALL = registerBlock("vegan_chocolate_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    // Vegan Chocolate Fence
+    public static final RegistryObject<Block> VEGAN_CHOCOLATE_FENCE = registerBlock("vegan_chocolate_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+    // Vegan Chocolate Fence Gate
+    public static final RegistryObject<Block> VEGAN_CHOCOLATE_FENCE_GATE = registerBlock("vegan_chocolate_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+    // Vegan Chocolate Food
+    public static final RegistryObject<Block> VEGAN_CHOCOLATE_CAKE = BLOCKS.register("vegan_chocolate_cake",
+            () -> new VeganChocolateCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
+
+    // Apple Sauce
+    public static final RegistryObject<LiquidBlock> APPLE_SAUCE_BLOCK = BLOCKS.register("apple_sauce_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_APPLE_SAUCE_FLUID.get(), BlockBehaviour.Properties.copy(Blocks.WATER).noCollission()));
+
+    // Almond Milk
+    public static final RegistryObject<LiquidBlock> ALMOND_MILK_BLOCK = BLOCKS.register("almond_milk_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_ALMOND_MILK_FLUID.get(), BlockBehaviour.Properties.copy(Blocks.WATER).noCollission()));
 
 
 

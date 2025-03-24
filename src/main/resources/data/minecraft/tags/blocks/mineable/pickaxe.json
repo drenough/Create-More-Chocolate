@@ -34,6 +34,14 @@
     "create_chocolate:caramel_fence_gate",
     "create_chocolate:royal_chocolate_bricks",
     "create_chocolate:royal_chocolate_stairs",
-    "create_chocolate:royal_chocolate_slab"
+    "create_chocolate:royal_chocolate_slab",
+    "create_chocolate:vegan_chocolate_bricks",
+    "create_chocolate:vegan_chocolate_stairs",
+    "create_chocolate:vegan_chocolate_slab",
+    "create_chocolate:vegan_chocolate_door",
+    "create_chocolate:vegan_chocolate_trapdoor",
+    "create_chocolate:vegan_chocolate_wall",
+    "create_chocolate:vegan_chocolate_fence",
+    "create_chocolate:vegan_chocolate_fence_gate"
   ]
 }

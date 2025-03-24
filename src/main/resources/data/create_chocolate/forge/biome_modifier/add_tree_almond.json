@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:forest",
+    "minecraft:birch_forest"
+  ],
+  "features": "create_chocolate:almond_placed",
+  "step": "vegetal_decoration"
+}

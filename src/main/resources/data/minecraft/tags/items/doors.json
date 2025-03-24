@@ -4,6 +4,7 @@
     "create_chocolate:dark_chocolate_door",
     "create_chocolate:white_chocolate_door",
     "create_chocolate:caramel_door",
-    "create_chocolate:royal_chocolate_door"
+    "create_chocolate:royal_chocolate_door",
+    "create_chocolate:vegan_chocolate_door"
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "create_chocolate:pallet_of_chocolate",
+    "create_chocolate:pallet_of_dark_chocolate",
+    "create_chocolate:pallet_of_white_chocolate",
+    "create_chocolate:pallet_of_caramel",
+    "create_chocolate:pallet_of_royal_chocolate",
+    "create_chocolate:pallet_of_vegan_chocolate"
+  ]
+}

@@ -42,11 +42,39 @@
     },
     {
       "type": "single",
+      "resource": "create_chocolate:block/pallet_of_vegan_chocolate"
+    },
+    {
+      "type": "single",
       "resource": "create_chocolate:fluid/royal_chocolate_still"
     },
     {
       "type": "single",
       "resource": "create_chocolate:fluid/royal_chocolate_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/vegan_chocolate_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/vegan_chocolate_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/apple_sauce_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/apple_sauce_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/almond_milk_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:fluid/almond_milk_flow"
     }
   ]
 }

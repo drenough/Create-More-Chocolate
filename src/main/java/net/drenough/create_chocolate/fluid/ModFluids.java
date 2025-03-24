@@ -54,6 +54,36 @@ public class ModFluids {
             ModFluidTypes.ROYAL_CHOCOLATE_FLUID_TYPE, SOURCE_ROYAL_CHOCOLATE_FLUID, FLOWING_ROYAL_CHOCOLATE_FLUID)
             .slopeFindDistance(3).levelDecreasePerBlock(2).block(ModBlocks.ROYAL_CHOCOLATE_BLOCK).bucket(ModItems.ROYAL_CHOCOLATE_BUCKET).tickRate(25);
 
+    // Vegan Chocolate Fluid
+    public static final RegistryObject<FlowingFluid> SOURCE_VEGAN_CHOCOLATE_FLUID = FLUIDS.register("vegan_chocolate_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.VEGAN_CHOCOLATE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_VEGAN_CHOCOLATE_FLUID = FLUIDS.register("flowing_vegan_chocolate",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.VEGAN_CHOCOLATE_FLUID_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties VEGAN_CHOCOLATE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.VEGAN_CHOCOLATE_FLUID_TYPE, SOURCE_VEGAN_CHOCOLATE_FLUID, FLOWING_VEGAN_CHOCOLATE_FLUID)
+            .slopeFindDistance(3).levelDecreasePerBlock(2).block(ModBlocks.VEGAN_CHOCOLATE_BLOCK).bucket(ModItems.VEGAN_CHOCOLATE_BUCKET).tickRate(25);
+
+    //Apple Sauce Fluid
+    public static final RegistryObject<FlowingFluid> SOURCE_APPLE_SAUCE_FLUID = FLUIDS.register("apple_sauce_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.APPLE_SAUCE_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_APPLE_SAUCE_FLUID = FLUIDS.register("flowing_apple_sauce",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.APPLE_SAUCE_FLUID_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties APPLE_SAUCE_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.APPLE_SAUCE_FLUID_TYPE, SOURCE_APPLE_SAUCE_FLUID, FLOWING_APPLE_SAUCE_FLUID)
+            .slopeFindDistance(3).levelDecreasePerBlock(2).block(ModBlocks.APPLE_SAUCE_BLOCK).bucket(ModItems.APPLE_SAUCE_BUCKET).tickRate(25);
+
+    // Almond Milk Fluid
+    public static final RegistryObject<FlowingFluid> SOURCE_ALMOND_MILK_FLUID = FLUIDS.register("almond_milk_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.ALMOND_MILK_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_ALMOND_MILK_FLUID = FLUIDS.register("flowing_almond_milk",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.ALMOND_MILK_FLUID_PROPERTIES));
+
+    public static final ForgeFlowingFluid.Properties ALMOND_MILK_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.ALMOND_MILK_FLUID_TYPE, SOURCE_ALMOND_MILK_FLUID, FLOWING_ALMOND_MILK_FLUID)
+            .slopeFindDistance(3).levelDecreasePerBlock(2).block(ModBlocks.ALMOND_MILK_BLOCK).bucket(ModItems.ALMOND_MILK_BUCKET).tickRate(25);
+
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);
     }
