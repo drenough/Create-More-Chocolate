@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluid": "create_chocolate:apple_sauce_fluid"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create_chocolate:almond_butter"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "create_chocolate:vegan_chocolate_fluid"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "create_chocolate:vegan_chocolate_dough"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_chocolate:vegan_chocolate_marshmallow"
+    }
+  ]
+}

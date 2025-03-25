@@ -1,0 +1,14 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
+    }
+  ],
+  "results": [
+    {
+      "amount": 125,
+      "fluid": "create_chocolate:apple_sauce_fluid"
+    }
+  ]
+}

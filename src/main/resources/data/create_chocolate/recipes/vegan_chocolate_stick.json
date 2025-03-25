@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "create_chocolate:bar_of_vegan_chocolate"
+    }
+  },
+  "pattern": [
+    "#X",
+    "X#"
+  ],
+  "result": {
+    "count": 2,
+    "item": "create_chocolate:vegan_chocolate_stick"
+  },
+  "show_notification": true
+}

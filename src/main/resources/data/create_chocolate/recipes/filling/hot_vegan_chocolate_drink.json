@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "amount": 250,
+      "fluid": "create_chocolate:vegan_chocolate_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_chocolate:hot_vegan_chocolate_drink"
+    }
+  ]
+}

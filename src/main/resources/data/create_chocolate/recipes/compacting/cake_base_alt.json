@@ -1,0 +1,31 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "create_chocolate:apple_sauce_drink"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create:dough"
+    },
+    {
+      "item": "create:wheat_flour"
+    },
+    {
+      "item": "create:wheat_flour"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_chocolate:cake_base"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ]
+}

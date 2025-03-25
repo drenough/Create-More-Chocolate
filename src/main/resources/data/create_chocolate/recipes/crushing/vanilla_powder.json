@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create_chocolate:vanilla_lusk"
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "item": "create_chocolate:vanilla_powder"
+    }
+  ]
+}

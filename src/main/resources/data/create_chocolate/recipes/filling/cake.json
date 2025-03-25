@@ -6,7 +6,7 @@
     },
     {
       "amount": 1000,
-      "fluidTag": "forge:milk"
+      "fluid": "minecraft:milk"
     }
   ],
   "results": [
