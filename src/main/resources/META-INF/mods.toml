@@ -26,7 +26,7 @@ side = "BOTH"
 [[dependencies.create_chocolate]]
 modId="create"
 mandatory=true
-versionRange="[6.0.4,6.1.0)"  # Lower bound inclusive, upper bound exclusive
+versionRange="[6.0.6,6.1.0)"  # Lower bound inclusive, upper bound exclusive
 ordering="NONE"
 side="BOTH"
 
@@ -40,7 +40,7 @@ side="BOTH"
 [[dependencies.create_chocolate]]
 modId="flywheel"
 mandatory=true
-versionRange="[1.0.1,)"  # Lower bound inclusive, upper bound exclusive
+versionRange="[1.0.4,)"  # Lower bound inclusive, upper bound exclusive
 ordering="AFTER"
 side="CLIENT"
 
