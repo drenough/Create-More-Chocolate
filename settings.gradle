@@ -1,17 +1,10 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        maven {
-            name = 'NeoGradle'
-            url = 'https://maven.neoforged.net/releases' // Add NeoGradle repository
-        }
-        maven {
-            name = 'ParchmentMC'
-            url = 'https://maven.parchmentmc.org' // Keep Parchment repository
-        }
+        maven { url = 'https://maven.neoforged.net/releases' }
     }
 }
 
 plugins {
-    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
 }
