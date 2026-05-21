@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "create_chocolate:pallet_of_royal_chocolate"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "create_chocolate:blocks/pallet_of_royal_chocolate"
+}

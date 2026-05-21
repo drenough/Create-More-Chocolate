@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_chocolate:caramel_dough"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:caramel_truffle"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "create_chocolate:block/royal_chocolate_slab"
+    },
+    "type=double": {
+      "model": "create_chocolate:block/royal_chocolate_bricks"
+    },
+    "type=top": {
+      "model": "create_chocolate:block/royal_chocolate_slab_top"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/cake_slice4",
+  "textures": {
+    "bottom": "create_chocolate:block/dark_chocolate_cake_bottom",
+    "top": "create_chocolate:block/dark_chocolate_cake_top",
+    "side": "create_chocolate:block/dark_chocolate_cake_side",
+    "inside": "create_chocolate:block/dark_chocolate_cake_inner"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_chocolate:vegan_chocolate_dough"
+    },
+    {
+      "item": "create_chocolate:vanilla_sugar"
+    },
+    {
+      "item": "create_chocolate:almond_butter"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:vegan_chocolate_truffle"
+      }
+    }
+  ]
+}

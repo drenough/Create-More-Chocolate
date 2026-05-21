@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "create_chocolate:block/caramel_bricks",
+    "side": "create_chocolate:block/caramel_bricks",
+    "top": "create_chocolate:block/caramel_bricks"
+  }
+}

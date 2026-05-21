@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "create_chocolate:vegan_chocolate_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:bar_of_vegan_chocolate"
+      }
+    }
+  ]
+}

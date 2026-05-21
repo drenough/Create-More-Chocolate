@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate_wall",
+  "textures": {
+    "texture": "create_chocolate:block/white_chocolate_bricks"
+  }
+}

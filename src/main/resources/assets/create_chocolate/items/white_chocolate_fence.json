@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "create_chocolate:block/white_chocolate_fence_inventory"
+  }
+}

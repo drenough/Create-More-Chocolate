@@ -1,0 +1,33 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "create_chocolate:bar_of_royal_chocolate"
+    },
+    {
+      "item": "create_chocolate:bar_of_royal_chocolate"
+    },
+    {
+      "item": "create_chocolate:bar_of_royal_chocolate"
+    },
+    {
+      "item": "create_chocolate:bar_of_royal_chocolate"
+    },
+    {
+      "item": "create_chocolate:bar_of_royal_chocolate"
+    },
+    {
+      "item": "create_chocolate:bar_of_royal_chocolate"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:full_royal_chocolate_bar"
+      }
+    }
+  ]
+}

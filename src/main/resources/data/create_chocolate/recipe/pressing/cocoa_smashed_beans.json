@@ -1,0 +1,15 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:cocoa_smashed_beans"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "minecraft:milk"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "create_chocolate:butter"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "id": "create_chocolate:caramel_fluid"
+    }
+  ]
+}

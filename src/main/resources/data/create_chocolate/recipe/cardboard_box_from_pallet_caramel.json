@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "create_chocolate:pallet_of_caramel"
+  ],
+  "result": {
+    "count": 9,
+    "id": "create_chocolate:cardboard_box_of_caramel"
+  }
+}

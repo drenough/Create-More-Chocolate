@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "create_chocolate:block/stripped_almond_log_top",
+    "side": "create_chocolate:block/stripped_almond_log"
+  }
+}

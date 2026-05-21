@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": "create_chocolate:ginger_dough",
+  "result": {
+    "id": "create_chocolate:ginger_bread"
+  }
+}

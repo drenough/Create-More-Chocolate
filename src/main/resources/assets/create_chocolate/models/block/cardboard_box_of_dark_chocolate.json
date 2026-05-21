@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "create_chocolate:block/cardboard_box_of_dark_chocolate_bottom",
+    "side": "create_chocolate:block/cardboard_box_of_dark_chocolate_side",
+    "top": "create_chocolate:block/cardboard_box_of_dark_chocolate_top"
+  }
+}

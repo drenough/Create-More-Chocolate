@@ -1,0 +1,15 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "create_chocolate:ginger_dough"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:ginger_bread_man"
+      }
+    }
+  ]
+}

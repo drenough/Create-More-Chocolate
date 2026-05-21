@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "create_chocolate:hard_chocolate_chestplate",
+    "create_chocolate:royal_chocolate_chestplate"
+  ]
+}

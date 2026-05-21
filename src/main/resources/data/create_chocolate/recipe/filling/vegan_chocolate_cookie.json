@@ -1,0 +1,20 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:cookie"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 125,
+      "fluid": "create_chocolate:vegan_chocolate_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:vegan_chocolate_cookie"
+      }
+    }
+  ]
+}

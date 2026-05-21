@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "create_chocolate:block/royal_chocolate_bricks",
+    "side": "create_chocolate:block/royal_chocolate_bricks",
+    "top": "create_chocolate:block/royal_chocolate_bricks"
+  }
+}

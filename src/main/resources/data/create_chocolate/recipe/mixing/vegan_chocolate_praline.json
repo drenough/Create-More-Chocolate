@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create_chocolate:vanilla_sugar"
+    },
+    {
+      "item": "create_chocolate:almond_butter"
+    },
+    {
+      "item": "create_chocolate:cocoa_powder"
+    },
+    {
+      "item": "create_chocolate:bar_of_vegan_chocolate"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:vegan_chocolate_praline"
+      }
+    }
+  ]
+}

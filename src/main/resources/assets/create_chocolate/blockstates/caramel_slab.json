@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "create_chocolate:block/caramel_slab"
+    },
+    "type=double": {
+      "model": "create_chocolate:block/caramel_bricks"
+    },
+    "type=top": {
+      "model": "create_chocolate:block/caramel_slab_top"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/dark_chocolate_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/dark_chocolate_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/white_chocolate_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/white_chocolate_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/caramel_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/caramel_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/pallet_of_vegan_chocolate"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/pallet_of_dark_chocolate"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/pallet_of_white_chocolate"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/pallet_of_chocolate"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/pallet_of_caramel"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/royal_chocolate_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/royal_chocolate_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/vegan_chocolate_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/vegan_chocolate_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/apple_sauce_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/apple_sauce_flow"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/almond_milk_still"
+    },
+    {
+      "type": "single",
+      "resource": "create_chocolate:block/almond_milk_flow"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:stick",
+    "X": "create_chocolate:bar_of_royal_chocolate"
+  },
+  "pattern": [
+    "#X",
+    "X#"
+  ],
+  "result": {
+    "count": 2,
+    "id": "create_chocolate:royal_chocolate_stick"
+  },
+  "show_notification": true
+}

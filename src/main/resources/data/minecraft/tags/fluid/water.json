@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "create_chocolate:dark_chocolate_fluid",
+    "create_chocolate:flowing_dark_chocolate",
+    "create_chocolate:white_chocolate_fluid",
+    "create_chocolate:flowing_white_chocolate",
+    "create_chocolate:caramel_fluid",
+    "create_chocolate:flowing_caramel",
+    "create_chocolate:royal_chocolate_fluid",
+    "create_chocolate:flowing_royal_chocolate",
+    "create_chocolate:vegan_chocolate_fluid",
+    "create_chocolate:flowing_vegan_chocolate",
+    "create_chocolate:apple_sauce_fluid",
+    "create_chocolate:flowing_apple_sauce",
+    "create_chocolate:almond_milk_fluid",
+    "create_chocolate:flowing_almond_milk"
+  ]
+}

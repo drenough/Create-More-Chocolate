@@ -1,0 +1,6 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "create_chocolate:block/almond_leaves_empty"
+  }
+}

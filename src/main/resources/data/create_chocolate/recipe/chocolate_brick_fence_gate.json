@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "create_chocolate:hard_chocolate_stick",
+    "W": "create_chocolate:chocolate_bricks"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "create_chocolate:chocolate_brick_fence_gate"
+  },
+  "show_notification": true
+}

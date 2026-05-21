@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "create_chocolate:block/dark_chocolate_bricks"
+  }
+}

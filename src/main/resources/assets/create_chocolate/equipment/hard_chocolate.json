@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "create_chocolate:hard_chocolate"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "create_chocolate:hard_chocolate"
+      }
+    ]
+  }
+}

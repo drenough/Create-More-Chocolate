@@ -1,0 +1,20 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 125,
+      "fluid": "create_chocolate:caramel_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:caramel_egg"
+      }
+    }
+  ]
+}

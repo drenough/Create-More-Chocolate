@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "create:bar_of_chocolate"
+  },
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "result": {
+    "id": "create_chocolate:hard_chocolate_boots"
+  },
+  "show_notification": true
+}

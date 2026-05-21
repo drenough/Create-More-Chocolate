@@ -1,0 +1,20 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 125,
+      "fluid": "create_chocolate:dark_chocolate_fluid"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "create_chocolate:dark_chocolate_egg"
+      }
+    }
+  ]
+}
